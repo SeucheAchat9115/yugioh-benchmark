@@ -31,9 +31,9 @@ jobs:
           scripts=re.findall(r'<script[^>]+src=[\"\x27]([^\"\x27]+)',page,re.I)
           print('Script sources:',json.dumps(scripts))
           inventory=[]
-          for index,src in enumerate(scripts[:16]):
+          for index,src in enumerate(src for src in scripts if "/duel.js" in src or "/utils.js" in src):
               url=urllib.parse.urljoin('https://www.duelingbook.com/',src)
-              if urllib.parse.urlparse(url).hostname not in ('duelingbook.com','www.duelingbook.com'): continue
+              if urllib.parse.urlparse(url).hostname not in ('duelingbook.com','www.duelingbook.com','static.duelingbook.com'): continue
               filename=f'script-{index}.js'
               try:
                   source=fetch(url,filename)
