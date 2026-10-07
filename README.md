@@ -39,7 +39,7 @@ complete in the hosted browser. The included match was obtained from a public
 archive instead. There are no endless retries or fabricated tokens.
 
 - [Replay JSON format](docs/replay-format.md)
-- [Obtaining replay data](docs/acquisition.md)
+- [How to save replay JSON (desktop and mobile)](docs/acquisition.md)
 - [Preparing and running harness benchmarks](docs/harness-integration.md)
 
 Raw imports/HARs and evaluation runs stay local and ignored. Deliberately selected
