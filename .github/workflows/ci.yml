@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: SeucheAchat9115/yugioh-harness
-          ref: d6e1f398571f1332334393bdc5373e4946466f26
+          ref: 1d54835a8e239160f8e5dc4f01c8589506669ac0
           path: harness-source
       - uses: actions/setup-python@v5
         with:
