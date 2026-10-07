@@ -42,6 +42,11 @@ jobs:
                       print(filename,source[max(0,match.start()-140):match.end()+200].replace('\n',' '))
               except Exception as error: print('Fetch failed:',url,type(error).__name__,str(error))
           (root/'inventory.json').write_text(json.dumps(inventory,indent=2),encoding='utf-8')
+          try:
+              payload=fetch('https://www.duelingbook.com/view-replay?id=678633-59711433','response.json')
+              data=json.loads(payload)
+              print('Replay response keys:',list(data)); print('Action:',data.get('action')); print('Message:',data.get('message')); print('Plays:',len(data.get('plays',[])))
+          except Exception as error: print('Replay response:',type(error).__name__,str(error))
       - uses: actions/upload-artifact@v4
         if: always()
         with:
