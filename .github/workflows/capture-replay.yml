@@ -1,0 +1,33 @@
+name: Capture one replay
+on:
+  workflow_dispatch:
+    inputs:
+      replay_url:
+        description: Public DuelingBook replay URL
+        required: true
+        default: https://www.duelingbook.com/replay?id=678633-59711433
+  push:
+    paths: ['tools/capture_browser.py', '.github/workflows/capture-replay.yml']
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: windows-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check --timeout 15 --retries 0 playwright
+      - name: Capture viewer response
+        env:
+          REPLAY_URL: ${{ inputs.replay_url || 'https://www.duelingbook.com/replay?id=678633-59711433' }}
+        run: python tools/capture_browser.py "$env:REPLAY_URL" --output imports/captured.json --deadline 45
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: captured-replay
+          path: imports/captured.json
+          if-no-files-found: error
+          retention-days: 1
