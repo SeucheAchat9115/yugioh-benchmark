@@ -32,6 +32,7 @@ No duplicate raw source file is stored beside the converted bundle.
 
 The source hash uses sorted-key, compact JSON with UTF-8 text and no NaN values.
 Event hashes cover the stored file bytes, including the final newline. Bundle
+checkouts preserve LF line endings via `.gitattributes` on every platform.
 loading verifies file paths, order, hashes, source identity and all derived fields.
 Conversion refuses an existing output directory and writes through a temporary
 directory. External provenance is separate from the replay's derived metadata.

@@ -16,6 +16,10 @@ def prepare_case(runner, *, case_id, source, sequence, actor, review, grading):
         raise ValueError('Sequence must identify a source decision boundary')
     from harness.players.isolated import model_request
     context = runner.context(actor, compact=True)
+    if (context.get('perspective') != actor or
+            not isinstance(context.get('decision'), dict) or
+            context['decision'].get('actor') != actor):
+        raise ValueError('The position must be awaiting this player decision')
     model_request(context)  # Reject omniscient/invalid contexts before storing.
     return {'schema_version':'1.0', 'id':case_id,
             'source':{'replay':source, 'before_sequence':sequence},
