@@ -1,0 +1,1 @@
+{"actor":null,"game":1,"kind":"setup","payload":{"action":"Duel","log":{"public_log":"Won Rock-Paper-Scissors","timestamp":"[0:21]","type":"game","username":"Noxjja"},"play":"RPS","player1":"Noxjja","player1_choice":"Paper","player2":"Drew Carter","player2_choice":"Rock","seconds":21,"winner":"Noxjja"},"sequence":1,"source_index":0}

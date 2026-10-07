@@ -1,0 +1,30 @@
+# Third-party source fixture
+
+The replay `replays/db-2178594` is a lossless transformation of
+[`standard-replay.json`](https://github.com/nedhmn/duel-tools/blob/main/packages/dt-parser/tests/fixtures/standard-replay.json)
+from **nedhmn/duel-tools**, supplied under its repository MIT license.
+The pinned Git blob is recorded in `provenance.json`.
+The following notice is retained for that source fixture. It does not claim
+ownership of Yu-Gi-Oh card names, artwork or game text; no artwork is included.
+
+MIT License
+
+Copyright (c) 2026 nedhmn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

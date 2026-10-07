@@ -6,8 +6,6 @@ on:
         description: Public DuelingBook replay URL
         required: true
         default: https://www.duelingbook.com/replay?id=678633-59711433
-  push:
-    paths: ['tools/capture_browser.py', '.github/workflows/capture-replay.yml']
 permissions:
   contents: read
 jobs:

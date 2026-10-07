@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yugioh-benchmark"
+version = "0.1.0"
+description = "DuelingBook replay conversion and reviewed decision benchmarks for agentic Yu-Gi-Oh"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+capture = ["playwright>=1.45,<2"]
+
+[project.scripts]
+yugioh-benchmark = "yugioh_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

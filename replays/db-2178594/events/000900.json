@@ -1,0 +1,1 @@
+{"actor":"p2","game":3,"kind":"information_observation","payload":{"action":"Duel","log":{"public_log":"Stopped viewing Opponent's Public Extra Deck","timestamp":"[42:30]","type":"duel","username":"Drew Carter"},"play":"Stop viewing","seconds":2550,"username":"Drew Carter","viewing":"Opponent's Public Extra Deck"},"sequence":900,"source_index":899}

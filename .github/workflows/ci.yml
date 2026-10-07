@@ -1,0 +1,36 @@
+name: Offline CI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install --disable-pip-version-check --timeout 15 --retries 0 .
+      - run: python -m unittest discover -s tests -v
+      - run: yugioh-benchmark inspect replays/db-2178594
+  harness-compatibility:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: SeucheAchat9115/yugioh-harness
+          ref: d6e1f398571f1332334393bdc5373e4946466f26
+          path: harness-source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test bridge against pinned harness
+        env:
+          PYTHONPATH: '${{ github.workspace }}/src;${{ github.workspace }}/harness-source'
+        run: python -m unittest discover -s tests -p test_harness_bridge.py -v

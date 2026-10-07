@@ -1,0 +1,1 @@
+{"actor":"p2","game":3,"kind":"result_observation","payload":{"action":"Duel","log":{"public_log":"Left duel","timestamp":"[45:02]","type":"game","username":"Drew Carter"},"play":"Quit duel","player1":{"experience":258,"points":0,"rating":115},"player2":{"experience":341,"points":0,"rating":344},"seconds":2702,"username":"Drew Carter"},"sequence":955,"source_index":954}

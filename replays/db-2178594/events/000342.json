@@ -1,0 +1,1 @@
+{"actor":"p2","game":2,"kind":"information_observation","payload":{"action":"Duel","log":{"public_log":"Stopped viewing Opponent's Graveyard","timestamp":"[16:44]","type":"duel","username":"Drew Carter"},"play":"Stop viewing","seconds":1004,"username":"Drew Carter","viewing":"Opponent's Graveyard"},"sequence":342,"source_index":341}

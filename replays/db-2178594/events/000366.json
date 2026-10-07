@@ -1,0 +1,1 @@
+{"actor":"p2","game":2,"kind":"lp","payload":{"action":"Duel","amount":-1000,"life":6300,"log":{"public_log":"Lost 1000 LP","timestamp":"[17:55]","type":"duel","username":"Drew Carter"},"message":"Drew Carter has lost 1000 life points","play":"Life points","points":1000,"seconds":1075,"username":"Drew Carter","word":"decreased"},"sequence":366,"source_index":365}
