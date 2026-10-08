@@ -1,0 +1,3431 @@
+{
+  "schema_version": "1.0",
+  "id": "db-json-40753-85958923-reviewed-sets-v1",
+  "cases": [
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 334,
+        "source_index": 333,
+        "game": 2,
+        "seconds": 931
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "f083d81987d3bc158c1c211bb0f0351ae0f88bffd9a186c17d41c557dbc17dfb",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000334",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000334.json",
+      "player_context_sha256": "079ccc67e43a56cfe911895a304c2db22146f494991746f786d9d733f6ff7f6d",
+      "id": "db-json-40753-85958923-before-000334-state",
+      "task": "state_recreation",
+      "declared_play": "Set D.D. Warrior Lady from my hand face-down in Monster Zone 3. Stop with an opponent response decision (actor human, window after_set); do not activate or resolve an effect.",
+      "expected_state": {
+        "game_id": "reference-checkpoint",
+        "mode": "agent-vs-agent",
+        "player_isolation": "enforced",
+        "status": "active",
+        "revision": 0,
+        "turn": 1,
+        "phase": "main1",
+        "active_player": "agent",
+        "players": {
+          "agent": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "agent-hand-1",
+                "owner": "agent",
+                "card_id": 71413901
+              },
+              {
+                "instance_id": "agent-hand-3",
+                "owner": "agent",
+                "card_id": 77538567
+              },
+              {
+                "instance_id": "agent-hand-4",
+                "owner": "agent",
+                "card_id": 44095762
+              },
+              {
+                "instance_id": "agent-hand-5",
+                "owner": "agent",
+                "card_id": 4929256
+              },
+              {
+                "instance_id": "agent-hand-6",
+                "owner": "agent",
+                "card_id": 68005187
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "agent-deck-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-15",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-16",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-17",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-18",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-19",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-20",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-21",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-22",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-23",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-24",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-25",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-26",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-27",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-28",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-29",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-30",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-31",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-32",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-33",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-34",
+                "owner": "agent"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "agent-extra-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "agent-side-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              {
+                "instance_id": "agent-hand-2",
+                "owner": "agent",
+                "card_id": 7572887,
+                "hidden": true,
+                "position": "DEF"
+              },
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "71413901": {
+                "id": 71413901,
+                "name": "Breaker the Magical Warrior",
+                "desc": "If this card is Normal Summoned: Place 1 Spell Counter on it (max. 1). Gains 300 ATK for each Spell Counter on it. You can remove 1 Spell Counter from this card, then target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 1600,
+                "def": 1000,
+                "level": 4,
+                "attribute": "DARK"
+              },
+              "7572887": {
+                "id": 7572887,
+                "name": "D.D. Warrior Lady",
+                "desc": "After damage calculation, when this card battles an opponent's monster: You can banish that monster, also banish this card.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 1500,
+                "def": 1600,
+                "level": 4,
+                "attribute": "LIGHT"
+              },
+              "77538567": {
+                "id": 77538567,
+                "name": "Dark Bribe",
+                "desc": "When your opponent activates a Spell/Trap Card: Your opponent draws 1 card, also negate the Spell/Trap activation, and if you do, destroy it.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Counter"
+              },
+              "44095762": {
+                "id": 44095762,
+                "name": "Mirror Force",
+                "desc": "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Normal"
+              },
+              "4929256": {
+                "id": 4929256,
+                "name": "Mobius the Frost Monarch",
+                "desc": "When this card is Tribute Summoned: You can target up to 2 Spell/Trap Cards on the field; destroy those targets.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Aqua",
+                "atk": 2400,
+                "def": 1000,
+                "level": 6,
+                "attribute": "WATER"
+              },
+              "68005187": {
+                "id": 68005187,
+                "name": "Soul Exchange",
+                "desc": "Target 1 monster your opponent controls; this turn, if you Tribute a monster, you must Tribute that target, as if you controlled it. You cannot conduct your Battle Phase the turn you activate this card.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              }
+            },
+            "normal_summon_used": true,
+            "effect_usage": {},
+            "restrictions": []
+          },
+          "human": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "human-hand-1",
+                "owner": "human",
+                "card_id": 87910978
+              },
+              {
+                "instance_id": "human-hand-2",
+                "owner": "human",
+                "card_id": 40737112
+              },
+              {
+                "instance_id": "human-hand-3",
+                "owner": "human",
+                "card_id": 45809008
+              },
+              {
+                "instance_id": "human-hand-4",
+                "owner": "human",
+                "card_id": 81866673
+              },
+              {
+                "instance_id": "human-hand-5",
+                "owner": "human",
+                "card_id": 5318639
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "human-deck-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-15",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-16",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-17",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-18",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-19",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-20",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-21",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-22",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-23",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-24",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-25",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-26",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-27",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-28",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-29",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-30",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-31",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-32",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-33",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-34",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-35",
+                "owner": "human"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "human-extra-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "human-side-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "87910978": {
+                "id": 87910978,
+                "name": "Brain Control",
+                "desc": "Pay 800 LP, then target 1 face-up monster your opponent controls that can be Normal Summoned/Set; take control of that target until the End Phase.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "40737112": {
+                "id": 40737112,
+                "name": "Dark Magician of Chaos",
+                "desc": "During the End Phase, if this card was Normal or Special Summoned this turn: You can target 1 Spell in your GY; add it to your hand. You can only use this effect of \"Dark Magician of Chaos\" once per turn. If this card destroys an opponent's monster by battle, after damage calculation: Banish that opponent's monster. If this face-up card would leave the field, banish it instead.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 2800,
+                "def": 2600,
+                "level": 8,
+                "attribute": "DARK"
+              },
+              "45809008": {
+                "id": 45809008,
+                "name": "Destiny Draw",
+                "desc": "Discard 1 \"Destiny HERO\" card; draw 2 cards.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "81866673": {
+                "id": 81866673,
+                "name": "Destiny HERO - Dasher",
+                "desc": "Once per turn: You can Tribute 1 other monster; this card gains 1000 ATK until the End Phase. If this card attacks, change it to Defense Position at the end of the Battle Phase. One time only, when you draw a Monster Card during your Draw Phase while this card is in your Graveyard: You can reveal it; Special Summon it. This card must be in the Graveyard to activate and to resolve this effect.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 2100,
+                "def": 1000,
+                "level": 6,
+                "attribute": "DARK"
+              },
+              "5318639": {
+                "id": 5318639,
+                "name": "Mystical Space Typhoon",
+                "desc": "Target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Quick-Play"
+              }
+            },
+            "normal_summon_used": false,
+            "effect_usage": {},
+            "restrictions": []
+          }
+        },
+        "shared_zones": {
+          "extra_monster_zones": []
+        },
+        "presentation": {
+          "show_agent_hand": false
+        },
+        "chain": [],
+        "pending_effects": [],
+        "pending_decision": {
+          "actor": "human",
+          "window": "after_set"
+        }
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 334,
+        "source_index": 333,
+        "game": 2,
+        "seconds": 931
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "f083d81987d3bc158c1c211bb0f0351ae0f88bffd9a186c17d41c557dbc17dfb",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000334",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000334.json",
+      "player_context_sha256": "079ccc67e43a56cfe911895a304c2db22146f494991746f786d9d733f6ff7f6d",
+      "id": "db-json-40753-85958923-before-000334-choice",
+      "task": "human_move_reproduction",
+      "human_move": {
+        "kind": "set",
+        "card": "D.D. Warrior Lady",
+        "zone_type": "monster",
+        "position": "DEF"
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 335,
+        "source_index": 334,
+        "game": 2,
+        "seconds": 932
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "101261b62fa8295302a002a293ac0dc088e09e3c81ab1fb627444ba79116560d",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000335",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000335.json",
+      "player_context_sha256": "02f3e34a9256137f544083ee11ed6b1de34b6900a029e5a06c28940cc0507578",
+      "id": "db-json-40753-85958923-before-000335-state",
+      "task": "state_recreation",
+      "declared_play": "Set Mirror Force from my hand face-down in Spell/Trap Zone 3. Stop with an opponent response decision (actor human, window after_set); do not activate or resolve an effect.",
+      "expected_state": {
+        "game_id": "reference-checkpoint",
+        "mode": "agent-vs-agent",
+        "player_isolation": "enforced",
+        "status": "active",
+        "revision": 0,
+        "turn": 1,
+        "phase": "main1",
+        "active_player": "agent",
+        "players": {
+          "agent": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "agent-hand-1",
+                "owner": "agent",
+                "card_id": 71413901
+              },
+              {
+                "instance_id": "agent-hand-2",
+                "owner": "agent",
+                "card_id": 77538567
+              },
+              {
+                "instance_id": "agent-hand-4",
+                "owner": "agent",
+                "card_id": 4929256
+              },
+              {
+                "instance_id": "agent-hand-5",
+                "owner": "agent",
+                "card_id": 68005187
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "agent-deck-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-15",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-16",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-17",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-18",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-19",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-20",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-21",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-22",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-23",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-24",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-25",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-26",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-27",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-28",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-29",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-30",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-31",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-32",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-33",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-34",
+                "owner": "agent"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "agent-extra-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "agent-side-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              {
+                "instance_id": "field-ref-715",
+                "owner": "agent",
+                "hidden": true,
+                "card_id": 7572887,
+                "position": "DEF"
+              },
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              {
+                "instance_id": "agent-hand-3",
+                "owner": "agent",
+                "card_id": 44095762,
+                "hidden": true
+              },
+              null,
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "71413901": {
+                "id": 71413901,
+                "name": "Breaker the Magical Warrior",
+                "desc": "If this card is Normal Summoned: Place 1 Spell Counter on it (max. 1). Gains 300 ATK for each Spell Counter on it. You can remove 1 Spell Counter from this card, then target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 1600,
+                "def": 1000,
+                "level": 4,
+                "attribute": "DARK"
+              },
+              "77538567": {
+                "id": 77538567,
+                "name": "Dark Bribe",
+                "desc": "When your opponent activates a Spell/Trap Card: Your opponent draws 1 card, also negate the Spell/Trap activation, and if you do, destroy it.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Counter"
+              },
+              "44095762": {
+                "id": 44095762,
+                "name": "Mirror Force",
+                "desc": "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Normal"
+              },
+              "4929256": {
+                "id": 4929256,
+                "name": "Mobius the Frost Monarch",
+                "desc": "When this card is Tribute Summoned: You can target up to 2 Spell/Trap Cards on the field; destroy those targets.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Aqua",
+                "atk": 2400,
+                "def": 1000,
+                "level": 6,
+                "attribute": "WATER"
+              },
+              "68005187": {
+                "id": 68005187,
+                "name": "Soul Exchange",
+                "desc": "Target 1 monster your opponent controls; this turn, if you Tribute a monster, you must Tribute that target, as if you controlled it. You cannot conduct your Battle Phase the turn you activate this card.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "7572887": {
+                "id": 7572887,
+                "name": "D.D. Warrior Lady",
+                "desc": "After damage calculation, when this card battles an opponent's monster: You can banish that monster, also banish this card.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 1500,
+                "def": 1600,
+                "level": 4,
+                "attribute": "LIGHT"
+              }
+            },
+            "normal_summon_used": true,
+            "effect_usage": {},
+            "restrictions": []
+          },
+          "human": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "human-hand-1",
+                "owner": "human",
+                "card_id": 87910978
+              },
+              {
+                "instance_id": "human-hand-2",
+                "owner": "human",
+                "card_id": 40737112
+              },
+              {
+                "instance_id": "human-hand-3",
+                "owner": "human",
+                "card_id": 45809008
+              },
+              {
+                "instance_id": "human-hand-4",
+                "owner": "human",
+                "card_id": 81866673
+              },
+              {
+                "instance_id": "human-hand-5",
+                "owner": "human",
+                "card_id": 5318639
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "human-deck-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-15",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-16",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-17",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-18",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-19",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-20",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-21",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-22",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-23",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-24",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-25",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-26",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-27",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-28",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-29",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-30",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-31",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-32",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-33",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-34",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-35",
+                "owner": "human"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "human-extra-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "human-side-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "87910978": {
+                "id": 87910978,
+                "name": "Brain Control",
+                "desc": "Pay 800 LP, then target 1 face-up monster your opponent controls that can be Normal Summoned/Set; take control of that target until the End Phase.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "40737112": {
+                "id": 40737112,
+                "name": "Dark Magician of Chaos",
+                "desc": "During the End Phase, if this card was Normal or Special Summoned this turn: You can target 1 Spell in your GY; add it to your hand. You can only use this effect of \"Dark Magician of Chaos\" once per turn. If this card destroys an opponent's monster by battle, after damage calculation: Banish that opponent's monster. If this face-up card would leave the field, banish it instead.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 2800,
+                "def": 2600,
+                "level": 8,
+                "attribute": "DARK"
+              },
+              "45809008": {
+                "id": 45809008,
+                "name": "Destiny Draw",
+                "desc": "Discard 1 \"Destiny HERO\" card; draw 2 cards.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "81866673": {
+                "id": 81866673,
+                "name": "Destiny HERO - Dasher",
+                "desc": "Once per turn: You can Tribute 1 other monster; this card gains 1000 ATK until the End Phase. If this card attacks, change it to Defense Position at the end of the Battle Phase. One time only, when you draw a Monster Card during your Draw Phase while this card is in your Graveyard: You can reveal it; Special Summon it. This card must be in the Graveyard to activate and to resolve this effect.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 2100,
+                "def": 1000,
+                "level": 6,
+                "attribute": "DARK"
+              },
+              "5318639": {
+                "id": 5318639,
+                "name": "Mystical Space Typhoon",
+                "desc": "Target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Quick-Play"
+              }
+            },
+            "normal_summon_used": false,
+            "effect_usage": {},
+            "restrictions": []
+          }
+        },
+        "shared_zones": {
+          "extra_monster_zones": []
+        },
+        "presentation": {
+          "show_agent_hand": false
+        },
+        "chain": [],
+        "pending_effects": [],
+        "pending_decision": {
+          "actor": "human",
+          "window": "after_set"
+        }
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 335,
+        "source_index": 334,
+        "game": 2,
+        "seconds": 932
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "101261b62fa8295302a002a293ac0dc088e09e3c81ab1fb627444ba79116560d",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000335",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000335.json",
+      "player_context_sha256": "02f3e34a9256137f544083ee11ed6b1de34b6900a029e5a06c28940cc0507578",
+      "id": "db-json-40753-85958923-before-000335-choice",
+      "task": "human_move_reproduction",
+      "human_move": {
+        "kind": "set",
+        "card": "Mirror Force",
+        "zone_type": "spell_trap"
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 336,
+        "source_index": 335,
+        "game": 2,
+        "seconds": 934
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "917d1b9b9012b159ad6abc8744da6aecf85c3756d62734830a6586f7c199c088",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000336",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000336.json",
+      "player_context_sha256": "cdf67df97964602f2933c5703bf4e329428db7b26e8e65911298ade3e054f74f",
+      "id": "db-json-40753-85958923-before-000336-state",
+      "task": "state_recreation",
+      "declared_play": "Set Dark Bribe from my hand face-down in Spell/Trap Zone 4. Stop with an opponent response decision (actor human, window after_set); do not activate or resolve an effect.",
+      "expected_state": {
+        "game_id": "reference-checkpoint",
+        "mode": "agent-vs-agent",
+        "player_isolation": "enforced",
+        "status": "active",
+        "revision": 0,
+        "turn": 1,
+        "phase": "main1",
+        "active_player": "agent",
+        "players": {
+          "agent": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "agent-hand-1",
+                "owner": "agent",
+                "card_id": 71413901
+              },
+              {
+                "instance_id": "agent-hand-3",
+                "owner": "agent",
+                "card_id": 4929256
+              },
+              {
+                "instance_id": "agent-hand-4",
+                "owner": "agent",
+                "card_id": 68005187
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "agent-deck-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-15",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-16",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-17",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-18",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-19",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-20",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-21",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-22",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-23",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-24",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-25",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-26",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-27",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-28",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-29",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-30",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-31",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-32",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-33",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-34",
+                "owner": "agent"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "agent-extra-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "agent-side-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              {
+                "instance_id": "field-ref-715",
+                "owner": "agent",
+                "hidden": true,
+                "card_id": 7572887,
+                "position": "DEF"
+              },
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              {
+                "instance_id": "field-ref-717",
+                "owner": "agent",
+                "hidden": true,
+                "card_id": 44095762
+              },
+              {
+                "instance_id": "agent-hand-2",
+                "owner": "agent",
+                "card_id": 77538567,
+                "hidden": true
+              },
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "71413901": {
+                "id": 71413901,
+                "name": "Breaker the Magical Warrior",
+                "desc": "If this card is Normal Summoned: Place 1 Spell Counter on it (max. 1). Gains 300 ATK for each Spell Counter on it. You can remove 1 Spell Counter from this card, then target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 1600,
+                "def": 1000,
+                "level": 4,
+                "attribute": "DARK"
+              },
+              "77538567": {
+                "id": 77538567,
+                "name": "Dark Bribe",
+                "desc": "When your opponent activates a Spell/Trap Card: Your opponent draws 1 card, also negate the Spell/Trap activation, and if you do, destroy it.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Counter"
+              },
+              "4929256": {
+                "id": 4929256,
+                "name": "Mobius the Frost Monarch",
+                "desc": "When this card is Tribute Summoned: You can target up to 2 Spell/Trap Cards on the field; destroy those targets.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Aqua",
+                "atk": 2400,
+                "def": 1000,
+                "level": 6,
+                "attribute": "WATER"
+              },
+              "68005187": {
+                "id": 68005187,
+                "name": "Soul Exchange",
+                "desc": "Target 1 monster your opponent controls; this turn, if you Tribute a monster, you must Tribute that target, as if you controlled it. You cannot conduct your Battle Phase the turn you activate this card.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "7572887": {
+                "id": 7572887,
+                "name": "D.D. Warrior Lady",
+                "desc": "After damage calculation, when this card battles an opponent's monster: You can banish that monster, also banish this card.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 1500,
+                "def": 1600,
+                "level": 4,
+                "attribute": "LIGHT"
+              },
+              "44095762": {
+                "id": 44095762,
+                "name": "Mirror Force",
+                "desc": "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Normal"
+              }
+            },
+            "normal_summon_used": true,
+            "effect_usage": {},
+            "restrictions": []
+          },
+          "human": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "human-hand-1",
+                "owner": "human",
+                "card_id": 87910978
+              },
+              {
+                "instance_id": "human-hand-2",
+                "owner": "human",
+                "card_id": 40737112
+              },
+              {
+                "instance_id": "human-hand-3",
+                "owner": "human",
+                "card_id": 45809008
+              },
+              {
+                "instance_id": "human-hand-4",
+                "owner": "human",
+                "card_id": 81866673
+              },
+              {
+                "instance_id": "human-hand-5",
+                "owner": "human",
+                "card_id": 5318639
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "human-deck-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-15",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-16",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-17",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-18",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-19",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-20",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-21",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-22",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-23",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-24",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-25",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-26",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-27",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-28",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-29",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-30",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-31",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-32",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-33",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-34",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-35",
+                "owner": "human"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "human-extra-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "human-side-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "87910978": {
+                "id": 87910978,
+                "name": "Brain Control",
+                "desc": "Pay 800 LP, then target 1 face-up monster your opponent controls that can be Normal Summoned/Set; take control of that target until the End Phase.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "40737112": {
+                "id": 40737112,
+                "name": "Dark Magician of Chaos",
+                "desc": "During the End Phase, if this card was Normal or Special Summoned this turn: You can target 1 Spell in your GY; add it to your hand. You can only use this effect of \"Dark Magician of Chaos\" once per turn. If this card destroys an opponent's monster by battle, after damage calculation: Banish that opponent's monster. If this face-up card would leave the field, banish it instead.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 2800,
+                "def": 2600,
+                "level": 8,
+                "attribute": "DARK"
+              },
+              "45809008": {
+                "id": 45809008,
+                "name": "Destiny Draw",
+                "desc": "Discard 1 \"Destiny HERO\" card; draw 2 cards.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "81866673": {
+                "id": 81866673,
+                "name": "Destiny HERO - Dasher",
+                "desc": "Once per turn: You can Tribute 1 other monster; this card gains 1000 ATK until the End Phase. If this card attacks, change it to Defense Position at the end of the Battle Phase. One time only, when you draw a Monster Card during your Draw Phase while this card is in your Graveyard: You can reveal it; Special Summon it. This card must be in the Graveyard to activate and to resolve this effect.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 2100,
+                "def": 1000,
+                "level": 6,
+                "attribute": "DARK"
+              },
+              "5318639": {
+                "id": 5318639,
+                "name": "Mystical Space Typhoon",
+                "desc": "Target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Quick-Play"
+              }
+            },
+            "normal_summon_used": false,
+            "effect_usage": {},
+            "restrictions": []
+          }
+        },
+        "shared_zones": {
+          "extra_monster_zones": []
+        },
+        "presentation": {
+          "show_agent_hand": false
+        },
+        "chain": [],
+        "pending_effects": [],
+        "pending_decision": {
+          "actor": "human",
+          "window": "after_set"
+        }
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 336,
+        "source_index": 335,
+        "game": 2,
+        "seconds": 934
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "917d1b9b9012b159ad6abc8744da6aecf85c3756d62734830a6586f7c199c088",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000336",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000336.json",
+      "player_context_sha256": "cdf67df97964602f2933c5703bf4e329428db7b26e8e65911298ade3e054f74f",
+      "id": "db-json-40753-85958923-before-000336-choice",
+      "task": "human_move_reproduction",
+      "human_move": {
+        "kind": "set",
+        "card": "Dark Bribe",
+        "zone_type": "spell_trap"
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 337,
+        "source_index": 336,
+        "game": 2,
+        "seconds": 948
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "2eb464027787b787ae40382473a571972fa4854966890db3d9c33167450b078b",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000337",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000337.json",
+      "player_context_sha256": "8555b7f58a4172995df89df665957c03c0d1a83b69f09bf5b2a8bc57601479aa",
+      "id": "db-json-40753-85958923-before-000337-state",
+      "task": "state_recreation",
+      "declared_play": "Set Soul Exchange from my hand face-down in Spell/Trap Zone 2. Stop with an opponent response decision (actor human, window after_set); do not activate or resolve an effect.",
+      "expected_state": {
+        "game_id": "reference-checkpoint",
+        "mode": "agent-vs-agent",
+        "player_isolation": "enforced",
+        "status": "active",
+        "revision": 0,
+        "turn": 1,
+        "phase": "main1",
+        "active_player": "agent",
+        "players": {
+          "agent": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "agent-hand-1",
+                "owner": "agent",
+                "card_id": 71413901
+              },
+              {
+                "instance_id": "agent-hand-2",
+                "owner": "agent",
+                "card_id": 4929256
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "agent-deck-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-15",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-16",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-17",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-18",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-19",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-20",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-21",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-22",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-23",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-24",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-25",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-26",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-27",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-28",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-29",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-30",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-31",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-32",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-33",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-deck-unknown-34",
+                "owner": "agent"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "agent-extra-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-extra-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "agent-side-unknown-1",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-2",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-3",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-4",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-5",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-6",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-7",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-8",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-9",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-10",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-11",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-12",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-13",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-14",
+                "owner": "agent"
+              },
+              {
+                "instance_id": "agent-side-unknown-15",
+                "owner": "agent"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              {
+                "instance_id": "field-ref-715",
+                "owner": "agent",
+                "hidden": true,
+                "card_id": 7572887,
+                "position": "DEF"
+              },
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              {
+                "instance_id": "agent-hand-3",
+                "owner": "agent",
+                "card_id": 68005187,
+                "hidden": true
+              },
+              {
+                "instance_id": "field-ref-717",
+                "owner": "agent",
+                "hidden": true,
+                "card_id": 44095762
+              },
+              {
+                "instance_id": "field-ref-714",
+                "owner": "agent",
+                "hidden": true,
+                "card_id": 77538567
+              },
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "71413901": {
+                "id": 71413901,
+                "name": "Breaker the Magical Warrior",
+                "desc": "If this card is Normal Summoned: Place 1 Spell Counter on it (max. 1). Gains 300 ATK for each Spell Counter on it. You can remove 1 Spell Counter from this card, then target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 1600,
+                "def": 1000,
+                "level": 4,
+                "attribute": "DARK"
+              },
+              "4929256": {
+                "id": 4929256,
+                "name": "Mobius the Frost Monarch",
+                "desc": "When this card is Tribute Summoned: You can target up to 2 Spell/Trap Cards on the field; destroy those targets.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Aqua",
+                "atk": 2400,
+                "def": 1000,
+                "level": 6,
+                "attribute": "WATER"
+              },
+              "68005187": {
+                "id": 68005187,
+                "name": "Soul Exchange",
+                "desc": "Target 1 monster your opponent controls; this turn, if you Tribute a monster, you must Tribute that target, as if you controlled it. You cannot conduct your Battle Phase the turn you activate this card.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "7572887": {
+                "id": 7572887,
+                "name": "D.D. Warrior Lady",
+                "desc": "After damage calculation, when this card battles an opponent's monster: You can banish that monster, also banish this card.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 1500,
+                "def": 1600,
+                "level": 4,
+                "attribute": "LIGHT"
+              },
+              "44095762": {
+                "id": 44095762,
+                "name": "Mirror Force",
+                "desc": "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Normal"
+              },
+              "77538567": {
+                "id": 77538567,
+                "name": "Dark Bribe",
+                "desc": "When your opponent activates a Spell/Trap Card: Your opponent draws 1 card, also negate the Spell/Trap activation, and if you do, destroy it.",
+                "type": "Trap Card",
+                "frameType": "trap",
+                "race": "Counter"
+              }
+            },
+            "normal_summon_used": true,
+            "effect_usage": {},
+            "restrictions": []
+          },
+          "human": {
+            "lp": 8000,
+            "hand": [
+              {
+                "instance_id": "human-hand-1",
+                "owner": "human",
+                "card_id": 87910978
+              },
+              {
+                "instance_id": "human-hand-2",
+                "owner": "human",
+                "card_id": 40737112
+              },
+              {
+                "instance_id": "human-hand-3",
+                "owner": "human",
+                "card_id": 45809008
+              },
+              {
+                "instance_id": "human-hand-4",
+                "owner": "human",
+                "card_id": 81866673
+              },
+              {
+                "instance_id": "human-hand-5",
+                "owner": "human",
+                "card_id": 5318639
+              }
+            ],
+            "deck": [
+              {
+                "instance_id": "human-deck-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-15",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-16",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-17",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-18",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-19",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-20",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-21",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-22",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-23",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-24",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-25",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-26",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-27",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-28",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-29",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-30",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-31",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-32",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-33",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-34",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-deck-unknown-35",
+                "owner": "human"
+              }
+            ],
+            "extra_deck": [
+              {
+                "instance_id": "human-extra-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-extra-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "side_deck": [
+              {
+                "instance_id": "human-side-unknown-1",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-2",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-3",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-4",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-5",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-6",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-7",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-8",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-9",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-10",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-11",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-12",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-13",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-14",
+                "owner": "human"
+              },
+              {
+                "instance_id": "human-side-unknown-15",
+                "owner": "human"
+              }
+            ],
+            "monster_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "spell_trap_zones": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "field_spell": null,
+            "graveyard": [],
+            "banished": [],
+            "cards": {
+              "87910978": {
+                "id": 87910978,
+                "name": "Brain Control",
+                "desc": "Pay 800 LP, then target 1 face-up monster your opponent controls that can be Normal Summoned/Set; take control of that target until the End Phase.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "40737112": {
+                "id": 40737112,
+                "name": "Dark Magician of Chaos",
+                "desc": "During the End Phase, if this card was Normal or Special Summoned this turn: You can target 1 Spell in your GY; add it to your hand. You can only use this effect of \"Dark Magician of Chaos\" once per turn. If this card destroys an opponent's monster by battle, after damage calculation: Banish that opponent's monster. If this face-up card would leave the field, banish it instead.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Spellcaster",
+                "atk": 2800,
+                "def": 2600,
+                "level": 8,
+                "attribute": "DARK"
+              },
+              "45809008": {
+                "id": 45809008,
+                "name": "Destiny Draw",
+                "desc": "Discard 1 \"Destiny HERO\" card; draw 2 cards.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Normal"
+              },
+              "81866673": {
+                "id": 81866673,
+                "name": "Destiny HERO - Dasher",
+                "desc": "Once per turn: You can Tribute 1 other monster; this card gains 1000 ATK until the End Phase. If this card attacks, change it to Defense Position at the end of the Battle Phase. One time only, when you draw a Monster Card during your Draw Phase while this card is in your Graveyard: You can reveal it; Special Summon it. This card must be in the Graveyard to activate and to resolve this effect.",
+                "type": "Effect Monster",
+                "frameType": "effect",
+                "race": "Warrior",
+                "atk": 2100,
+                "def": 1000,
+                "level": 6,
+                "attribute": "DARK"
+              },
+              "5318639": {
+                "id": 5318639,
+                "name": "Mystical Space Typhoon",
+                "desc": "Target 1 Spell/Trap on the field; destroy that target.",
+                "type": "Spell Card",
+                "frameType": "spell",
+                "race": "Quick-Play"
+              }
+            },
+            "normal_summon_used": false,
+            "effect_usage": {},
+            "restrictions": []
+          }
+        },
+        "shared_zones": {
+          "extra_monster_zones": []
+        },
+        "presentation": {
+          "show_agent_hand": false
+        },
+        "chain": [],
+        "pending_effects": [],
+        "pending_decision": {
+          "actor": "human",
+          "window": "after_set"
+        }
+      }
+    },
+    {
+      "source": {
+        "replay": "db-json-40753-85958923",
+        "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+        "before_sequence": 337,
+        "source_index": 336,
+        "game": 2,
+        "seconds": 948
+      },
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
+        "date": "2026-10-08",
+        "scope": "Basic setting action only, independently reset fixed checkpoint; not full-game approval",
+        "evidence": [
+          "Private source log identifies the card and destination",
+          "Batched opening names plus preceding named draw reproduce the hand",
+          "No previous activation, battle, chain or triggered effect in game 2 at these boundaries",
+          "Normal Set consumes the unused normal summon allowance; subsequent S/T sets do not",
+          "Known chosen card is eligible to be Set in the empty source slot"
+        ],
+        "historical_text_dependent_legality": "deferred for alternative effects",
+        "full_deck_reviewed": false
+      },
+      "initial_state_sha256": "2eb464027787b787ae40382473a571972fa4854966890db3d9c33167450b078b",
+      "rules": {
+        "format": "perfect-circle",
+        "rules_version": "perfect-circle-2026-10-08",
+        "rules_sha256": "e0cfe354e9fbf2d16e25986a401a555cfb5b5448bce756547b3b79fd0f42f5e2",
+        "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+        "card_text_sha256": "b4f6a9ddbe10fb3f8816eaa464363af0ec737a0c293e08e83ae297663d2fc2a2",
+        "historical_card_text_complete": false,
+        "legality_scope": "case-local action initiation; historical-text-dependent alternatives provisional"
+      },
+      "checkpoint": "evaluator.json#db-json-40753-85958923-before-000337",
+      "player_packet": "player-packets/db-json-40753-85958923-before-000337.json",
+      "player_context_sha256": "8555b7f58a4172995df89df665957c03c0d1a83b69f09bf5b2a8bc57601479aa",
+      "id": "db-json-40753-85958923-before-000337-choice",
+      "task": "human_move_reproduction",
+      "human_move": {
+        "kind": "set",
+        "card": "Soul Exchange",
+        "zone_type": "spell_trap"
+      }
+    }
+  ]
+}

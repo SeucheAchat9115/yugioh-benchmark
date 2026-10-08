@@ -103,7 +103,10 @@ references, but legality scoring requires a separately established rules profile
 Known-format cases can supply that KPI without relying on this replay's rules.
 
 The configured target and weights are in `benchmarks/evaluation-config.json`.
-The scorer is available; the replay's reviewed checkpoints and a complete
-three-KPI run remain pending. A 99% score would describe performance on these tested tasks. Competitive
+The scorer is available; [four scoped replay checkpoints](replay-review-stage.md)
+are prepared. Whole-match review and a complete three-KPI model run remain pending. A 99% score would describe performance on these tested tasks. Competitive
 training suitability additionally needs diverse positions, formats, matchups and
 full games against strong opponents; human-move agreement alone cannot establish it.
+
+The [review preparation report](replay-review-stage.md) records the whole-match
+work list, approved subset, information gaps and how to run the first scoped suite.

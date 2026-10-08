@@ -7,8 +7,8 @@ The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
 **Status: alpha toolkit.** Replay importing, reviewed-case execution and the
-three-KPI artifact scorer are implemented. Reviewed replay cases and a
-complete three-KPI evaluation remain pending. A [small Edison pilot](docs/edison-pilot.md)
+three-KPI artifact scorer are implemented. A [first scoped replay suite](docs/replay-review-stage.md) is prepared; a
+complete three-KPI model evaluation remains pending. A [small Edison pilot](docs/edison-pilot.md)
 measured state recreation and legality; human-move agreement and a final score
 remain unavailable.
 This project is independent of Duelingbook and the Yu-Gi-Oh rights holders.
@@ -46,9 +46,10 @@ LP updates. The [source registry](benchmarks/sources.json) links the JSON fixtur
 bundle, hashes, card references and review candidates. Its identity is
 `db-json-40753-85958923`.
 
-There are currently **no scored decision cases**. Imported observations are
-unreviewed; positions, information visibility, historical rules and decision
-boundaries must be checked before gameplay scoring. The user identifies this
+The [whole-match review stage](docs/replay-review-stage.md) indexes 207 work
+items across both games. Four simple setting checkpoints are approved for a
+small eight-task suite; the other positions remain pending or excluded.
+**No model score has been measured on this suite.** The user identifies this
 match as **Perfect Circle 2007**. The registry links the September 2007 format
 reference; its exact card pool, historical rules and pre-errata texts still need
 review. The export itself labels the game Unlimited.
@@ -89,6 +90,7 @@ bounded model transport; see [harness setup](docs/harness-integration.md).
 - [Supplying replay data](docs/acquisition.md)
 - [Current card names and texts from YGOPRODeck](docs/card-metadata.md)
 - [Native JSON importing and coverage](docs/native-json.md)
+- [Whole-match review and the first scoped suite](docs/replay-review-stage.md)
 - [Extracting states and preparing reviewed cases](docs/extraction.md)
 - [Replay bundle format](docs/replay-format.md)
 - [Preparing harness decision positions](docs/harness-integration.md)

@@ -3,7 +3,8 @@
 The intended benchmark has [three equally weighted KPIs](agentic-kpis.md): state
 recreation, human-move agreement and format-specific rule correctness. GPT-6.1
 Sol is the configured evaluation target. The combined scorer is implemented;
-reviewed cases and an actual model run remain pending.
+[four scoped replay checkpoints](replay-review-stage.md) are prepared; an actual
+model run remains pending.
 
 For live evaluation, use the harness's existing orchestrator and sole moderator
 writer to collect model attempts, reviewed action records and authoritative
@@ -83,8 +84,9 @@ and run contract; prepare the additional reviewed states, semantic moves,
 journals and independent grading records described in [agentic KPIs](agentic-kpis.md).
 The KPI scorer consumes these trusted artifacts but does not launch the workflow.
 Automated strategic rubric grading,
-checkpoint reconstruction, model provider transports and approved case datasets
-remain future additions. Historical replays cannot evaluate a
+checkpoint reconstruction and model provider transports remain future additions.
+The [first scoped replay dataset](replay-review-stage.md) supplies approved inputs
+and grading fixtures; broader replay review remains pending. Historical replays cannot evaluate a
 counterfactual win rate once the model diverges; that requires actual new duels
 in the harness against controlled opponents with repeated seeds and side swaps.
 
