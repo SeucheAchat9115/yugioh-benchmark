@@ -124,6 +124,26 @@ class KpiTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             score_kpis(cases, run(cases, []))
 
+    def test_public_kpi_command_scores_trusted_artifacts(self):
+        import json
+        from io import StringIO
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+        from yugioh_benchmark.cli import main
+        cases = suite()
+        with TemporaryDirectory() as temporary:
+            case_path, run_path = Path(temporary)/'suite.json', Path(temporary)/'run.json'
+            case_path.write_text(json.dumps(cases))
+            run_path.write_text(json.dumps(run(cases, [])))
+            output = StringIO()
+            with patch('sys.argv', ['benchmark', 'score-kpis', str(case_path), str(run_path)]), patch('sys.stdout', output):
+                main()
+            result = json.loads(output.getvalue())
+            self.assertEqual(result['metric'], 'agentic_workflow_kpis')
+            self.assertEqual(result['final_score_percent'], 0)
+            self.assertTrue(all(kpi['passed'] == 0 for kpi in result['kpis'].values()))
+
     def test_gameplay_comparison_preserves_order_and_ignores_admin(self):
         initial = state()
         other = deepcopy(initial)

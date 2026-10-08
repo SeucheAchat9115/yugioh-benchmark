@@ -9,7 +9,7 @@ import unittest
 
 from yugioh_benchmark.native_json import convert_json, gameplay_export, parse_export
 from yugioh_benchmark.replay import canonical, load_bundle, restore_source, validate, write_bundle
-from yugioh_benchmark.text_log import decision_candidates
+from yugioh_benchmark.candidates import decision_candidates
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURE = ROOT/'fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.json'
@@ -97,10 +97,11 @@ class NativeJsonTests(unittest.TestCase):
         self.assertEqual(candidates, decision_candidates(loaded))
         self.assertEqual(len(candidates), 174)
         self.assertTrue(all(c['review']['status'] == 'unreviewed' for c in candidates))
-        self.assertEqual(restore_source(load_bundle(ROOT/registry['companion_text']['bundle'])),
-                         (ROOT/registry['companion_text']['fixture']).read_text())
+        self.assertNotIn('companion_text', registry)
+        self.assertEqual([c['source']['source_index'] for c in candidates],
+                         [c['source']['before_sequence']-1 for c in candidates])
 
-    def test_json_cli_and_two_adapters_have_distinct_ids(self):
+    def test_json_cli_and_legacy_adapters_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:
             folder = Path(temporary)/'bundle'
             result = subprocess.run([sys.executable, '-m', 'yugioh_benchmark', 'convert-json',
@@ -108,6 +109,48 @@ class NativeJsonTests(unittest.TestCase):
                                     capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual(json.loads(result.stdout)['events'], 554)
-        text = load_bundle(ROOT/'replays/db-text-aco77-sdesowitz02-2026-10-07')
-        self.assertNotEqual(text['id'], self.replay['id'])
-        self.assertEqual(text['source']['replay_id'], self.replay['source']['replay_id'])
+        for adapter in ('duelingbook-text-v1', 'duelingbook-api-v1'):
+            legacy = deepcopy(self.replay)
+            legacy['source']['adapter'] = adapter
+            with self.assertRaisesRegex(ValueError, 'native Duelingbook JSON'):
+                validate(legacy)
+
+    def test_bundle_hash_order_and_count_corruption_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            folder = Path(temporary)/'bundle'
+            write_bundle(self.replay, folder)
+            manifest_path = folder/'replay.json'
+            original_manifest = manifest_path.read_bytes()
+            manifest = json.loads(original_manifest)
+            for field in ('count', 'path', 'sequence'):
+                changed = deepcopy(manifest)
+                if field == 'count':
+                    changed['event_count'] += 1
+                elif field == 'path':
+                    changed['events'][0]['path'] = '../outside.json'
+                else:
+                    changed['events'][0]['sequence'] = 2
+                manifest_path.write_text(json.dumps(changed))
+                with self.assertRaises(ValueError):
+                    load_bundle(folder)
+            manifest_path.write_bytes(original_manifest)
+            event_path = folder/'events/000001.json'
+            event_path.write_bytes(event_path.read_bytes()+b' ')
+            with self.assertRaisesRegex(ValueError, 'digest mismatch'):
+                load_bundle(folder)
+
+    def test_import_limits_and_legacy_commands_rejected(self):
+        from unittest.mock import patch
+        from yugioh_benchmark.inputs import read_text
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary)/'replay.json'
+            path.write_bytes(b'\xef\xbb\xbf{}')
+            self.assertEqual(read_text(path), '{}')
+            with patch('yugioh_benchmark.inputs.MAX_INPUT_BYTES', 4):
+                with self.assertRaisesRegex(ValueError, '64 MiB'):
+                    read_text(path)
+        for command in ('convert-text', 'import-texts', 'reproduce', 'score'):
+            result = subprocess.run([sys.executable, '-m', 'yugioh_benchmark', command],
+                                    capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('invalid choice', result.stderr)

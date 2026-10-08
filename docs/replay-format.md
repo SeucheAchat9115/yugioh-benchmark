@@ -1,56 +1,47 @@
 # Replay bundle, version 1.0
 
 `replays/<folder>/replay.json` is the manifest. `events/000001.json` and subsequent
-files hold one native JSON play, timestamped text observation or turn header each. All strings are
-UTF-8. The folder is a readable storage path; the manifest holds the source ID.
+files hold one native JSON play each. All strings are UTF-8. The folder is a
+readable storage path; the manifest identifies the source as `db-json-<replay ID>`.
 
 | Manifest field | Meaning |
 | --- | --- |
-| schema_version, id | Schema version and adapter-scoped ID: `db-json-<replay ID>` for native JSON; `db-<replay ID>` / `db-text-<sha256>` for text |
-| source | Viewer URL/ID, source digest, adapter version and acquisition time |
-| format | Unreviewed profile, banlist and rules identifiers; no inferred format |
+| schema_version, id | Schema version and native replay identity |
+| source | Viewer URL/ID, canonical selected-source digest, adapter version and retrieval time |
+| format | Literal source codes and unreviewed rules fields; external format declarations live in the registry |
 | players | Stable p1/p2 slots and source usernames |
 | coverage | Completeness/review status; hidden-card and physical-copy gaps |
-| source_metadata | Text and participant names, or selected native JSON data and coverage audit |
-| event_count | Number of observations and turn headers |
+| source_metadata | Selected native JSON data and coverage audit |
+| event_count | Number of native plays |
 | events | Ordered `{sequence, path, sha256}` file references |
 
 | Event field | Meaning |
 | --- | --- |
 | sequence | Consecutive one-based sequence |
-| source_index | Zero-based index among parsed observations and turn headers |
-| game | Sequential game, incremented on a later Turn 1 header |
+| source_index | Zero-based index in the original `plays` array |
+| game | Sequential game, incremented on `Begin next duel` |
 | kind | Observational grouping such as summon, move, phase or unclassified |
-| actor | p1/p2 when the speaker identifies a player; otherwise null |
-| payload | Text message/line references, or literal `native` play structure plus observed annotations |
+| actor | p1/p2 when the username identifies a player; otherwise null |
+| payload | Literal `native` play structure plus observed annotations |
 
-Timestamped payloads retain elapsed seconds, username and current observed turn.
-Turn headers retain the original optional Game label, which may differ from the
-sequential game. Duplicate timestamps preserve source order. Unknown non-event
-lines remain in the full source text. No missing moves or card identities are
-invented.
+There is one event per native play, including batched opening draws. Equal
+elapsed times keep source order; absent times remain null. No missing moves,
+card identities or complete game states are invented. `kind` groups observations
+for review; it does not assert legal execution or a decision window.
 
-`kind` does not assert a legal action, effect resolution or priority window.
-Match logs contain hidden information and outcomes; the full bundle is reviewer
-data and must never enter a player prompt. `restore_source` validates the bundle
-and returns its complete decoded source text or a copy of its selected native JSON.
+The supported adapter is `duelingbook-json-v1`. The source digest covers canonical
+selected gameplay JSON, not raw uploaded whitespace. `load_bundle` verifies
+ordered paths, per-file hashes, event count and source derivation. Reconversion
+must reproduce the complete manifest data and annotations. `restore_source`
+returns a copy of the selected JSON object, without restoring removed cosmetics
+or original formatting.
 
-The source hash covers decoded UTF-8 text after optional BOM removal. Event
-hashes cover stored canonical JSON bytes including the final newline. Checkouts
-preserve LF line endings via `.gitattributes`. Loading verifies paths, event
-order, hashes, source identity and derived fields by reconversion. Conversion
-refuses an existing output directory and writes through a temporary directory.
-External provenance stays separate from derived metadata.
+[JSON Schemas](../schemas) document manifests, events and filtered bridge cases.
+Python validation additionally checks source integrity and derivation.
+[Candidate indexes](../benchmarks/candidates) use `source_index` and
+`before_sequence`; candidates remain unreviewed. Read [native JSON](native-json.md)
+before resolving runtime references or filtering private data.
 
-Text logs do not supply persistent physical-copy IDs or full decklists. Reviewers
-must resolve card instances and check historical card text and rules before
-producing a harness state. Machine-readable definitions are in [schemas](../schemas);
-Python validation additionally verifies hashes and source derivation.
-
-The supported adapters are `duelingbook-text-v1` and `duelingbook-json-v1`.
-For JSON, the source digest covers canonical selected gameplay JSON, not raw
-uploaded whitespace. Native entries retain source order, nullable elapsed time,
-batched logs/card definitions and literal runtime references. Read
-[native JSON importing](native-json.md) before resolving references or filtering
-private data. Separate adapter IDs prevent old text sequences from becoming
-native JSON sequences silently. Legacy API-observation adapters remain rejected.
+Legacy text and API-observation bundles are rejected. Old text sequences/digests
+cannot be reassigned to native JSON cases; import the original native response
+and reconstruct/review any positions against that source.

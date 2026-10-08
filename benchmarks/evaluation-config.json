@@ -10,7 +10,6 @@
   "source_rules_status": "Perfect Circle 2007 identified by user; September 2007 format reference found; exact card pool, historical rules and card texts still require review",
   "case_preparation_status": "pending review",
   "current_agentic_score": null,
-  "structural_operation_coverage_contributes_to_score": false,
   "last_pilot": {
     "date": "2026-10-08",
     "format": "edison",
@@ -32,7 +31,6 @@
     "report": "docs/edison-pilot.md",
     "scope": "assisted workflow micro-position pilot; no full match or replay agreement"
   },
-  "companion_text_replay": "db-40753-85958923",
   "source_format_declaration": {
     "label": "Perfect Circle 2007",
     "provenance": "user correction in conversation on 2026-10-08",

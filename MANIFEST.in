@@ -2,6 +2,6 @@ include LICENSE README.md THIRD_PARTY_NOTICES.md
 recursive-include docs *.md
 recursive-include schemas *.json
 recursive-include benchmarks *.json
-recursive-include fixtures *.txt *.json
+recursive-include fixtures *.json
 recursive-include replays *.json
 recursive-include tests *.py

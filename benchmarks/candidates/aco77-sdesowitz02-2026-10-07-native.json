@@ -4,7 +4,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 7,
-      "line_number": null
+      "source_index": 6
     },
     "game": 1,
     "actor": "p2",
@@ -25,7 +25,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 8,
-      "line_number": null
+      "source_index": 7
     },
     "game": 1,
     "actor": "p2",
@@ -46,7 +46,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 11,
-      "line_number": null
+      "source_index": 10
     },
     "game": 1,
     "actor": "p2",
@@ -67,7 +67,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 19,
-      "line_number": null
+      "source_index": 18
     },
     "game": 1,
     "actor": "p2",
@@ -88,7 +88,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 21,
-      "line_number": null
+      "source_index": 20
     },
     "game": 1,
     "actor": "p2",
@@ -109,7 +109,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 25,
-      "line_number": null
+      "source_index": 24
     },
     "game": 1,
     "actor": "p2",
@@ -130,7 +130,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 26,
-      "line_number": null
+      "source_index": 25
     },
     "game": 1,
     "actor": "p2",
@@ -151,7 +151,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 27,
-      "line_number": null
+      "source_index": 26
     },
     "game": 1,
     "actor": "p2",
@@ -172,7 +172,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 28,
-      "line_number": null
+      "source_index": 27
     },
     "game": 1,
     "actor": "p1",
@@ -193,7 +193,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 30,
-      "line_number": null
+      "source_index": 29
     },
     "game": 1,
     "actor": "p1",
@@ -214,7 +214,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 31,
-      "line_number": null
+      "source_index": 30
     },
     "game": 1,
     "actor": "p1",
@@ -235,7 +235,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 33,
-      "line_number": null
+      "source_index": 32
     },
     "game": 1,
     "actor": "p1",
@@ -256,7 +256,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 34,
-      "line_number": null
+      "source_index": 33
     },
     "game": 1,
     "actor": "p1",
@@ -277,7 +277,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 35,
-      "line_number": null
+      "source_index": 34
     },
     "game": 1,
     "actor": "p1",
@@ -298,7 +298,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 36,
-      "line_number": null
+      "source_index": 35
     },
     "game": 1,
     "actor": "p2",
@@ -319,7 +319,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 38,
-      "line_number": null
+      "source_index": 37
     },
     "game": 1,
     "actor": "p2",
@@ -340,7 +340,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 39,
-      "line_number": null
+      "source_index": 38
     },
     "game": 1,
     "actor": "p2",
@@ -361,7 +361,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 41,
-      "line_number": null
+      "source_index": 40
     },
     "game": 1,
     "actor": "p2",
@@ -382,7 +382,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 48,
-      "line_number": null
+      "source_index": 47
     },
     "game": 1,
     "actor": "p2",
@@ -403,7 +403,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 55,
-      "line_number": null
+      "source_index": 54
     },
     "game": 1,
     "actor": "p2",
@@ -424,7 +424,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 58,
-      "line_number": null
+      "source_index": 57
     },
     "game": 1,
     "actor": "p2",
@@ -445,7 +445,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 67,
-      "line_number": null
+      "source_index": 66
     },
     "game": 1,
     "actor": "p2",
@@ -466,7 +466,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 68,
-      "line_number": null
+      "source_index": 67
     },
     "game": 1,
     "actor": "p2",
@@ -487,7 +487,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 78,
-      "line_number": null
+      "source_index": 77
     },
     "game": 1,
     "actor": "p2",
@@ -508,7 +508,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 81,
-      "line_number": null
+      "source_index": 80
     },
     "game": 1,
     "actor": "p2",
@@ -529,7 +529,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 82,
-      "line_number": null
+      "source_index": 81
     },
     "game": 1,
     "actor": "p2",
@@ -550,7 +550,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 83,
-      "line_number": null
+      "source_index": 82
     },
     "game": 1,
     "actor": "p1",
@@ -571,7 +571,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 86,
-      "line_number": null
+      "source_index": 85
     },
     "game": 1,
     "actor": "p2",
@@ -592,7 +592,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 93,
-      "line_number": null
+      "source_index": 92
     },
     "game": 1,
     "actor": "p2",
@@ -613,7 +613,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 96,
-      "line_number": null
+      "source_index": 95
     },
     "game": 1,
     "actor": "p2",
@@ -634,7 +634,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 97,
-      "line_number": null
+      "source_index": 96
     },
     "game": 1,
     "actor": "p2",
@@ -655,7 +655,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 98,
-      "line_number": null
+      "source_index": 97
     },
     "game": 1,
     "actor": "p1",
@@ -676,7 +676,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 100,
-      "line_number": null
+      "source_index": 99
     },
     "game": 1,
     "actor": "p1",
@@ -697,7 +697,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 102,
-      "line_number": null
+      "source_index": 101
     },
     "game": 1,
     "actor": "p1",
@@ -718,7 +718,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 110,
-      "line_number": null
+      "source_index": 109
     },
     "game": 1,
     "actor": "p1",
@@ -739,7 +739,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 111,
-      "line_number": null
+      "source_index": 110
     },
     "game": 1,
     "actor": "p1",
@@ -760,7 +760,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 112,
-      "line_number": null
+      "source_index": 111
     },
     "game": 1,
     "actor": "p1",
@@ -781,7 +781,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 116,
-      "line_number": null
+      "source_index": 115
     },
     "game": 1,
     "actor": "p2",
@@ -802,7 +802,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 118,
-      "line_number": null
+      "source_index": 117
     },
     "game": 1,
     "actor": "p2",
@@ -823,7 +823,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 120,
-      "line_number": null
+      "source_index": 119
     },
     "game": 1,
     "actor": "p2",
@@ -844,7 +844,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 122,
-      "line_number": null
+      "source_index": 121
     },
     "game": 1,
     "actor": "p2",
@@ -865,7 +865,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 123,
-      "line_number": null
+      "source_index": 122
     },
     "game": 1,
     "actor": "p2",
@@ -886,7 +886,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 130,
-      "line_number": null
+      "source_index": 129
     },
     "game": 1,
     "actor": "p2",
@@ -907,7 +907,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 131,
-      "line_number": null
+      "source_index": 130
     },
     "game": 1,
     "actor": "p2",
@@ -928,7 +928,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 137,
-      "line_number": null
+      "source_index": 136
     },
     "game": 1,
     "actor": "p2",
@@ -949,7 +949,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 148,
-      "line_number": null
+      "source_index": 147
     },
     "game": 1,
     "actor": "p2",
@@ -970,7 +970,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 149,
-      "line_number": null
+      "source_index": 148
     },
     "game": 1,
     "actor": "p2",
@@ -991,7 +991,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 150,
-      "line_number": null
+      "source_index": 149
     },
     "game": 1,
     "actor": "p1",
@@ -1012,7 +1012,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 152,
-      "line_number": null
+      "source_index": 151
     },
     "game": 1,
     "actor": "p1",
@@ -1033,7 +1033,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 153,
-      "line_number": null
+      "source_index": 152
     },
     "game": 1,
     "actor": "p1",
@@ -1054,7 +1054,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 155,
-      "line_number": null
+      "source_index": 154
     },
     "game": 1,
     "actor": "p1",
@@ -1075,7 +1075,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 158,
-      "line_number": null
+      "source_index": 157
     },
     "game": 1,
     "actor": "p1",
@@ -1096,7 +1096,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 159,
-      "line_number": null
+      "source_index": 158
     },
     "game": 1,
     "actor": "p1",
@@ -1117,7 +1117,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 161,
-      "line_number": null
+      "source_index": 160
     },
     "game": 1,
     "actor": "p1",
@@ -1138,7 +1138,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 165,
-      "line_number": null
+      "source_index": 164
     },
     "game": 1,
     "actor": "p2",
@@ -1159,7 +1159,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 172,
-      "line_number": null
+      "source_index": 171
     },
     "game": 1,
     "actor": "p1",
@@ -1180,7 +1180,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 173,
-      "line_number": null
+      "source_index": 172
     },
     "game": 1,
     "actor": "p2",
@@ -1201,7 +1201,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 175,
-      "line_number": null
+      "source_index": 174
     },
     "game": 1,
     "actor": "p2",
@@ -1222,7 +1222,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 180,
-      "line_number": null
+      "source_index": 179
     },
     "game": 1,
     "actor": "p2",
@@ -1243,7 +1243,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 187,
-      "line_number": null
+      "source_index": 186
     },
     "game": 1,
     "actor": "p2",
@@ -1264,7 +1264,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 190,
-      "line_number": null
+      "source_index": 189
     },
     "game": 1,
     "actor": "p2",
@@ -1285,7 +1285,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 196,
-      "line_number": null
+      "source_index": 195
     },
     "game": 1,
     "actor": "p2",
@@ -1306,7 +1306,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 198,
-      "line_number": null
+      "source_index": 197
     },
     "game": 1,
     "actor": "p2",
@@ -1327,7 +1327,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 209,
-      "line_number": null
+      "source_index": 208
     },
     "game": 1,
     "actor": "p2",
@@ -1348,7 +1348,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 210,
-      "line_number": null
+      "source_index": 209
     },
     "game": 1,
     "actor": "p2",
@@ -1369,7 +1369,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 215,
-      "line_number": null
+      "source_index": 214
     },
     "game": 1,
     "actor": "p2",
@@ -1390,7 +1390,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 225,
-      "line_number": null
+      "source_index": 224
     },
     "game": 1,
     "actor": "p2",
@@ -1411,7 +1411,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 228,
-      "line_number": null
+      "source_index": 227
     },
     "game": 1,
     "actor": "p1",
@@ -1432,7 +1432,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 231,
-      "line_number": null
+      "source_index": 230
     },
     "game": 1,
     "actor": "p2",
@@ -1453,7 +1453,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 234,
-      "line_number": null
+      "source_index": 233
     },
     "game": 1,
     "actor": "p2",
@@ -1474,7 +1474,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 236,
-      "line_number": null
+      "source_index": 235
     },
     "game": 1,
     "actor": "p2",
@@ -1495,7 +1495,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 247,
-      "line_number": null
+      "source_index": 246
     },
     "game": 1,
     "actor": "p2",
@@ -1516,7 +1516,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 253,
-      "line_number": null
+      "source_index": 252
     },
     "game": 1,
     "actor": "p2",
@@ -1537,7 +1537,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 256,
-      "line_number": null
+      "source_index": 255
     },
     "game": 1,
     "actor": "p2",
@@ -1558,7 +1558,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 259,
-      "line_number": null
+      "source_index": 258
     },
     "game": 1,
     "actor": "p2",
@@ -1579,7 +1579,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 262,
-      "line_number": null
+      "source_index": 261
     },
     "game": 1,
     "actor": "p2",
@@ -1600,7 +1600,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 267,
-      "line_number": null
+      "source_index": 266
     },
     "game": 1,
     "actor": "p2",
@@ -1621,7 +1621,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 272,
-      "line_number": null
+      "source_index": 271
     },
     "game": 1,
     "actor": "p2",
@@ -1642,7 +1642,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 275,
-      "line_number": null
+      "source_index": 274
     },
     "game": 1,
     "actor": "p2",
@@ -1663,7 +1663,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 276,
-      "line_number": null
+      "source_index": 275
     },
     "game": 1,
     "actor": "p2",
@@ -1684,7 +1684,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 278,
-      "line_number": null
+      "source_index": 277
     },
     "game": 1,
     "actor": "p2",
@@ -1705,7 +1705,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 287,
-      "line_number": null
+      "source_index": 286
     },
     "game": 1,
     "actor": "p2",
@@ -1726,7 +1726,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 288,
-      "line_number": null
+      "source_index": 287
     },
     "game": 1,
     "actor": "p2",
@@ -1747,7 +1747,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 290,
-      "line_number": null
+      "source_index": 289
     },
     "game": 1,
     "actor": "p2",
@@ -1768,7 +1768,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 291,
-      "line_number": null
+      "source_index": 290
     },
     "game": 1,
     "actor": "p2",
@@ -1789,7 +1789,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 293,
-      "line_number": null
+      "source_index": 292
     },
     "game": 1,
     "actor": "p1",
@@ -1810,7 +1810,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 295,
-      "line_number": null
+      "source_index": 294
     },
     "game": 1,
     "actor": "p1",
@@ -1831,7 +1831,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 296,
-      "line_number": null
+      "source_index": 295
     },
     "game": 1,
     "actor": "p1",
@@ -1852,7 +1852,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 302,
-      "line_number": null
+      "source_index": 301
     },
     "game": 1,
     "actor": "p1",
@@ -1873,7 +1873,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 303,
-      "line_number": null
+      "source_index": 302
     },
     "game": 1,
     "actor": "p1",
@@ -1894,7 +1894,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 304,
-      "line_number": null
+      "source_index": 303
     },
     "game": 1,
     "actor": "p1",
@@ -1915,7 +1915,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 305,
-      "line_number": null
+      "source_index": 304
     },
     "game": 1,
     "actor": "p2",
@@ -1936,7 +1936,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 307,
-      "line_number": null
+      "source_index": 306
     },
     "game": 1,
     "actor": "p2",
@@ -1957,7 +1957,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 308,
-      "line_number": null
+      "source_index": 307
     },
     "game": 1,
     "actor": "p2",
@@ -1978,7 +1978,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 312,
-      "line_number": null
+      "source_index": 311
     },
     "game": 1,
     "actor": "p2",
@@ -1999,7 +1999,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 319,
-      "line_number": null
+      "source_index": 318
     },
     "game": 1,
     "actor": "p2",
@@ -2020,7 +2020,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 331,
-      "line_number": null
+      "source_index": 330
     },
     "game": 2,
     "actor": "p1",
@@ -2041,7 +2041,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 332,
-      "line_number": null
+      "source_index": 331
     },
     "game": 2,
     "actor": "p1",
@@ -2062,7 +2062,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 334,
-      "line_number": null
+      "source_index": 333
     },
     "game": 2,
     "actor": "p1",
@@ -2083,7 +2083,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 335,
-      "line_number": null
+      "source_index": 334
     },
     "game": 2,
     "actor": "p1",
@@ -2104,7 +2104,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 336,
-      "line_number": null
+      "source_index": 335
     },
     "game": 2,
     "actor": "p1",
@@ -2125,7 +2125,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 337,
-      "line_number": null
+      "source_index": 336
     },
     "game": 2,
     "actor": "p1",
@@ -2146,7 +2146,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 338,
-      "line_number": null
+      "source_index": 337
     },
     "game": 2,
     "actor": "p1",
@@ -2167,7 +2167,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 339,
-      "line_number": null
+      "source_index": 338
     },
     "game": 2,
     "actor": "p2",
@@ -2188,7 +2188,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 341,
-      "line_number": null
+      "source_index": 340
     },
     "game": 2,
     "actor": "p2",
@@ -2209,7 +2209,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 342,
-      "line_number": null
+      "source_index": 341
     },
     "game": 2,
     "actor": "p2",
@@ -2230,7 +2230,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 344,
-      "line_number": null
+      "source_index": 343
     },
     "game": 2,
     "actor": "p2",
@@ -2251,7 +2251,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 352,
-      "line_number": null
+      "source_index": 351
     },
     "game": 2,
     "actor": "p2",
@@ -2272,7 +2272,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 354,
-      "line_number": null
+      "source_index": 353
     },
     "game": 2,
     "actor": "p2",
@@ -2293,7 +2293,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 360,
-      "line_number": null
+      "source_index": 359
     },
     "game": 2,
     "actor": "p2",
@@ -2314,7 +2314,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 361,
-      "line_number": null
+      "source_index": 360
     },
     "game": 2,
     "actor": "p2",
@@ -2335,7 +2335,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 368,
-      "line_number": null
+      "source_index": 367
     },
     "game": 2,
     "actor": "p2",
@@ -2356,7 +2356,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 369,
-      "line_number": null
+      "source_index": 368
     },
     "game": 2,
     "actor": "p2",
@@ -2377,7 +2377,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 370,
-      "line_number": null
+      "source_index": 369
     },
     "game": 2,
     "actor": "p2",
@@ -2398,7 +2398,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 371,
-      "line_number": null
+      "source_index": 370
     },
     "game": 2,
     "actor": "p2",
@@ -2419,7 +2419,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 372,
-      "line_number": null
+      "source_index": 371
     },
     "game": 2,
     "actor": "p2",
@@ -2440,7 +2440,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 375,
-      "line_number": null
+      "source_index": 374
     },
     "game": 2,
     "actor": "p2",
@@ -2461,7 +2461,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 376,
-      "line_number": null
+      "source_index": 375
     },
     "game": 2,
     "actor": "p2",
@@ -2482,7 +2482,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 377,
-      "line_number": null
+      "source_index": 376
     },
     "game": 2,
     "actor": "p2",
@@ -2503,7 +2503,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 378,
-      "line_number": null
+      "source_index": 377
     },
     "game": 2,
     "actor": "p1",
@@ -2524,7 +2524,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 380,
-      "line_number": null
+      "source_index": 379
     },
     "game": 2,
     "actor": "p1",
@@ -2545,7 +2545,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 381,
-      "line_number": null
+      "source_index": 380
     },
     "game": 2,
     "actor": "p1",
@@ -2566,7 +2566,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 384,
-      "line_number": null
+      "source_index": 383
     },
     "game": 2,
     "actor": "p1",
@@ -2587,7 +2587,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 386,
-      "line_number": null
+      "source_index": 385
     },
     "game": 2,
     "actor": "p1",
@@ -2608,7 +2608,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 388,
-      "line_number": null
+      "source_index": 387
     },
     "game": 2,
     "actor": "p2",
@@ -2629,7 +2629,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 391,
-      "line_number": null
+      "source_index": 390
     },
     "game": 2,
     "actor": "p1",
@@ -2650,7 +2650,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 393,
-      "line_number": null
+      "source_index": 392
     },
     "game": 2,
     "actor": "p1",
@@ -2671,7 +2671,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 395,
-      "line_number": null
+      "source_index": 394
     },
     "game": 2,
     "actor": "p1",
@@ -2692,7 +2692,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 396,
-      "line_number": null
+      "source_index": 395
     },
     "game": 2,
     "actor": "p1",
@@ -2713,7 +2713,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 397,
-      "line_number": null
+      "source_index": 396
     },
     "game": 2,
     "actor": "p1",
@@ -2734,7 +2734,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 398,
-      "line_number": null
+      "source_index": 397
     },
     "game": 2,
     "actor": "p2",
@@ -2755,7 +2755,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 400,
-      "line_number": null
+      "source_index": 399
     },
     "game": 2,
     "actor": "p2",
@@ -2776,7 +2776,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 401,
-      "line_number": null
+      "source_index": 400
     },
     "game": 2,
     "actor": "p2",
@@ -2797,7 +2797,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 408,
-      "line_number": null
+      "source_index": 407
     },
     "game": 2,
     "actor": "p2",
@@ -2818,7 +2818,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 413,
-      "line_number": null
+      "source_index": 412
     },
     "game": 2,
     "actor": "p2",
@@ -2839,7 +2839,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 438,
-      "line_number": null
+      "source_index": 437
     },
     "game": 2,
     "actor": "p2",
@@ -2860,7 +2860,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 443,
-      "line_number": null
+      "source_index": 442
     },
     "game": 2,
     "actor": "p2",
@@ -2881,7 +2881,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 454,
-      "line_number": null
+      "source_index": 453
     },
     "game": 2,
     "actor": "p2",
@@ -2902,7 +2902,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 455,
-      "line_number": null
+      "source_index": 454
     },
     "game": 2,
     "actor": "p2",
@@ -2923,7 +2923,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 461,
-      "line_number": null
+      "source_index": 460
     },
     "game": 2,
     "actor": "p2",
@@ -2944,7 +2944,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 462,
-      "line_number": null
+      "source_index": 461
     },
     "game": 2,
     "actor": "p2",
@@ -2965,7 +2965,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 463,
-      "line_number": null
+      "source_index": 462
     },
     "game": 2,
     "actor": "p2",
@@ -2986,7 +2986,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 464,
-      "line_number": null
+      "source_index": 463
     },
     "game": 2,
     "actor": "p1",
@@ -3007,7 +3007,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 466,
-      "line_number": null
+      "source_index": 465
     },
     "game": 2,
     "actor": "p1",
@@ -3028,7 +3028,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 467,
-      "line_number": null
+      "source_index": 466
     },
     "game": 2,
     "actor": "p1",
@@ -3049,7 +3049,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 468,
-      "line_number": null
+      "source_index": 467
     },
     "game": 2,
     "actor": "p1",
@@ -3070,7 +3070,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 469,
-      "line_number": null
+      "source_index": 468
     },
     "game": 2,
     "actor": "p1",
@@ -3091,7 +3091,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 470,
-      "line_number": null
+      "source_index": 469
     },
     "game": 2,
     "actor": "p1",
@@ -3112,7 +3112,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 471,
-      "line_number": null
+      "source_index": 470
     },
     "game": 2,
     "actor": "p2",
@@ -3133,7 +3133,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 473,
-      "line_number": null
+      "source_index": 472
     },
     "game": 2,
     "actor": "p2",
@@ -3154,7 +3154,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 474,
-      "line_number": null
+      "source_index": 473
     },
     "game": 2,
     "actor": "p2",
@@ -3175,7 +3175,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 484,
-      "line_number": null
+      "source_index": 483
     },
     "game": 2,
     "actor": "p2",
@@ -3196,7 +3196,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 485,
-      "line_number": null
+      "source_index": 484
     },
     "game": 2,
     "actor": "p2",
@@ -3217,7 +3217,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 486,
-      "line_number": null
+      "source_index": 485
     },
     "game": 2,
     "actor": "p1",
@@ -3238,7 +3238,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 489,
-      "line_number": null
+      "source_index": 488
     },
     "game": 2,
     "actor": "p2",
@@ -3259,7 +3259,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 490,
-      "line_number": null
+      "source_index": 489
     },
     "game": 2,
     "actor": "p2",
@@ -3280,7 +3280,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 491,
-      "line_number": null
+      "source_index": 490
     },
     "game": 2,
     "actor": "p2",
@@ -3301,7 +3301,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 492,
-      "line_number": null
+      "source_index": 491
     },
     "game": 2,
     "actor": "p1",
@@ -3322,7 +3322,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 494,
-      "line_number": null
+      "source_index": 493
     },
     "game": 2,
     "actor": "p1",
@@ -3343,7 +3343,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 495,
-      "line_number": null
+      "source_index": 494
     },
     "game": 2,
     "actor": "p1",
@@ -3364,7 +3364,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 496,
-      "line_number": null
+      "source_index": 495
     },
     "game": 2,
     "actor": "p1",
@@ -3385,7 +3385,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 497,
-      "line_number": null
+      "source_index": 496
     },
     "game": 2,
     "actor": "p2",
@@ -3406,7 +3406,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 499,
-      "line_number": null
+      "source_index": 498
     },
     "game": 2,
     "actor": "p2",
@@ -3427,7 +3427,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 500,
-      "line_number": null
+      "source_index": 499
     },
     "game": 2,
     "actor": "p2",
@@ -3448,7 +3448,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 502,
-      "line_number": null
+      "source_index": 501
     },
     "game": 2,
     "actor": "p2",
@@ -3469,7 +3469,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 508,
-      "line_number": null
+      "source_index": 507
     },
     "game": 2,
     "actor": "p1",
@@ -3490,7 +3490,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 526,
-      "line_number": null
+      "source_index": 525
     },
     "game": 2,
     "actor": "p2",
@@ -3511,7 +3511,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 531,
-      "line_number": null
+      "source_index": 530
     },
     "game": 2,
     "actor": "p2",
@@ -3532,7 +3532,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 532,
-      "line_number": null
+      "source_index": 531
     },
     "game": 2,
     "actor": "p2",
@@ -3553,7 +3553,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 533,
-      "line_number": null
+      "source_index": 532
     },
     "game": 2,
     "actor": "p2",
@@ -3574,7 +3574,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 534,
-      "line_number": null
+      "source_index": 533
     },
     "game": 2,
     "actor": "p2",
@@ -3595,7 +3595,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 535,
-      "line_number": null
+      "source_index": 534
     },
     "game": 2,
     "actor": "p2",
@@ -3616,7 +3616,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 538,
-      "line_number": null
+      "source_index": 537
     },
     "game": 2,
     "actor": "p2",
@@ -3637,7 +3637,7 @@
     "source": {
       "replay": "db-json-40753-85958923",
       "before_sequence": 552,
-      "line_number": null
+      "source_index": 551
     },
     "game": 2,
     "actor": "p2",

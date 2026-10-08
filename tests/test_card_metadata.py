@@ -50,7 +50,9 @@ class CardMetadataTests(unittest.TestCase):
                 build_metadata(self.replay, json.dumps(body).encode(), '2026-10-08')
         with self.assertRaises(ValueError):
             build_metadata(self.replay, self.response, '')
-        text = load_bundle(ROOT/'replays/db-text-aco77-sdesowitz02-2026-10-07')
+        from copy import deepcopy
+        text = deepcopy(self.replay)
+        text['source']['adapter'] = 'duelingbook-text-v1'
         with self.assertRaises(ValueError):
             request_url(text)
 
@@ -75,5 +77,5 @@ class CardMetadataTests(unittest.TestCase):
             with patch('sys.argv', argv), patch('builtins.print'):
                 main()
             self.assertEqual(json.loads(output.read_text())['matched_distinct_passcodes'], 42)
-            with patch('sys.argv', argv), self.assertRaises(SystemExit):
+            with patch('sys.argv', argv), patch('sys.stderr'), self.assertRaises(SystemExit):
                 main()

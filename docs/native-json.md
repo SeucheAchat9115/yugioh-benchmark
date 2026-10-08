@@ -1,11 +1,11 @@
 # Native Duelingbook JSON
 
-The user-supplied `view-replay` response is now the primary source for
+The user-supplied `view-replay` response is the source for
 [replay 40753-85958923](https://www.duelingbook.com/replay?id=40753-85958923).
 The selected [JSON fixture](../fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.json)
 and [native bundle](../replays/db-json-40753-85958923) are linked in
-[the source registry](../benchmarks/sources.json). The text fixture/bundle and
-their original event numbers remain separately identified companions.
+[the source registry](../benchmarks/sources.json). Obtain additional responses
+with the [browser inspector guide](acquisition.md).
 
 ## Import
 
@@ -22,9 +22,8 @@ Tag duels are rejected until a four-player adapter exists.
 
 Native IDs are `db-json-<replay ID>`, with adapter `duelingbook-json-v1`.
 There is one event per source `plays` entry; batched opening draws remain within
-their original `Pick first` entry. Native sequence numbers therefore differ from
-text sequence numbers. Rebuild and review cases against the native digest/index;
-never reuse a text sequence with the new source ID. Candidate indexes are
+their original `Pick first` entry. Candidate source indexes point into `plays`;
+review cases against the native digest/index. Candidate indexes are
 review work items, not certified decisions or player prompts.
 
 ## What this export adds
@@ -53,7 +52,7 @@ harness copy identities or effect checkpoints. Unseen card names are not inferre
 
 The embedded descriptions can be current text even when the recorded game uses
 historical effects. For example, exported Dark Magician of Chaos describes
-End Phase spell recovery, while the text companion records immediate recovery.
+End Phase spell recovery, while the native plays record immediate recovery.
 Neither the source format code nor current card-limit fields establish the agreed
 historical rules/banlist. This still blocks certified rule-correctness scoring.
 
@@ -80,7 +79,7 @@ rights remain in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 This import improves the evidence for all three KPIs; it does not calculate a
 model score. State reconstruction, response/effect windows, historical rules and
 ground-truth decisions still require review. Do not treat native event counts,
-candidate counts or old text diagnostic scores as a complete game benchmark.
+candidate counts as a complete game benchmark.
 
 ## Card references
 

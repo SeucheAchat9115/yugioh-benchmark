@@ -5,14 +5,14 @@ Use Python 3.11 or newer. Install the package from the repository root with
 
 ```sh
 python -m unittest discover -s tests -v
-yugioh-benchmark inspect replays/db-text-aco77-sdesowitz02-2026-10-07
+yugioh-benchmark inspect replays/db-json-40753-85958923
 ```
 
 Tests run offline. Harness-specific tests skip when the optional harness is not
 installed; [harness integration](docs/harness-integration.md) explains how to
 run them against the pinned public checkout.
 
-Keep converters generic. Preserve original text, observation order, source
+Keep converters generic. Preserve selected native data, observation order, source
 references and information gaps. An observed operation is not a verified legal
 move. Do not invent hidden cards, effect resolutions or strategic labels.
 

@@ -9,7 +9,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^db-(?:(?:json-)?[1-9][0-9]*(?:-[1-9][0-9]*)?|text-[a-f0-9]{64})$"
+      "pattern": "^db-json-[1-9][0-9]*(?:-[1-9][0-9]*)?$"
     },
     "source": {
       "type": "object",
@@ -30,22 +30,13 @@
           "pattern": "^[a-f0-9]{64}$"
         },
         "replay_id": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "url": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string"
         },
         "adapter": {
-          "enum": [
-            "duelingbook-text-v1",
-            "duelingbook-json-v1"
-          ]
+          "const": "duelingbook-json-v1"
         }
       }
     },

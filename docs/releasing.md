@@ -37,7 +37,7 @@ From a clean checkout, using Python 3.11 or newer:
 ```sh
 python -m pip install .
 python -m unittest discover -s tests -v
-yugioh-benchmark inspect replays/db-text-aco77-sdesowitz02-2026-10-07
+yugioh-benchmark inspect replays/db-json-40753-85958923
 python -m pip install build
 python -m build
 ```
