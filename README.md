@@ -7,8 +7,10 @@ The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
 **Status: alpha toolkit.** Text importing, reviewed-case execution and the
-three-KPI artifact scorer are implemented. Reviewed agentic cases and an actual
-model evaluation remain pending; no live agent performance score exists yet.
+three-KPI artifact scorer are implemented. Reviewed replay cases and a
+complete three-KPI evaluation remain pending. A [small Edison pilot](docs/edison-pilot.md)
+measured state recreation and legality; human-move agreement and a final score
+remain unavailable.
 This project is independent of Duelingbook and the Yu-Gi-Oh rights holders.
 
 ## Agentic benchmark score

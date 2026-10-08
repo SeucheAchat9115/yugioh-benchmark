@@ -61,6 +61,20 @@ def choice(case, move=None, verdict='valid'):
 
 
 class KpiTests(unittest.TestCase):
+    def test_rules_only_cases_do_not_invent_human_agreement(self):
+        cases = suite()
+        case = deepcopy(cases['cases'][1])
+        case.update(id='rules-only', task='rule_correctness')
+        case.pop('human_move')
+        case.pop('source')
+        cases['cases'] = [cases['cases'][0], case]
+        row = legality({'case_id': 'rules-only', 'status': 'completed',
+                        'response': 'Pass'}, case)
+        result = score_kpis(cases, run(cases, [row]))
+        self.assertEqual(result['kpis']['human_move_agreement']['total'], 0)
+        self.assertIsNone(result['final_score_percent'])
+        self.assertEqual(result['kpis']['rule_correctness']['score'], 0.5)
+
     def test_missing_attempts_count_in_all_denominators(self):
         cases = suite()
         result = score_kpis(cases, run(cases, []))
