@@ -8,7 +8,7 @@
   },
   "source_replay": "db-json-40753-85958923",
   "source_rules_status": "Perfect Circle profile and dated TCG-pool banlist documented in a pinned harness commit; complete historical text overrides and replay states/legality still require review",
-  "case_preparation_status": "whole_match_index_prepared_four_scoped_checkpoints_approved",
+  "case_preparation_status": "all_previous_pending_dispositioned_18_scoped_checkpoints_approved",
   "current_agentic_score": null,
   "last_pilot": {
     "date": "2026-10-08",
@@ -57,5 +57,9 @@
   },
   "reviewed_suite": "benchmarks/review/db-json-40753-85958923/suite.json",
   "preparation_report": "docs/replay-review-stage.md",
-  "whole_match_review_completed": false
+  "whole_match_review_completed": false,
+  "review_disposition_pass_completed": true,
+  "reviewed_blocked_work_items": 94,
+  "approved_scoped_checkpoints": 18,
+  "expanded_suite_model_run_completed": false
 }

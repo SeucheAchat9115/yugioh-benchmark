@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Review all 185 previously pending replay work items: approve 14 additional
+  scoped checkpoints, exclude 77 bookkeeping/substeps, and document 94 blocked
+  items. Expand the suite to 18 independent checkpoints / 36 tasks. Preserve
+  source-bound findings, privacy filtering and deferred historical rulings.
+
 - Native `view-replay` JSON is the supported replay input. Remove the text fixture,
   bundle, candidate index and converters, plus exact-response scoring and isolated
   operation probes. Reimport old sources as native JSON and review their positions.
