@@ -27,6 +27,9 @@ def main():
     for name in ('inspect', 'candidates'):
         command = commands.add_parser(name)
         command.add_argument('bundle', type=Path)
+    command = commands.add_parser('extract', help='Extract unreviewed reviewer-only states and recorded actions')
+    command.add_argument('bundle', type=Path)
+    command.add_argument('--output', required=True, type=Path)
     command = commands.add_parser('score-kpis', help='Score trusted three-KPI suite/run artifacts')
     command.add_argument('suite', type=Path)
     command.add_argument('run', type=Path)
@@ -38,7 +41,10 @@ def main():
     command.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     try:
-        if args.command == 'score-kpis':
+        if args.command == 'extract':
+            from .extraction import extract_observations, write_extraction
+            output = write_extraction(extract_observations(load_bundle(args.bundle)), args.output)
+        elif args.command == 'score-kpis':
             from .kpis import KPI_NAMES, score_kpis
             weights = dict(zip(KPI_NAMES, args.weights)) if args.weights is not None else None
             output = score_kpis(json.loads(read_text(args.suite)), json.loads(read_text(args.run)), weights)
