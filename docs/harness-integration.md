@@ -78,9 +78,7 @@ if needed for adjudication. They must contain all known hidden state, while play
 contexts contain only information available to that actor.
 
 `run_case` currently returns a decision, measured latency and `assessment: null`.
-`benchmark.run_suite` adds reviewed-suite execution and exact-response agreement;
-see [text-log benchmarks](text-logs.md). This is a separate narrow metric, not
-the three-KPI score. Bridge cases/results do not directly satisfy the KPI suite
+Bridge cases/results do not directly satisfy the three-KPI suite
 and run contract; prepare the additional reviewed states, semantic moves,
 journals and independent grading records described in [agentic KPIs](agentic-kpis.md).
 The KPI scorer consumes these trusted artifacts but does not launch the workflow.

@@ -49,7 +49,7 @@ checkpoints. Report those as separate decisions, not an uninterrupted match.
 
 ## Scoring artifact contract
 
-`python -m yugioh_benchmark.kpis suite.json run.json` scores trusted artifacts
+`yugioh-benchmark score-kpis suite.json run.json` scores trusted artifacts
 collected by the existing workflow; this command does not launch a model or
 simulate a duel. Install the pinned harness on the Python path for journal replay.
 Keep run artifacts and game saves local and ignored.
@@ -86,8 +86,8 @@ pending and block a final score. A missing KPI also blocks the final score.
 
 ## Current replay and limits
 
-The supplied native JSON replay is linked as `db-json-40753-85958923`;
-the text companion retains `db-40753-85958923`. Its export labels the format
+The supplied native JSON replay is linked as `db-json-40753-85958923`.
+Its export labels the format
 Unlimited. The user identifies it as Perfect Circle 2007. The declaration and
 [September 2007 format reference](https://www.formatlibrary.com/formats/perfect-circle)
 are recorded separately; exact card pool, historical rules and pre-errata texts
@@ -101,7 +101,6 @@ references, but legality scoring requires a separately established rules profile
 Known-format cases can supply that KPI without relying on this replay's rules.
 
 The configured target and weights are in `benchmarks/evaluation-config.json`.
-The earlier 71.5% structural operation coverage contributes nothing to this score.
 The scorer is available; the replay's reviewed checkpoints and a complete
 three-KPI run remain pending. A 99% score would describe performance on these tested tasks. Competitive
 training suitability additionally needs diverse positions, formats, matchups and

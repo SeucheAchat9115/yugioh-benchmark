@@ -33,9 +33,7 @@ Use the existing live harness workflow to collect attempts, authoritative
 journals and independent grades. The [KPI scorer](docs/agentic-kpis.md) consumes
 those artifacts; it does not launch a model or simulate a duel by itself.
 Missing attempts score zero, while unfinished grading blocks a final score.
-Neither the older exact-response scorer nor the **71.5% structural operation
-coverage** is this final score. Even a high task score alone does not establish
-competitive playing strength.
+A high task score alone does not establish competitive playing strength.
 
 ## Replay dataset and importing
 
@@ -44,25 +42,26 @@ now uses the [supplied native JSON](fixtures/duelingbook/aco77-sdesowitz02-2026-
 and [native bundle](replays/db-json-40753-85958923) as its primary source:
 **554 source plays, two games, 174 review candidates**. It adds private draw
 observations for both players, card definitions, shuffle references and absolute
-LP updates. The [original text](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
-and [text bundle](replays/db-text-aco77-sdesowitz02-2026-10-07) remain companions
-with their original event numbers. The
-[benchmark source registry](benchmarks/sources.json) links the sources, bundles,
-payload digests and candidate indexes. The primary identity is
-`db-json-40753-85958923`; the text companion remains `db-40753-85958923`.
+LP updates. The [source registry](benchmarks/sources.json) links the JSON fixture,
+bundle, hashes, card references and review candidates. Its identity is
+`db-json-40753-85958923`.
 
 There are currently **no scored decision cases**. Imported observations are
 unreviewed; positions, information visibility, historical rules and decision
-boundaries must be checked before gameplay scoring. This replay is labelled
-Unlimited; its rules, banlist and card-text version remain unknown. Legality
-evaluation needs cases with an established rules profile.
+boundaries must be checked before gameplay scoring. The user identifies this
+match as **Perfect Circle 2007**. The registry links the September 2007 format
+reference; its exact card pool, historical rules and pre-errata texts still need
+review. The export itself labels the game Unlimited.
 
-Prefer native `view-replay` JSON responses for additional matches; copied
-Duelingbook Chat/Duel/Game text is also supported. Include the replay URL.
-Importing works offline with no runtime dependencies or
-browser setup. Each observation has a numbered event file; the manifest records
-its path and hash. Original text and source-line references are preserved.
-Unknown draws, set cards and operations remain available for review.
+For each new match, open the browser inspector’s **Network → Fetch/XHR** tab,
+reload the replay and copy the complete **`view-replay` JSON response** to a file.
+Supply the replay URL and played format alongside it. Follow the
+[step-by-step acquisition guide](docs/acquisition.md), including its coverage
+checks. HTML exports and copied duel text are unsupported.
+
+Importing runs offline without runtime dependencies, browser setup or credentials.
+Each native play has a numbered, hashed event file and its original source index.
+Unknown cards, missing timestamps and manual operations remain available for review.
 
 An orchestrator can import files internally in response to a natural language
 request. Duel players do not need to run Python themselves. Maintainer commands:
@@ -71,16 +70,16 @@ request. Duel players do not need to run Python themselves. Maintainer commands:
 git clone https://github.com/SeucheAchat9115/yugioh-benchmark.git
 cd yugioh-benchmark
 python -m pip install .
-yugioh-benchmark convert-text imports/match.txt --source https://www.duelingbook.com/replay?id=40753-85958923 --output replays/my-match
-yugioh-benchmark import-texts imports --output replays
 yugioh-benchmark convert-json imports/replay.json --source https://www.duelingbook.com/replay?id=40753-85958923 --output replays/my-native-match
 yugioh-benchmark inspect replays/db-json-40753-85958923
+# Score a reviewed suite and its trusted run artifacts:
+yugioh-benchmark score-kpis suite.json run.json
 python -m unittest discover -s tests -v
 ```
 
 [Offline CI](.github/workflows/ci.yml) tests Python 3.11–3.13 on Linux and Windows and
 checks the filtered benchmark bridge against the pinned harness.
-Replay conversion and saved exact-response scoring do not require the harness.
+Replay conversion and human-move/legality artifact scoring do not require the harness.
 State-recreation KPI scoring requires the harness to verify journals. Running
 an agent through the bridge requires a separate harness checkout and your own
 bounded model transport; see [harness setup](docs/harness-integration.md).
@@ -89,10 +88,8 @@ bounded model transport; see [harness setup](docs/harness-integration.md).
 - [Current card names and texts from YGOPRODeck](docs/card-metadata.md)
 - [Native JSON importing and coverage](docs/native-json.md)
 - [Replay bundle format](docs/replay-format.md)
-- [Text importing and the separate exact-response scorer](docs/text-logs.md)
 - [Preparing harness decision positions](docs/harness-integration.md)
 - [Agentic workflow KPIs and scoring](docs/agentic-kpis.md)
-- [Structural operation regression checks (separate from agent scores)](docs/reproduction.md)
 - [Contributing](CONTRIBUTING.md)
 - [Release notes and public release preparation](docs/releasing.md)
 
