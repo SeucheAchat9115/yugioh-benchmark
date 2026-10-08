@@ -8,10 +8,10 @@
 - Keep source URLs, payload digests, adapter versions and known information gaps.
 - Player agents receive only a reviewed, filtered packet. Never give them complete
   replays, future actions/outcomes, grading keys or opponent hidden cards.
-- Keep raw downloads, HAR files and model-run logs local and ignored. Version
+- Keep raw text imports and model-run logs local and ignored. Version
   selected benchmark fixtures and reviewed cases deliberately; no harness game saves.
-- Use bounded capture with no fabricated browser tokens or endless retries.
 - The orchestrator runs tools internally; users can request imports/evaluation in
   natural language. Maintainer commands are not steps a duel player must perform.
-- Run meaningful offline converter/privacy/integrity tests. Network capture is an
-  explicit integration job, never a required dependency of normal CI.
+- Run meaningful offline converter/privacy/integrity tests. Importing copied duel
+  text requires no browser, network capture or credentials.
+

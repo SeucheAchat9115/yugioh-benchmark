@@ -43,7 +43,6 @@
         },
         "adapter": {
           "enum": [
-            "duelingbook-plays-v1",
             "duelingbook-text-v1"
           ]
         }

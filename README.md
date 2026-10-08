@@ -1,56 +1,47 @@
 # Yu-Gi-Oh Benchmark
 
-Replay sources and reviewed decision benchmarks for testing how well an LLM
-plays Yu-Gi-Oh through [yugioh-harness](https://github.com/SeucheAchat9115/yugioh-harness).
+Duelingbook text replay sources and reviewed decision benchmarks for testing how
+well an LLM plays Yu-Gi-Oh through
+[yugioh-harness](https://github.com/SeucheAchat9115/yugioh-harness).
 The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
-The first real import is [Noxjja vs Drew Carter](https://www.duelingbook.com/replay?id=2178594),
-a 2017 Advanced-format match: **962 source events, three games**. Its public
-archived JSON was converted into [replays/db-2178594](replays/db-2178594).
-See [provenance](replays/db-2178594/provenance.json) and [third-party notices](THIRD_PARTY_NOTICES.md).
-The archive supplies card data and simulator operations. Legality, historical
-rules, hidden-state completeness and decision boundaries remain unreviewed.
-The user-supplied [Aco77 vs sdesowitz02 text export](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
-is also included: **565 observations, two games**. It is linked to its converted
-bundle and reviewer candidate index in [the benchmark source registry](benchmarks/sources.json).
-Its [Duelingbook replay](https://www.duelingbook.com/replay?id=40753-85958923)
-is identified as `db-40753-85958923`.
-See [text-log importing and benchmarking](docs/text-logs.md) for batch ingestion,
-source-line references and reviewed-suite scoring.
+The selected [Aco77 vs sdesowitz02 replay](https://www.duelingbook.com/replay?id=40753-85958923)
+is included as a [complete supplied text export](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
+and [converted bundle](replays/db-text-aco77-sdesowitz02-2026-10-07):
+**565 observations, two games, 159 review candidates**. The
+[benchmark source registry](benchmarks/sources.json) links the text, bundle,
+payload digest and candidate index. Its identity is `db-40753-85958923`.
 
-There are currently **no scored decision cases**; importing a replay does not
-create a validated benchmark automatically.
+There are currently **no scored decision cases**. Imported observations are
+unreviewed; positions, information visibility, historical rules and decision
+boundaries must be checked before gameplay scoring.
 
-An orchestrator can import and inspect files internally in response to a natural
-language request. Duel players do not need to run Python themselves. These are
-maintainer commands:
+Supply more matches as copied Duelingbook Chat/Duel/Game text, with each replay
+URL when available. Importing works offline with no runtime dependencies or
+browser setup. Each observation has a numbered event file; the manifest records
+its path and hash. Original text and source-line references are preserved.
+Unknown draws, set cards and operations remain available for review.
+
+An orchestrator can import files internally in response to a natural language
+request. Duel players do not need to run Python themselves. Maintainer commands:
 
 ```sh
 python -m pip install .
-yugioh-benchmark convert imports/replay.json --source 2178594 --output replays/db-2178594-new
-yugioh-benchmark inspect replays/db-2178594
+yugioh-benchmark convert-text imports/match.txt --source https://www.duelingbook.com/replay?id=40753-85958923 --output replays/my-match
+yugioh-benchmark import-texts imports --output replays
+yugioh-benchmark inspect replays/db-text-aco77-sdesowitz02-2026-10-07
 python -m unittest discover -s tests -v
 ```
 
-Conversion accepts a DuelingBook `/view-replay` response JSON or a browser HAR
-with exactly one matching successful response. It works offline with no runtime
-dependencies. Each event has its own numbered file; the manifest indexes their
-paths and hashes. Source operations and card identifiers are preserved without
-inventing missing moves. Unknown operation labels remain available for review.
+[Offline CI](.github/workflows/ci.yml) tests Python 3.11–3.13 on Windows and
+checks the filtered benchmark bridge against the pinned harness.
 
-[Offline CI](.github/workflows/ci.yml) tests the package on Windows with Python
-3.11–3.13. Live capture is a separate, explicitly triggered integration workflow
-with a 45-second capture deadline. DuelingBook currently requires browser
-verification: direct requests return “Missing token”, and verification did not
-complete in the hosted browser. The included match was obtained from a public
-archive instead. There are no endless retries or fabricated tokens.
+- [Supplying text replays](docs/acquisition.md)
+- [Replay bundle format](docs/replay-format.md)
+- [Text importing and reviewed-suite scoring](docs/text-logs.md)
+- [Preparing harness decision positions](docs/harness-integration.md)
 
-- [Replay JSON format](docs/replay-format.md)
-- [How to save replay JSON (desktop and mobile)](docs/acquisition.md)
-- [Preparing and running harness benchmarks](docs/harness-integration.md)
-
-Raw imports/HARs and evaluation runs stay local and ignored. Deliberately selected
+Raw imports and evaluation runs stay local and ignored. Deliberately selected
 source fixtures and reviewed cases may be versioned. Harness game saves belong
 in the harness's local storage.
-

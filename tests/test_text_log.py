@@ -100,6 +100,23 @@ class TextLogTests(unittest.TestCase):
             event = self.replay['events'][candidate['source']['before_sequence']-1]
             self.assertEqual(candidate['source']['line_number'], event['payload']['line_number'])
 
+    def test_path_escape_order_and_retired_adapter_are_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)/'bundle'
+            write_bundle(self.replay, directory)
+            path = directory/'replay.json'
+            manifest = json.loads(path.read_text(encoding='utf-8'))
+            for field, value in [('path', '../private.json'), ('sequence', 2)]:
+                altered = deepcopy(manifest)
+                altered['events'][0][field] = value
+                path.write_text(json.dumps(altered), encoding='utf-8')
+                with self.assertRaises(ValueError):
+                    load_bundle(directory)
+        replay = deepcopy(self.replay)
+        replay['source']['adapter'] = 'retired-adapter'
+        with self.assertRaisesRegex(ValueError, 'Unsupported replay adapter'):
+            validate(replay)
+
     def test_batch_import_deduplicates_and_preflights(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)
