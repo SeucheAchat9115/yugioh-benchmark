@@ -1,12 +1,12 @@
 # Yu-Gi-Oh Benchmark
 
-Duelingbook text replay sources and reviewed decision benchmarks for testing how
+Duelingbook replay sources and reviewed decision benchmarks for testing how
 well an LLM plays Yu-Gi-Oh through
 [yugioh-harness](https://github.com/SeucheAchat9115/yugioh-harness).
 The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
-**Status: alpha toolkit.** Text importing, reviewed-case execution and the
+**Status: alpha toolkit.** Replay importing, reviewed-case execution and the
 three-KPI artifact scorer are implemented. Reviewed replay cases and a
 complete three-KPI evaluation remain pending. A [small Edison pilot](docs/edison-pilot.md)
 measured state recreation and legality; human-move agreement and a final score
@@ -40,11 +40,16 @@ competitive playing strength.
 ## Replay dataset and importing
 
 The selected [Aco77 vs sdesowitz02 replay](https://www.duelingbook.com/replay?id=40753-85958923)
-is included as a [complete supplied text export](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
-and [converted bundle](replays/db-text-aco77-sdesowitz02-2026-10-07):
-**565 observations, two games, 159 review candidates**. The
-[benchmark source registry](benchmarks/sources.json) links the text, bundle,
-payload digest and candidate index. Its identity is `db-40753-85958923`.
+now uses the [supplied native JSON](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.json)
+and [native bundle](replays/db-json-40753-85958923) as its primary source:
+**554 source plays, two games, 174 review candidates**. It adds private draw
+observations for both players, card definitions, shuffle references and absolute
+LP updates. The [original text](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
+and [text bundle](replays/db-text-aco77-sdesowitz02-2026-10-07) remain companions
+with their original event numbers. The
+[benchmark source registry](benchmarks/sources.json) links the sources, bundles,
+payload digests and candidate indexes. The primary identity is
+`db-json-40753-85958923`; the text companion remains `db-40753-85958923`.
 
 There are currently **no scored decision cases**. Imported observations are
 unreviewed; positions, information visibility, historical rules and decision
@@ -52,8 +57,9 @@ boundaries must be checked before gameplay scoring. This replay is labelled
 Unlimited; its rules, banlist and card-text version remain unknown. Legality
 evaluation needs cases with an established rules profile.
 
-Supply more matches as copied Duelingbook Chat/Duel/Game text, with each replay
-URL when available. Importing works offline with no runtime dependencies or
+Prefer native `view-replay` JSON responses for additional matches; copied
+Duelingbook Chat/Duel/Game text is also supported. Include the replay URL.
+Importing works offline with no runtime dependencies or
 browser setup. Each observation has a numbered event file; the manifest records
 its path and hash. Original text and source-line references are preserved.
 Unknown draws, set cards and operations remain available for review.
@@ -67,7 +73,8 @@ cd yugioh-benchmark
 python -m pip install .
 yugioh-benchmark convert-text imports/match.txt --source https://www.duelingbook.com/replay?id=40753-85958923 --output replays/my-match
 yugioh-benchmark import-texts imports --output replays
-yugioh-benchmark inspect replays/db-text-aco77-sdesowitz02-2026-10-07
+yugioh-benchmark convert-json imports/replay.json --source https://www.duelingbook.com/replay?id=40753-85958923 --output replays/my-native-match
+yugioh-benchmark inspect replays/db-json-40753-85958923
 python -m unittest discover -s tests -v
 ```
 
@@ -78,7 +85,9 @@ State-recreation KPI scoring requires the harness to verify journals. Running
 an agent through the bridge requires a separate harness checkout and your own
 bounded model transport; see [harness setup](docs/harness-integration.md).
 
-- [Supplying text replays](docs/acquisition.md)
+- [Supplying replay data](docs/acquisition.md)
+- [Current card names and texts from YGOPRODeck](docs/card-metadata.md)
+- [Native JSON importing and coverage](docs/native-json.md)
 - [Replay bundle format](docs/replay-format.md)
 - [Text importing and the separate exact-response scorer](docs/text-logs.md)
 - [Preparing harness decision positions](docs/harness-integration.md)

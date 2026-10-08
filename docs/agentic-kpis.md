@@ -86,10 +86,17 @@ pending and block a final score. A missing KPI also blocks the final score.
 
 ## Current replay and limits
 
-The supplied replay is linked as `db-40753-85958923`. Its format is labelled
-Unlimited, and its rules, banlist and card-text version are unknown. Do not infer
+The supplied native JSON replay is linked as `db-json-40753-85958923`;
+the text companion retains `db-40753-85958923`. Its export labels the format
+Unlimited. The user identifies it as Perfect Circle 2007. The declaration and
+[September 2007 format reference](https://www.formatlibrary.com/formats/perfect-circle)
+are recorded separately; exact card pool, historical rules and pre-errata texts
+still require review. Do not infer
 Edison, Goat or Advanced from its cards. Its states and decision boundaries still
-need review; hidden information cannot be invented. It may provide reviewed move
+need review. The native export supplies both players’ private draw logs and
+absolute LP updates, but complete named decklists and reviewed checkpoints remain
+pending. Hidden information cannot be invented; each player receives only the
+information available at that decision. See [native JSON](native-json.md). It may provide reviewed move
 references, but legality scoring requires a separately established rules profile.
 Known-format cases can supply that KPI without relying on this replay's rules.
 

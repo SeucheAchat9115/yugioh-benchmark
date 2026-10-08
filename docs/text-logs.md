@@ -7,6 +7,10 @@ is retained as text, with no timezone assumption. The user also supplied its
 [replay URL](https://www.duelingbook.com/replay?id=40753-85958923), which identifies
 the sample as `db-40753-85958923`; its text digest is preserved for integrity.
 
+The [native JSON export](native-json.md) is now the primary source for this match.
+This text export remains a companion with its original IDs and observations.
+Descriptions of missing draw names and LP totals below apply to the text source.
+
 Maintainer commands:
 
 ```sh

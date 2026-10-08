@@ -1,4 +1,20 @@
-# Supplying Duelingbook replay text
+# Supplying Duelingbook replay data
+
+## Preferred: native JSON export
+
+In the replay page's browser developer tools, open Network, select Fetch/XHR,
+reload and complete normal browser verification. Open the `view-replay` request
+and copy its response into a UTF-8 `.json` file. Supply it with the replay URL.
+Do not send a HAR, browser cookies, verification tokens or Copy as cURL output.
+The converter imports the supplied file offline and never fetches protected data.
+
+The [selected native export](../fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.json)
+is the primary source for the sample match. It contains both players' private
+draw logs, card definitions, runtime references, shuffle arrays and absolute LP
+updates. It improves reconstruction evidence, but does not establish a historical
+rules profile or complete named decklists. See [native JSON importing](native-json.md).
+
+## Fallback: copied text
 
 Open the replay in Duelingbook and copy its displayed duel/game log as text.
 Include the full match: timestamped lines, turn headers and later games. The
@@ -27,4 +43,5 @@ for commands, limits, deduplication and source linkage. Keep unselected raw logs
 in ignored `imports/`; version selected fixtures deliberately.
 
 The former archived API fixture, API-response/HAR importer and automated browser
-capture have been retired. The supported ingestion format is copied duel text.
+capture remain retired. Native JSON is supported through the new explicit
+`duelingbook-json-v1` adapter; unrelated legacy API bundles remain rejected.

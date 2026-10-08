@@ -1,17 +1,17 @@
 # Replay bundle, version 1.0
 
 `replays/<folder>/replay.json` is the manifest. `events/000001.json` and subsequent
-files hold one timestamped text observation or turn header each. All strings are
+files hold one native JSON play, timestamped text observation or turn header each. All strings are
 UTF-8. The folder is a readable storage path; the manifest holds the source ID.
 
 | Manifest field | Meaning |
 | --- | --- |
-| schema_version, id | Schema version and `db-<replay ID>`, or `db-text-<sha256>` without a URL |
-| source | Viewer URL/ID when supplied, decoded-text SHA-256, text adapter version and acquisition time |
+| schema_version, id | Schema version and adapter-scoped ID: `db-json-<replay ID>` for native JSON; `db-<replay ID>` / `db-text-<sha256>` for text |
+| source | Viewer URL/ID, source digest, adapter version and acquisition time |
 | format | Unreviewed profile, banlist and rules identifiers; no inferred format |
 | players | Stable p1/p2 slots and source usernames |
 | coverage | Completeness/review status; hidden-card and physical-copy gaps |
-| source_metadata | Full decoded text and participant names used for conversion |
+| source_metadata | Text and participant names, or selected native JSON data and coverage audit |
 | event_count | Number of observations and turn headers |
 | events | Ordered `{sequence, path, sha256}` file references |
 
@@ -22,7 +22,7 @@ UTF-8. The folder is a readable storage path; the manifest holds the source ID.
 | game | Sequential game, incremented on a later Turn 1 header |
 | kind | Observational grouping such as summon, move, phase or unclassified |
 | actor | p1/p2 when the speaker identifies a player; otherwise null |
-| payload | Literal message/header, raw line, original line number and observed annotations |
+| payload | Text message/line references, or literal `native` play structure plus observed annotations |
 
 Timestamped payloads retain elapsed seconds, username and current observed turn.
 Turn headers retain the original optional Game label, which may differ from the
@@ -33,7 +33,7 @@ invented.
 `kind` does not assert a legal action, effect resolution or priority window.
 Match logs contain hidden information and outcomes; the full bundle is reviewer
 data and must never enter a player prompt. `restore_source` validates the bundle
-and returns its complete decoded source text.
+and returns its complete decoded source text or a copy of its selected native JSON.
 
 The source hash covers decoded UTF-8 text after optional BOM removal. Event
 hashes cover stored canonical JSON bytes including the final newline. Checkouts
@@ -47,5 +47,10 @@ must resolve card instances and check historical card text and rules before
 producing a harness state. Machine-readable definitions are in [schemas](../schemas);
 Python validation additionally verifies hashes and source derivation.
 
-Only the `duelingbook-text-v1` adapter is supported. Legacy API-observation bundles
-must be reimported from copied text; they are rejected rather than misinterpreted.
+The supported adapters are `duelingbook-text-v1` and `duelingbook-json-v1`.
+For JSON, the source digest covers canonical selected gameplay JSON, not raw
+uploaded whitespace. Native entries retain source order, nullable elapsed time,
+batched logs/card definitions and literal runtime references. Read
+[native JSON importing](native-json.md) before resolving references or filtering
+private data. Separate adapter IDs prevent old text sequences from becoming
+native JSON sequences silently. Legacy API-observation adapters remain rejected.

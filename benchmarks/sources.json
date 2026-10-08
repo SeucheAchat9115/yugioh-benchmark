@@ -2,18 +2,47 @@
   "schema_version": "1.0",
   "sources": [
     {
-      "replay": "db-40753-85958923",
-      "fixture": "fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt",
-      "bundle": "replays/db-text-aco77-sdesowitz02-2026-10-07",
-      "candidates": "benchmarks/candidates/aco77-sdesowitz02-2026-10-07.json",
+      "replay": "db-json-40753-85958923",
+      "fixture": "fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.json",
+      "bundle": "replays/db-json-40753-85958923",
+      "candidates": "benchmarks/candidates/aco77-sdesowitz02-2026-10-07-native.json",
       "source_url": "https://www.duelingbook.com/replay?id=40753-85958923",
-      "payload_sha256": "ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
-      "adapter": "duelingbook-text-v1",
+      "payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
+      "uploaded_payload_sha256": "4f797fc6efc9f0d1802819c220f2f0c22256cf86c7751a2a766a6660254bb7ff",
+      "fixture_sha256": "5eee6f1a372aa321d7f6a4a0e48438b91c2ff73114a170e68723d73a53fc1fda",
+      "adapter": "duelingbook-json-v1",
       "review_status": "unreviewed",
-      "event_count": 565,
+      "event_count": 554,
       "game_count": 2,
-      "candidate_count": 159,
-      "approved_cases": []
+      "candidate_count": 174,
+      "approved_cases": [],
+      "source_selection": "native JSON primary; original text retained as a companion with separate event numbering",
+      "companion_text": {
+        "replay": "db-40753-85958923",
+        "fixture": "fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt",
+        "bundle": "replays/db-text-aco77-sdesowitz02-2026-10-07",
+        "candidates": "benchmarks/candidates/aco77-sdesowitz02-2026-10-07.json",
+        "source_url": "https://www.duelingbook.com/replay?id=40753-85958923",
+        "payload_sha256": "ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+        "adapter": "duelingbook-text-v1",
+        "review_status": "unreviewed",
+        "event_count": 565,
+        "game_count": 2,
+        "candidate_count": 159,
+        "approved_cases": []
+      },
+      "card_metadata": "benchmarks/card-metadata/db-json-40753-85958923.json",
+      "format_declaration": {
+        "label": "Perfect Circle 2007",
+        "provenance": "user correction in conversation on 2026-10-08",
+        "status": "user_declared_format_reference_found_rules_review_pending",
+        "rules_reference": "https://www.formatlibrary.com/formats/perfect-circle",
+        "banlist_reference": "https://www.formatlibrary.com/formats/perfect-circle",
+        "card_text_version": null,
+        "reviewed": false,
+        "user_wording": "perfect cycle 2007",
+        "banlist_candidate": "September 2007"
+      }
     }
   ]
 }
