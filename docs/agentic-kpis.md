@@ -88,10 +88,12 @@ pending and block a final score. A missing KPI also blocks the final score.
 
 The supplied native JSON replay is linked as `db-json-40753-85958923`.
 Its export labels the format
-Unlimited. The user identifies it as Perfect Circle 2007. The declaration and
-[September 2007 format reference](https://www.formatlibrary.com/formats/perfect-circle)
-are recorded separately; exact card pool, historical rules and pre-errata texts
-still require review. Do not infer
+Unlimited. The user identifies it as Perfect Circle 2007. The declaration and a
+[pinned harness rules profile](https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/perfect-circle.md)
+are recorded separately. The registry also pins the dated banlist. Complete
+historical text overrides and the replay’s state/rules application still need
+review; these reference-file hashes do not substitute for the assembled rules
+and card-text hashes required by a KPI case. Do not infer
 Edison, Goat or Advanced from its cards. Its states and decision boundaries still
 need review. The native export supplies both players’ private draw logs and
 absolute LP updates, but complete named decklists and reviewed checkpoints remain
