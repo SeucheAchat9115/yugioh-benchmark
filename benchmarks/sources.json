@@ -11,11 +11,20 @@
       "uploaded_payload_sha256": "4f797fc6efc9f0d1802819c220f2f0c22256cf86c7751a2a766a6660254bb7ff",
       "fixture_sha256": "5eee6f1a372aa321d7f6a4a0e48438b91c2ff73114a170e68723d73a53fc1fda",
       "adapter": "duelingbook-json-v1",
-      "review_status": "unreviewed",
+      "review_status": "four_scoped_set_checkpoints_approved_whole_match_review_pending",
       "event_count": 554,
       "game_count": 2,
       "candidate_count": 174,
-      "approved_cases": [],
+      "approved_cases": [
+        "db-json-40753-85958923-before-000334-state",
+        "db-json-40753-85958923-before-000334-choice",
+        "db-json-40753-85958923-before-000335-state",
+        "db-json-40753-85958923-before-000335-choice",
+        "db-json-40753-85958923-before-000336-state",
+        "db-json-40753-85958923-before-000336-choice",
+        "db-json-40753-85958923-before-000337-state",
+        "db-json-40753-85958923-before-000337-choice"
+      ],
       "source_selection": "selected native JSON gameplay export",
       "card_metadata": "benchmarks/card-metadata/db-json-40753-85958923.json",
       "format_declaration": {
@@ -41,7 +50,8 @@
         "reference_event": "SJC Orlando, 2008-01-26",
         "historical_card_text_overrides_complete": false,
         "replay_legality_reviewed": false
-      }
+      },
+      "review_dataset": "benchmarks/review/db-json-40753-85958923/manifest.json"
     }
   ]
 }

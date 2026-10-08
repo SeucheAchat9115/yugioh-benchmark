@@ -8,7 +8,7 @@
   },
   "source_replay": "db-json-40753-85958923",
   "source_rules_status": "Perfect Circle profile and dated TCG-pool banlist documented in a pinned harness commit; complete historical text overrides and replay states/legality still require review",
-  "case_preparation_status": "pending review",
+  "case_preparation_status": "whole_match_index_prepared_four_scoped_checkpoints_approved",
   "current_agentic_score": null,
   "last_pilot": {
     "date": "2026-10-08",
@@ -54,5 +54,8 @@
     "reference_event": "SJC Orlando, 2008-01-26",
     "historical_card_text_overrides_complete": false,
     "replay_legality_reviewed": false
-  }
+  },
+  "reviewed_suite": "benchmarks/review/db-json-40753-85958923/suite.json",
+  "preparation_report": "docs/replay-review-stage.md",
+  "whole_match_review_completed": false
 }
