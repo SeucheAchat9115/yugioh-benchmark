@@ -3,17 +3,9 @@ import json
 from pathlib import Path
 
 from .benchmark import score_results
-from .inputs import MAX_INPUT_BYTES, read_input
-from .replay import convert, load_bundle, write_bundle
+from .inputs import read_text
+from .replay import load_bundle, write_bundle
 from .text_log import convert_text, decision_candidates
-
-
-def read_text(path):
-    with path.open('rb') as stream:
-        raw = stream.read(MAX_INPUT_BYTES + 1)
-    if len(raw) > MAX_INPUT_BYTES:
-        raise ValueError('Input exceeds 64 MiB')
-    return raw.decode('utf-8-sig')
 
 
 def summary(replay):
@@ -28,11 +20,6 @@ def summary(replay):
 def main():
     parser = argparse.ArgumentParser(description='Convert DuelingBook observations and score reviewed decisions')
     commands = parser.add_subparsers(dest='command', required=True)
-    command = commands.add_parser('convert')
-    command.add_argument('input', type=Path)
-    command.add_argument('--source', required=True)
-    command.add_argument('--output', required=True, type=Path)
-    command.add_argument('--retrieved-at')
     for name in ('convert-text', 'import-texts'):
         command = commands.add_parser(name)
         command.add_argument('input', type=Path)
@@ -75,10 +62,7 @@ def main():
                 write_bundle(replay, args.output/identity)
             output = [summary(replay) for replay in replays.values()]
         else:
-            if args.command == 'convert':
-                replay = convert(read_input(args.input, args.source), args.source, args.retrieved_at)
-                write_bundle(replay, args.output)
-            elif args.command == 'convert-text':
+            if args.command == 'convert-text':
                 replay = convert_text(read_text(args.input), args.source, args.retrieved_at, args.players)
                 write_bundle(replay, args.output)
             else:

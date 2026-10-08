@@ -34,7 +34,7 @@ game says `Game 1`; its sequential bundle game is 2.
 
 The full decoded source, including date, blanks, unknown lines and search footer,
 is stored in `source_metadata.text`. `replay.restore_source` returns that string
-for text bundles and a JSON object for API bundles. Loading verifies both source
+for text bundles. Loading verifies both source
 digest and derived annotations by reconversion, as well as individual event
 hashes. When the URL is unknown, `source.url` and `source.replay_id` are null and
 the ID is `db-text-<sha256>`. An explicitly supplied Duelingbook ID/URL uses the

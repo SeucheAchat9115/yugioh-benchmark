@@ -9,11 +9,9 @@ description = "DuelingBook replay conversion and reviewed decision benchmarks fo
 requires-python = ">=3.11"
 dependencies = []
 
-[project.optional-dependencies]
-capture = ["playwright>=1.45,<2"]
-
 [project.scripts]
 yugioh-benchmark = "yugioh_benchmark.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+

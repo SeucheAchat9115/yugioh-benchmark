@@ -7,5 +7,5 @@ dist/
 imports/
 inspection/
 runs/
-*.har
 harness-source/
+
