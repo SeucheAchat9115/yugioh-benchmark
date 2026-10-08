@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "id": "db-json-40753-85958923-before-000470",
-  "runnable": false,
+  "runnable": true,
   "player_context": {
     "perspective": "agent",
     "state": {
@@ -16,7 +16,7 @@
       "revision": 0,
       "pending_decision": {
         "actor": "agent",
-        "window": "unreviewed_observation"
+        "window": "main_phase_action"
       },
       "players": {
         "agent": {
@@ -447,9 +447,891 @@
     },
     "decision": {
       "actor": "agent",
-      "window": "unreviewed_observation"
+      "window": "main_phase_action"
     },
     "recent_events": [
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Chose to go first"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-329",
+        "kind": "draw",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-330",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-331",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Standby Phase"
+      },
+      {
+        "id": "prior-332",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Main Phase 1"
+      },
+      {
+        "id": "prior-333",
+        "kind": "shuffle",
+        "actor": "Aco77",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-334",
+        "kind": "set",
+        "actor": "Aco77",
+        "summary": "Set card from hand (4/6) to M-3"
+      },
+      {
+        "id": "prior-335",
+        "kind": "set",
+        "actor": "Aco77",
+        "summary": "Set card from hand (5/5) to S-3"
+      },
+      {
+        "id": "prior-336",
+        "kind": "set",
+        "actor": "Aco77",
+        "summary": "Set card from hand (3/4) to S-4"
+      },
+      {
+        "id": "prior-337",
+        "kind": "set",
+        "actor": "Aco77",
+        "summary": "Set card from hand (2/3) to S-2"
+      },
+      {
+        "id": "prior-338",
+        "kind": "turn",
+        "actor": "Aco77",
+        "summary": "Ended turn"
+      },
+      {
+        "id": "prior-339",
+        "kind": "turn",
+        "actor": "sdesowitz02",
+        "summary": "Entered Draw Phase"
+      },
+      {
+        "id": "prior-340",
+        "kind": "draw",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-341",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Standby Phase"
+      },
+      {
+        "id": "prior-342",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Main Phase 1"
+      },
+      {
+        "id": "prior-343",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-344",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Activated \"Destiny Draw\" from hand (5/6) to S-3"
+      },
+      {
+        "id": "prior-345",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"Destiny HERO - Dasher\" from hand (3/5) to GY"
+      },
+      {
+        "id": "prior-346",
+        "kind": "communication",
+        "actor": "sdesowitz02",
+        "summary": "Signaled OK"
+      },
+      {
+        "id": "prior-347",
+        "kind": "communication",
+        "actor": "Aco77",
+        "summary": "Signaled OK"
+      },
+      {
+        "id": "prior-348",
+        "kind": "draw",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-349",
+        "kind": "draw",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-350",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"Destiny Draw\" from S-3 to GY"
+      },
+      {
+        "id": "prior-351",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-352",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Activated \"E - Emergency Call\" from hand (4/6) to S-3"
+      },
+      {
+        "id": "prior-353",
+        "kind": "communication",
+        "actor": "Aco77",
+        "summary": "Signaled OK"
+      },
+      {
+        "id": "prior-354",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Declared effect of \"E - Emergency Call\" in S-3"
+      },
+      {
+        "id": "prior-355",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed deck"
+      },
+      {
+        "id": "prior-356",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Added \"Elemental HERO Stratos\" from Deck to hand"
+      },
+      {
+        "id": "prior-357",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing Deck"
+      },
+      {
+        "id": "prior-358",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled deck"
+      },
+      {
+        "id": "prior-359",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"E - Emergency Call\" from S-3 to GY"
+      },
+      {
+        "id": "prior-360",
+        "kind": "summon",
+        "actor": "sdesowitz02",
+        "summary": "Normal Summoned \"Elemental HERO Stratos\" from hand (3/6) to M-3"
+      },
+      {
+        "id": "prior-361",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Declared effect of \"Elemental HERO Stratos\" in M-3"
+      },
+      {
+        "id": "prior-362",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed GY"
+      },
+      {
+        "id": "prior-363",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing GY"
+      },
+      {
+        "id": "prior-364",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed deck"
+      },
+      {
+        "id": "prior-365",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Added \"Destiny HERO - Diamond Dude\" from Deck to hand"
+      },
+      {
+        "id": "prior-366",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing Deck"
+      },
+      {
+        "id": "prior-367",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled deck"
+      },
+      {
+        "id": "prior-368",
+        "kind": "set",
+        "actor": "sdesowitz02",
+        "summary": "Set card from hand (4/6) to S-3"
+      },
+      {
+        "id": "prior-369",
+        "kind": "set",
+        "actor": "sdesowitz02",
+        "summary": "Set card from hand (4/5) to S-4"
+      },
+      {
+        "id": "prior-370",
+        "kind": "set",
+        "actor": "sdesowitz02",
+        "summary": "Set card from hand (3/4) to S-2"
+      },
+      {
+        "id": "prior-371",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Battle Phase"
+      },
+      {
+        "id": "prior-372",
+        "kind": "attack",
+        "actor": "sdesowitz02",
+        "summary": "Attacked Set card in M-3 with \"Elemental HERO Stratos\" in M-3"
+      },
+      {
+        "id": "prior-373",
+        "kind": "move",
+        "actor": "Aco77",
+        "summary": "Banished Set \"D.D. Warrior Lady\" from M-3"
+      },
+      {
+        "id": "prior-374",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Banished \"Elemental HERO Stratos\" from M-3"
+      },
+      {
+        "id": "prior-375",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Main Phase 2"
+      },
+      {
+        "id": "prior-376",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered End Phase"
+      },
+      {
+        "id": "prior-377",
+        "kind": "turn",
+        "actor": "sdesowitz02",
+        "summary": "Ended turn"
+      },
+      {
+        "id": "prior-378",
+        "kind": "turn",
+        "actor": "Aco77",
+        "summary": "Entered Draw Phase"
+      },
+      {
+        "id": "prior-379",
+        "kind": "draw",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-380",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Standby Phase"
+      },
+      {
+        "id": "prior-381",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Main Phase 1"
+      },
+      {
+        "id": "prior-382",
+        "kind": "shuffle",
+        "actor": "Aco77",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-383",
+        "kind": "shuffle",
+        "actor": "Aco77",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-384",
+        "kind": "summon",
+        "actor": "Aco77",
+        "summary": "Normal Summoned \"Breaker the Magical Warrior\" from hand (3/3) to M-3"
+      },
+      {
+        "id": "prior-385",
+        "kind": "communication",
+        "actor": "sdesowitz02",
+        "summary": "Signaled OK"
+      },
+      {
+        "id": "prior-386",
+        "kind": "activation_observation",
+        "actor": "Aco77",
+        "summary": "Declared effect of \"Breaker the Magical Warrior\" in M-3"
+      },
+      {
+        "id": "prior-387",
+        "kind": "field_observation",
+        "actor": "Aco77",
+        "summary": "Pointed at Set card in S-4"
+      },
+      {
+        "id": "prior-388",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Activated Set \"Mystical Space Typhoon\" in S-4"
+      },
+      {
+        "id": "prior-389",
+        "kind": "field_observation",
+        "actor": "sdesowitz02",
+        "summary": "Pointed at Set card in S-4"
+      },
+      {
+        "id": "prior-390",
+        "kind": "move",
+        "actor": "Aco77",
+        "summary": "Sent Set \"Dark Bribe\" from S-4 to GY"
+      },
+      {
+        "id": "prior-391",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Battle Phase"
+      },
+      {
+        "id": "prior-392",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"Mystical Space Typhoon\" from S-4 to GY"
+      },
+      {
+        "id": "prior-393",
+        "kind": "attack",
+        "actor": "Aco77",
+        "summary": "Attacked directly with \"Breaker the Magical Warrior\" in M-3"
+      },
+      {
+        "id": "prior-394",
+        "kind": "lp",
+        "actor": "sdesowitz02",
+        "summary": "Lost 1600 LP"
+      },
+      {
+        "id": "prior-395",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Main Phase 2"
+      },
+      {
+        "id": "prior-396",
+        "kind": "activation_observation",
+        "actor": "Aco77",
+        "summary": "Activated \"Dimensional Fissure\" from hand (1/2) to S-4"
+      },
+      {
+        "id": "prior-397",
+        "kind": "turn",
+        "actor": "Aco77",
+        "summary": "Ended turn"
+      },
+      {
+        "id": "prior-398",
+        "kind": "turn",
+        "actor": "sdesowitz02",
+        "summary": "Entered Draw Phase"
+      },
+      {
+        "id": "prior-399",
+        "kind": "draw",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-400",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Standby Phase"
+      },
+      {
+        "id": "prior-401",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Main Phase 1"
+      },
+      {
+        "id": "prior-402",
+        "kind": "result_observation",
+        "actor": "sdesowitz02",
+        "summary": "Lost connection"
+      },
+      {
+        "id": "prior-404",
+        "kind": "communication",
+        "actor": "sdesowitz02",
+        "summary": "Rejoined duel"
+      },
+      {
+        "id": "prior-405",
+        "kind": "communication",
+        "actor": "Duelingbook",
+        "summary": "The game can resume"
+      },
+      {
+        "id": "prior-406",
+        "kind": "communication",
+        "actor": "sdesowitz02",
+        "summary": "\"my god the lag\""
+      },
+      {
+        "id": "prior-407",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-408",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Activated \"Brain Control\" from hand (1/4) to S-4"
+      },
+      {
+        "id": "prior-409",
+        "kind": "lp",
+        "actor": "sdesowitz02",
+        "summary": "Lost 800 LP"
+      },
+      {
+        "id": "prior-410",
+        "kind": "field_observation",
+        "actor": "sdesowitz02",
+        "summary": "Pointed at \"Breaker the Magical Warrior\" in M-3"
+      },
+      {
+        "id": "prior-411",
+        "kind": "move",
+        "actor": "Aco77",
+        "summary": "Moved \"Breaker the Magical Warrior\" from M-3 to M2-3"
+      },
+      {
+        "id": "prior-412",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"Brain Control\" from S-4 to GY"
+      },
+      {
+        "id": "prior-413",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Activated Set \"Monster Gate\" in S-2"
+      },
+      {
+        "id": "prior-414",
+        "kind": "communication",
+        "actor": "Aco77",
+        "summary": "Signaled OK"
+      },
+      {
+        "id": "prior-415",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Banished \"Breaker the Magical Warrior\" from M-3"
+      },
+      {
+        "id": "prior-416",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Magical Stone Excavation\" from top of deck"
+      },
+      {
+        "id": "prior-417",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Twister\" from top of deck"
+      },
+      {
+        "id": "prior-418",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Divine Sword - Phoenix Blade\" from top of deck"
+      },
+      {
+        "id": "prior-419",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Heavy Storm\" from top of deck"
+      },
+      {
+        "id": "prior-420",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Destiny HERO - Plasma\" from top of deck"
+      },
+      {
+        "id": "prior-421",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed GY"
+      },
+      {
+        "id": "prior-422",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Banished \"Destiny HERO - Plasma\" from GY"
+      },
+      {
+        "id": "prior-423",
+        "kind": "information_observation",
+        "actor": "Aco77",
+        "summary": "Viewed Opponent's Graveyard"
+      },
+      {
+        "id": "prior-424",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing GY"
+      },
+      {
+        "id": "prior-425",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Trade-In\" from top of deck"
+      },
+      {
+        "id": "prior-426",
+        "kind": "information_observation",
+        "actor": "Aco77",
+        "summary": "Stopped viewing Opponent's GY"
+      },
+      {
+        "id": "prior-427",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Dimension Fusion\" from top of deck"
+      },
+      {
+        "id": "prior-428",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Return from the Different Dimension\" from top of deck"
+      },
+      {
+        "id": "prior-429",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Trade-In\" from top of deck"
+      },
+      {
+        "id": "prior-430",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Royal Decree\" from top of deck"
+      },
+      {
+        "id": "prior-431",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Royal Decree\" from top of deck"
+      },
+      {
+        "id": "prior-432",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Destiny Draw\" from top of deck"
+      },
+      {
+        "id": "prior-433",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Reinforcement of the Army\" from top of deck"
+      },
+      {
+        "id": "prior-434",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Monster Gate\" from top of deck"
+      },
+      {
+        "id": "prior-435",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Reasoning\" from top of deck"
+      },
+      {
+        "id": "prior-436",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Milled \"Strike Ninja\" from top of deck"
+      },
+      {
+        "id": "prior-437",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed GY"
+      },
+      {
+        "id": "prior-438",
+        "kind": "summon",
+        "actor": "sdesowitz02",
+        "summary": "Special Summoned \"Strike Ninja\" from GY to M-3 (ATK)"
+      },
+      {
+        "id": "prior-439",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing GY"
+      },
+      {
+        "id": "prior-440",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"Monster Gate\" from S-2 to GY"
+      },
+      {
+        "id": "prior-441",
+        "kind": "information_observation",
+        "actor": "Aco77",
+        "summary": "Viewed Opponent's Graveyard"
+      },
+      {
+        "id": "prior-442",
+        "kind": "information_observation",
+        "actor": "Aco77",
+        "summary": "Stopped viewing Opponent's GY"
+      },
+      {
+        "id": "prior-443",
+        "kind": "activation_observation",
+        "actor": "sdesowitz02",
+        "summary": "Activated \"Card Destruction\" from hand (3/3) to S-4"
+      },
+      {
+        "id": "prior-444",
+        "kind": "move",
+        "actor": "Aco77",
+        "summary": "Banished \"Mobius the Frost Monarch\" from hand (1/1)"
+      },
+      {
+        "id": "prior-445",
+        "kind": "draw",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-446",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Banished \"Destiny HERO - Diamond Dude\" from hand (2/2)"
+      },
+      {
+        "id": "prior-447",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Banished \"Dark Magician of Chaos\" from hand (1/1)"
+      },
+      {
+        "id": "prior-448",
+        "kind": "draw",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-449",
+        "kind": "draw",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-450",
+        "kind": "move",
+        "actor": "sdesowitz02",
+        "summary": "Sent \"Card Destruction\" from S-4 to GY"
+      },
+      {
+        "id": "prior-451",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-452",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed GY"
+      },
+      {
+        "id": "prior-453",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing GY"
+      },
+      {
+        "id": "prior-454",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Battle Phase"
+      },
+      {
+        "id": "prior-455",
+        "kind": "attack",
+        "actor": "sdesowitz02",
+        "summary": "Attacked directly with \"Strike Ninja\" in M-3"
+      },
+      {
+        "id": "prior-456",
+        "kind": "lp",
+        "actor": "Aco77",
+        "summary": "Lost 1700 LP"
+      },
+      {
+        "id": "prior-457",
+        "kind": "information_observation",
+        "actor": "Aco77",
+        "summary": "Viewed Opponent's Graveyard"
+      },
+      {
+        "id": "prior-458",
+        "kind": "information_observation",
+        "actor": "Aco77",
+        "summary": "Stopped viewing Opponent's GY"
+      },
+      {
+        "id": "prior-459",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Viewed Opponent's Banished"
+      },
+      {
+        "id": "prior-460",
+        "kind": "information_observation",
+        "actor": "sdesowitz02",
+        "summary": "Stopped viewing Opponent's Banished"
+      },
+      {
+        "id": "prior-461",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered Main Phase 2"
+      },
+      {
+        "id": "prior-462",
+        "kind": "phase",
+        "actor": "sdesowitz02",
+        "summary": "Entered End Phase"
+      },
+      {
+        "id": "prior-463",
+        "kind": "turn",
+        "actor": "sdesowitz02",
+        "summary": "Ended turn"
+      },
+      {
+        "id": "prior-464",
+        "kind": "turn",
+        "actor": "Aco77",
+        "summary": "Entered Draw Phase"
+      },
+      {
+        "id": "prior-465",
+        "kind": "draw",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
       {
         "id": "prior-466",
         "kind": "phase",
@@ -777,11 +1659,11 @@
     "guides": {},
     "context_version": "compact-v1",
     "context_limits": {
-      "recent_events": 4,
+      "recent_events": 151,
       "guide_chars_per_deck": 1200,
       "card_text": "visible hands, board, GYs, banished and pending effects; Extra/Side text on explicit focus",
       "details": "orchestrator can request full duel_context or focused duel_agent_context before dispatch",
-      "checkpoint_scope": "single next action; unseen identities and chain/effect bookkeeping need review outside approved set cases"
+      "checkpoint_scope": "Reviewed fixed checkpoint: one action initiation, before opponent response; unknown deck/Fusion/Side identities and historical-dependent alternatives remain unavailable."
     }
   }
 }

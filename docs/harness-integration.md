@@ -3,8 +3,9 @@
 The intended benchmark has [three equally weighted KPIs](agentic-kpis.md): state
 recreation, human-move agreement and format-specific rule correctness. GPT-6.1
 Sol is the configured evaluation target. The combined scorer is implemented;
-[four scoped replay checkpoints](replay-review-stage.md) are prepared; an actual
-model run remains pending.
+[18 scoped replay checkpoints](replay-review-stage.md) are prepared; an actual
+model run on this expanded suite remains pending. The original four-checkpoint
+cooperative pilot has completed; its result does not apply to these 18 positions.
 
 For live evaluation, use the harness's existing orchestrator and sole moderator
 writer to collect model attempts, reviewed action records and authoritative

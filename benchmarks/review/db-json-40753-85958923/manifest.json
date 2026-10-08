@@ -1,30 +1,30 @@
 {
   "schema_version": "1.0",
-  "id": "db-json-40753-85958923-whole-match-review-v1",
+  "id": "db-json-40753-85958923-whole-match-review-v2",
   "source_replay": "db-json-40753-85958923",
   "source_payload_sha256": "d6cb9929bb5b3093ad4dfc47d6c5875be0b875c101f7a816950e04e3384d0356",
   "source_events": 554,
   "games": 2,
   "decision_work_items": 207,
   "status_counts": {
-    "pending_review": 185,
-    "excluded": 18,
-    "approved_scoped": 4
+    "reviewed_blocked": 94,
+    "excluded": 95,
+    "approved_scoped": 18
   },
-  "player_packets": 189,
-  "approved_checkpoints": 4,
-  "suite_cases": 8,
+  "player_packets": 112,
+  "approved_checkpoints": 18,
+  "suite_cases": 36,
   "kpi_denominators": {
-    "state_recreation": 4,
-    "human_move_agreement": 4,
-    "rule_correctness": 8
+    "state_recreation": 18,
+    "human_move_agreement": 18,
+    "rule_correctness": 36
   },
   "whole_game_fully_reviewed": false,
   "whole_game_model_run_completed": false,
   "suite": "suite.json",
   "harness_commit": "d3f5a4193cdc81dea033742f9c639b63f21427eb",
   "reviewer": "Codex evaluator preparation review, 2026-10-08; not an external human certification",
-  "scope": "Full observed-match preparation index plus four scoped opening checkpoints; not a full autonomous match or win rate",
+  "scope": "All 185 previous pending work items received a disposition; scoped fixed-checkpoint actions only, not full match execution",
   "unknowns": [
     "Unobserved deck/Extra/Side names/order",
     "Runtime lineage through shuffles",
@@ -47,5 +47,9 @@
     "profile_sha256": "75c9ae2952d5e0f787dcaf4c12626701639e37137f75a004a14f0371809f1859",
     "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
     "card_metadata": "../../card-metadata/db-json-40753-85958923.json"
-  }
+  },
+  "reviewed_previous_pending": 185,
+  "review_decisions": "review-decisions.json",
+  "review_decisions_sha256": "86d02228e7e5dfbb1b18798e67440b64f45a48f54b359bd85c20c6037e80c998",
+  "disposition_pass_completed": true
 }

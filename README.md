@@ -46,13 +46,15 @@ LP updates. The [source registry](benchmarks/sources.json) links the JSON fixtur
 bundle, hashes, card references and review candidates. Its identity is
 `db-json-40753-85958923`.
 
-The [whole-match review stage](docs/replay-review-stage.md) indexes 207 work
-items across both games. Four simple setting checkpoints are approved for a
-small eight-task suite; the other positions remain pending or excluded.
-**No model score has been measured on this suite.** The user identifies this
-match as **Perfect Circle 2007**. The registry links the September 2007 format
-reference; its exact card pool, historical rules and pre-errata texts still need
-review. The export itself labels the game Unlimited.
+The [whole-match review](docs/replay-review-stage.md) covers all 207 work items
+across both games. All 185 previously pending items now have dispositions:
+14 newly approved, 77 excluded as bookkeeping/substeps and 94 reviewed but blocked.
+The suite has **18 scoped checkpoints and 36 tasks**, including the original four.
+These are independent resets, not an uninterrupted match. The earlier four-position
+cooperative pilot scored 70.83%; **the expanded suite has not been run**. Neither
+result establishes competitive strength. The user identifies the match as
+**Perfect Circle 2007**; historical-text-dependent cases remain provisional and
+the native export itself labels the game Unlimited.
 
 For each new match, open the browser inspector’s **Network → Fetch/XHR** tab,
 reload the replay and copy the complete **`view-replay` JSON response** to a file.

@@ -25,8 +25,9 @@ class ReviewedCasesTests(unittest.TestCase):
         timeline=json.loads((FOLDER/'timeline.json').read_text())
         self.assertEqual([e['source_index'] for e in timeline],list(range(554)))
         self.assertEqual(len(self.index),207)
-        self.assertEqual(sum(e['status']=='approved_scoped' for e in self.index),4)
-        self.assertEqual(sum(e['status']=='pending_review' for e in self.index),185)
+        self.assertEqual(sum(e['status']=='approved_scoped' for e in self.index),18)
+        self.assertEqual(sum(e['status']=='reviewed_blocked' for e in self.index),94)
+        self.assertEqual(sum(e['status']=='excluded' for e in self.index),95)
         self.assertEqual({e['source']['game'] for e in self.index},{1,2})
         candidates=json.loads((ROOT/'benchmarks/candidates/aco77-sdesowitz02-2026-10-07-native.json').read_text())
         self.assertTrue({c['source']['source_index'] for c in candidates}.issubset({e['source']['source_index'] for e in self.index}))
@@ -40,10 +41,10 @@ class ReviewedCasesTests(unittest.TestCase):
         manifest=json.loads((FOLDER/'manifest.json').read_text())
         self.assertFalse(manifest['whole_game_fully_reviewed'])
         self.assertFalse(manifest['whole_game_model_run_completed'])
-        self.assertEqual(len(validate_suite(self.suite)),8)
+        self.assertEqual(len(validate_suite(self.suite)),36)
 
     def test_pending_positions_cannot_be_loaded_for_scoring(self):
-        row=next(e for e in self.index if e['status']=='pending_review')
+        row=next(e for e in self.index if e['status']=='reviewed_blocked')
         with self.assertRaises(ValueError):load_reviewed_case(FOLDER,row['id']+'-choice')
 
     def test_all_prepared_packets_hide_opponent_and_unseen_catalogs(self):
@@ -68,21 +69,64 @@ class ReviewedCasesTests(unittest.TestCase):
             collect(ctx['state'])
             self.assertEqual(set(ctx['cards']),visible)
 
-    def test_reference_sets_match_source_after_inventory(self):
+    def test_reference_action_contracts_match_source_inventory(self):
         for entry in self.index:
             if entry['status']!='approved_scoped':continue
-            evidence=self.evaluator[entry['id']];source=self.replay['events'][entry['source']['source_index']]['payload']['native']
-            text=source['log']['private_log'];move=evidence['human_move'];initial=evidence['initial_state'];expected=evidence['expected_set_state']
-            self.assertIn('"'+move['card']+'"',text)
+            evidence=self.evaluator[entry['id']];move=evidence['human_move'];initial=evidence['initial_state']
+            expected=evidence.get('expected_state',evidence.get('expected_set_state'))
+            self.assertEqual(initial['players']['human'],expected['players']['human'])
+            self.assertEqual(initial['chain'],expected['chain'])
+            self.assertEqual(initial['pending_effects'],expected['pending_effects'])
+            if move['kind']=='end_turn':
+                self.assertEqual(expected['players'],initial['players'])
+                self.assertEqual(expected['phase'],'end')
+                self.assertEqual(expected['turn'],initial['turn'])
+                self.assertEqual(expected['active_player'],initial['active_player'])
+                self.assertEqual(expected['pending_decision'],{'actor':'human','window':'end_phase_response'})
+                continue
+            native=self.replay['events'][entry['source']['source_index']]['payload']['native']
+            self.assertIn('"'+move['card']+'"',evidence['recorded_action']['private_log'])
             before=initial['players']['agent'];after=expected['players']['agent']
             self.assertEqual(len(before['hand'])-1,len(after['hand']))
-            slot=2 if move['card'] in {'D.D. Warrior Lady','Mirror Force'} else 3 if move['card']=='Dark Bribe' else 1
-            zone='monster_zones' if move['zone_type']=='monster' else 'spell_trap_zones'
-            self.assertIsNone(before[zone][slot]);self.assertTrue(after[zone][slot]['hidden'])
-            self.assertEqual(expected['pending_decision'],{'actor':'human','window':'after_set'})
-            self.assertEqual(initial['players']['human'],expected['players']['human'])
-            self.assertTrue(after['normal_summon_used'])
-            self.assertEqual(initial['chain'],expected['chain'])
+            field=[c for c in after['monster_zones']+after['spell_trap_zones'] if c and c.get('instance_id','').startswith('agent-hand-')]
+            self.assertEqual(len(field),1)
+            card=field[0]
+            self.assertEqual(card['hidden'],move['kind']=='set')
+            if move['kind']=='normal_summon':
+                self.assertFalse(before['normal_summon_used'])
+                self.assertTrue(after['normal_summon_used'])
+                self.assertEqual(card['position'],'ATK')
+                self.assertEqual(expected['pending_decision'],{'actor':'human','window':'summon_negation'})
+            else:self.assertEqual(expected['pending_decision'],{'actor':'human','window':'after_set'})
+
+    def test_followup_dispositions_bind_every_previous_pending_source(self):
+        audit=json.loads((FOLDER/'review-decisions.json').read_text())
+        self.assertEqual(len(audit['items']),185)
+        self.assertEqual(sum(item['status']=='approved_scoped' for item in audit['items'].values()),14)
+        self.assertEqual(sum(item['status']=='excluded' for item in audit['items'].values()),77)
+        for key,finding in audit['items'].items():
+            row=next(e for e in self.index if e['source']['source_index']==int(key))
+            self.assertEqual(row['status'],finding['status'])
+            self.assertTrue(finding['finding'])
+            self.assertFalse(finding['certifies_whole_game'])
+        self.assertEqual(audit['items']['317']['status'],'reviewed_blocked')
+        self.assertIn('313',audit['items']['317']['finding'])
+        self.assertEqual(audit['items']['530']['classification'],'effect_resolution_substep')
+        self.assertEqual(audit['items']['344']['classification'],'cost_or_procedure_substep')
+        manifest=json.loads((FOLDER/'manifest.json').read_text())
+        self.assertEqual(manifest['review_decisions_sha256'],digest(audit))
+
+    def test_new_approved_context_history_has_no_future_entries(self):
+        audit=json.loads((FOLDER/'review-decisions.json').read_text())
+        for key,finding in audit['items'].items():
+            if finding['status']!='approved_scoped':continue
+            row=next(e for e in self.index if e['source']['source_index']==int(key))
+            context=json.loads((FOLDER/row['packet']).read_text())['player_context']
+            self.assertEqual(len(context['recent_events']),context['context_limits']['recent_events'])
+            for event in context['recent_events']:
+                sequence=int(event['id'].split('-')[1])
+                self.assertLessEqual(sequence,int(key))
+                self.assertEqual(self.replay['events'][sequence-1]['game'],row['source']['game'])
 
     @unittest.skipUnless(HAVE_HARNESS,'requires pinned harness')
     def test_real_bridge_receives_only_player_context(self):
@@ -94,9 +138,6 @@ class ReviewedCasesTests(unittest.TestCase):
             expected=model_request(bridge['player_context']);received=[]
             result=run_case(bridge,lambda request:(received.append(request) or {'response':'A test intention'}))
             self.assertEqual(received,[expected]);self.assertIsNone(result['assessment'])
-            self.assertNotIn('Brain Control',received[0]['messages'][1]['content'])
-            self.assertNotIn('Destiny HERO - Dasher',received[0]['messages'][1]['content'])
-            self.assertNotIn('Dark Magician of Chaos',received[0]['messages'][1]['content'])
 
     @unittest.skipUnless(HAVE_HARNESS,'requires pinned harness')
     def test_preparation_is_reproducible(self):

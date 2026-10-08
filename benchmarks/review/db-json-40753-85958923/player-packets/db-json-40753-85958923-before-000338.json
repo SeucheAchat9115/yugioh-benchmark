@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "id": "db-json-40753-85958923-before-000338",
-  "runnable": false,
+  "runnable": true,
   "player_context": {
     "perspective": "agent",
     "state": {
@@ -16,7 +16,7 @@
       "revision": 0,
       "pending_decision": {
         "actor": "agent",
-        "window": "unreviewed_observation"
+        "window": "main_phase_action"
       },
       "players": {
         "agent": {
@@ -184,9 +184,105 @@
     },
     "decision": {
       "actor": "agent",
-      "window": "unreviewed_observation"
+      "window": "main_phase_action"
     },
     "recent_events": [
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Chose to go first"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-328",
+        "kind": "setup",
+        "actor": "sdesowitz02",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-329",
+        "kind": "draw",
+        "actor": "Aco77",
+        "summary": "Drew a card"
+      },
+      {
+        "id": "prior-330",
+        "kind": "shuffle",
+        "actor": "sdesowitz02",
+        "summary": "Shuffled hand"
+      },
+      {
+        "id": "prior-331",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Standby Phase"
+      },
+      {
+        "id": "prior-332",
+        "kind": "phase",
+        "actor": "Aco77",
+        "summary": "Entered Main Phase 1"
+      },
+      {
+        "id": "prior-333",
+        "kind": "shuffle",
+        "actor": "Aco77",
+        "summary": "Shuffled hand"
+      },
       {
         "id": "prior-334",
         "kind": "set",
@@ -290,11 +386,11 @@
     "guides": {},
     "context_version": "compact-v1",
     "context_limits": {
-      "recent_events": 4,
+      "recent_events": 20,
       "guide_chars_per_deck": 1200,
       "card_text": "visible hands, board, GYs, banished and pending effects; Extra/Side text on explicit focus",
       "details": "orchestrator can request full duel_context or focused duel_agent_context before dispatch",
-      "checkpoint_scope": "single next action; unseen identities and chain/effect bookkeeping need review outside approved set cases"
+      "checkpoint_scope": "Reviewed fixed checkpoint: one action initiation, before opponent response; unknown deck/Fusion/Side identities and historical-dependent alternatives remain unavailable."
     }
   }
 }

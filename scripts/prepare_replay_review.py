@@ -1,7 +1,7 @@
 """Reproduce selected reviewer fixtures; requires the pinned harness on PYTHONPATH.
 
 This authors checkpoints, not a runtime action/effect engine or an approval bot.
-Only the four explicitly reviewed set boundaries below are approved for scoring.
+Only explicit source-bound evaluator approvals are used; no blanket approval.
 """
 from collections import Counter
 from copy import deepcopy
@@ -33,6 +33,77 @@ PHASES = {'DP':'draw','SP':'standby','M1':'main1','BP':'battle','M2':'main2','EP
 def save(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n',encoding='utf-8')
+
+
+def apply_followup_review(values, packets, records, state_for, context_for, catalog, pinned_rules):
+    """Apply explicit, source-bound evaluator dispositions; never auto-approve."""
+    review_path=FOLDER/'review-decisions.json'
+    audit=json.loads(review_path.read_text())
+    assert audit['source_payload_sha256']==values['manifest']['source_payload_sha256']
+    rows={row['source']['source_index']:row for row in values['review-index']}
+    assert set(map(int,audit['items']))=={i for i,row in rows.items() if row['status']=='pending_review'}
+    for key, finding in audit['items'].items():
+        i=int(key); record=records[i]; row=rows[i]; identity=row['id']
+        assert finding['before_observation_sha256']==digest(record['before'])
+        assert finding['recorded_action_sha256']==digest(record['observed_action'])
+        assert finding['source_payload_sha256']==row['source']['payload_sha256']
+        row['status']=finding['status'];row['review_finding']='review-decisions.json#items/'+key
+        row['blockers']=[] if finding['status']=='approved_scoped' else [finding['finding'],*finding['required_next_steps']]
+        evaluator=values['evaluator'][identity]
+        evaluator.update(review_status=row['status'],blockers=deepcopy(row['blockers']),disposition=deepcopy(finding))
+        if row['status']=='excluded':
+            row['packet']=None;packets.pop(identity,None)
+            evaluator['grading_status']='Excluded from independent action-initiation score; retained as source evidence'
+            continue
+        if row['status']!='approved_scoped':
+            packets[identity]['runnable']=False
+            evaluator['grading_status']='Reviewed and blocked; not eligible for scoring'
+            continue
+        contract=finding['contract'];kind=contract['kind'];chosen=contract['card'];zone=contract['zone'];slot=contract['slot']
+        state,mapping=state_for(record)
+        state['pending_decision']={'actor':'agent','window':'end_phase_action' if state['phase']=='end' else 'main_phase_action'}
+        assert state['active_player']=='agent' and not record['gaps'] and not record['unresolved_prior_source_indexes']
+        context=context_for(record,state,full_history=True)
+        context['context_limits']['checkpoint_scope']='Reviewed fixed checkpoint: one action initiation, before opponent response; unknown deck/Fusion/Side identities and historical-dependent alternatives remain unavailable.'
+        model_request(context)
+        expected=deepcopy(state)
+        if kind in {'set','normal_summon'}:
+            player=state['players']['agent'];matches=[c for c in player['hand'] if c.get('card_id')==catalog[chosen]['id']]
+            assert len(matches)==1 and player[zone][slot] is None and state['phase'] in {'main1','main2'}
+            card=deepcopy(matches[0]);expected['players']['agent']['hand'].remove(card)
+            expected['players']['agent'][zone][slot]=card
+            if kind=='set':
+                card['hidden']=True
+                move={'kind':'set','card':chosen,'zone_type':'spell_trap'}
+                expected['pending_decision']={'actor':'human','window':'after_set'}
+                declared=f'Set {chosen} from my hand face-down in Spell/Trap Zone {slot+1}. Stop with an opponent response decision (actor human, window after_set); do not activate or resolve an effect.'
+            else:
+                assert catalog[chosen]['level']<=4 and not player['normal_summon_used']
+                card.update(hidden=False,position='ATK')
+                expected['players']['agent']['normal_summon_used']=True
+                expected['pending_decision']={'actor':'human','window':'summon_negation'}
+                move={'kind':'normal_summon','card':chosen,'position':'ATK'}
+                declared=f'Attempt to Normal Summon {chosen} from my hand face-up in Attack Position in Monster Zone {slot+1}. Consume the Normal Summon allowance. Stop with an opponent summon-negation decision (actor human, window summon_negation). Do not confirm the summon, create or apply summon-trigger effects, activate an ignition effect, or decide an opponent response.'
+        elif kind=='end_turn':
+            assert state['phase'] in {'main1','main2','end'}
+            expected['phase']='end';expected['pending_decision']={'actor':'human','window':'end_phase_response'}
+            move={'kind':'end_turn'}
+            declared='Request ending my turn. Enter End Phase and stop with an opponent response decision (actor human, window end_phase_response). Do not advance the turn, draw, resolve an effect or decide an opponent response.'
+        else:raise ValueError('Unexpected explicitly reviewed action contract')
+        validate_state(state);validate_state(expected)
+        review={'status':'approved','reviewer':REVIEWER,'date':'2026-10-08','scope':'Observed fixed checkpoint, one basic action initiation only; not prior effect correctness, full deck or continuing match approval','evidence':[finding['finding'],'Own hand, public field, LP and pile inventory checked against pre-boundary observations','No unresolved extractor gap at this boundary; prior resolution outcomes accepted only as observed checkpoint facts','Conditional summon triggers and opponent responses are outside the endpoint'], 'historical_text_dependent_legality':'deferred for alternative effects','full_deck_reviewed':False}
+        packets[identity]={'schema_version':'1.0','id':identity,'runnable':True,'player_context':context}
+        evaluator.update(initial_state=state,expected_state=expected,human_move=move,rules=deepcopy(pinned_rules),review=review,grading_status='Reviewed scoped action initiation',normalization={'ignore':['wording','hand order','nonconsequential empty field slot'],'retain':['action kind','card name','position when relevant']},legality_rubric={'reference':'Basic action initiation under Perfect Circle profile; preserve continuous face-up effects and await actual opponent input','other_moves':'Independent legality review required; leave historically dependent or unknown-card alternatives pending','scope':'Observed checkpoint facts do not certify preceding manual effect execution'})
+        if kind=='set':evaluator['expected_set_state']=deepcopy(expected)
+        base={'source':deepcopy(row['source']),'review':review,'initial_state_sha256':digest(state),'rules':deepcopy(pinned_rules),'checkpoint':'evaluator.json#'+identity,'player_packet':row['packet'],'player_context_sha256':digest(context)}
+        values['suite']['cases'] += [{**deepcopy(base),'id':identity+'-state','task':'state_recreation','declared_play':declared,'expected_state':expected},{**deepcopy(base),'id':identity+'-choice','task':'human_move_reproduction','human_move':move}]
+    values['suite']['id']='db-json-40753-85958923-reviewed-actions-v2'
+    values['suite']['cases'].sort(key=lambda c:(c['source']['source_index'],c['task']))
+    validate_suite(values['suite'])
+    counts=dict(Counter(row['status'] for row in values['review-index']))
+    count=counts['approved_scoped']; manifest=values['manifest']
+    manifest.update(id='db-json-40753-85958923-whole-match-review-v2',status_counts=counts,player_packets=len(packets),approved_checkpoints=count,suite_cases=2*count,kpi_denominators={'state_recreation':count,'human_move_agreement':count,'rule_correctness':2*count},scope='All 185 previous pending work items received a disposition; scoped fixed-checkpoint actions only, not full match execution',reviewed_previous_pending=185,review_decisions='review-decisions.json',review_decisions_sha256=digest(audit),disposition_pass_completed=True)
+    return values,packets
 
 
 def prepared():
@@ -119,7 +190,7 @@ available information; do not try to retrieve the source replay or benchmark.
             state['players'][role]=detail
         validate_state(state)
         return state,mapping
-    def context_for(record,state):
+    def context_for(record,state,full_history=False):
         prior=[]
         for event in replay['events'][:record['source_index']]:
             if event['game']!=record['game']: continue
@@ -136,6 +207,9 @@ available information; do not try to retrieve the source replay or benchmark.
                                journal={'events':prior},assets={'rules.md':{'content':public_rules}},
                                configuration=configuration)
         context=DuelRunner.context(runner,'agent',compact=True)
+        if full_history:
+            context['recent_events']=[{'id':event['action']['id'],'kind':event['action']['kind'],'actor':event['action']['actor'],'summary':event['action']['public_summary']} for event in prior]
+            context['context_limits']['recent_events']=len(prior)
         context['context_limits']['checkpoint_scope']='single next action; unseen identities and chain/effect bookkeeping need review outside approved set cases'
         model_request(context)
         return context
@@ -232,12 +306,15 @@ available information; do not try to retrieve the source replay or benchmark.
                   'profile_sha256':hashlib.sha256(profile.encode()).hexdigest(),
                   'banlist_sha256':hashlib.sha256(banlist).hexdigest(),
                   'card_metadata':'../../card-metadata/db-json-40753-85958923.json'}}
-    return {'manifest':manifest,'review-index':index,'timeline':coverage,'evaluator':evaluator,
-            'suite':suite,'rules-snapshot':rules_snapshot,'card-texts':catalog},packets
+    values={'manifest':manifest,'review-index':index,'timeline':coverage,'evaluator':evaluator,
+            'suite':suite,'rules-snapshot':rules_snapshot,'card-texts':catalog}
+    return apply_followup_review(values,packets,records,state_for,context_for,catalog,pinned_rules)
 
 
 def main():
     values,packets=prepared()
+    for path in (FOLDER/'player-packets').glob('*.json'):
+        if path.stem not in packets:path.unlink()
     for name,value in values.items(): save(FOLDER/(('assets/' if name in {'rules-snapshot','card-texts'} else '')+name+'.json'),value)
     for identity,packet in packets.items(): save(FOLDER/'player-packets'/f'{identity}.json',packet)
     print(json.dumps(values['manifest'],indent=2))
