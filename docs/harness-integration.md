@@ -28,6 +28,31 @@ conversion does not depend on it. The trusted model transport must enforce its
 own request timeout and send only the supplied messages, with no inherited
 orchestrator transcript, filesystem access or tools.
 
+For the tested public harness version, keep a sibling checkout:
+
+```sh
+git clone https://github.com/SeucheAchat9115/yugioh-harness.git ../yugioh-harness
+git -C ../yugioh-harness checkout 1d54835a8e239160f8e5dc4f01c8589506669ac0
+```
+
+After installing this benchmark package, run the integration tests with the
+harness on Python's import path. From the benchmark repository on Linux/macOS:
+
+```sh
+PYTHONPATH=../yugioh-harness python -m unittest discover -s tests -v
+```
+
+On Windows PowerShell:
+
+```powershell
+$env:PYTHONPATH = "../yugioh-harness"
+python -m unittest discover -s tests -v
+```
+
+This checkout is optional and public; no GitHub token is needed. The benchmark
+does not bundle the harness. A model transport is still supplied by the caller;
+no provider account, credentials or provider SDK is included.
+
 Cases use `{schema_version, id, source, review, player_context, grading}`;
 `source.before_sequence` identifies the source boundary. `review` includes
 `status: approved` and `reviewer`; keep pinning/reconstruction evidence there.

@@ -1,13 +1,30 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "yugioh-benchmark"
 version = "0.1.0"
 description = "DuelingBook replay conversion and reviewed decision benchmarks for agentic Yu-Gi-Oh"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "SeucheAchat9115"}]
 requires-python = ">=3.11"
 dependencies = []
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/SeucheAchat9115/yugioh-benchmark"
+Issues = "https://github.com/SeucheAchat9115/yugioh-benchmark/issues"
+Documentation = "https://github.com/SeucheAchat9115/yugioh-benchmark/tree/main/docs"
 
 [project.scripts]
 yugioh-benchmark = "yugioh_benchmark.cli:main"
