@@ -6,9 +6,36 @@ well an LLM plays Yu-Gi-Oh through
 The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
-**Status: alpha toolkit.** Text importing and reviewed-case execution are
-implemented; the dataset currently contains no approved, scored decision cases.
+**Status: alpha toolkit.** Text importing, reviewed-case execution and the
+three-KPI artifact scorer are implemented. Reviewed agentic cases and an actual
+model evaluation remain pending; no live agent performance score exists yet.
 This project is independent of Duelingbook and the Yu-Gi-Oh rights holders.
+
+## Agentic benchmark score
+
+The benchmark evaluates an agent working through the harness, with three equally
+weighted KPIs:
+
+| KPI | What it measures | Weight |
+| --- | --- | --- |
+| State recreation | Does the agent orchestrate a player-declared play and produce the correct game state? | ⅓ |
+| Human-move agreement | Does the agent choose the same semantic move as the reviewed human replay? | ⅓ |
+| Rule correctness | Is the agent's play legal under the pinned format, banlist and card text? | ⅓ |
+
+**Final score = the average of the three KPI percentages.** A different legal
+move can pass rule correctness while failing human-move agreement. The selected
+evaluation target is **GPT-6.1 Sol** (`gpt-6.1-sol`); see the
+[evaluation configuration](benchmarks/evaluation-config.json).
+
+Use the existing live harness workflow to collect attempts, authoritative
+journals and independent grades. The [KPI scorer](docs/agentic-kpis.md) consumes
+those artifacts; it does not launch a model or simulate a duel by itself.
+Missing attempts score zero, while unfinished grading blocks a final score.
+Neither the older exact-response scorer nor the **71.5% structural operation
+coverage** is this final score. Even a high task score alone does not establish
+competitive playing strength.
+
+## Replay dataset and importing
 
 The selected [Aco77 vs sdesowitz02 replay](https://www.duelingbook.com/replay?id=40753-85958923)
 is included as a [complete supplied text export](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
@@ -19,7 +46,9 @@ payload digest and candidate index. Its identity is `db-40753-85958923`.
 
 There are currently **no scored decision cases**. Imported observations are
 unreviewed; positions, information visibility, historical rules and decision
-boundaries must be checked before gameplay scoring.
+boundaries must be checked before gameplay scoring. This replay is labelled
+Unlimited; its rules, banlist and card-text version remain unknown. Legality
+evaluation needs cases with an established rules profile.
 
 Supply more matches as copied Duelingbook Chat/Duel/Game text, with each replay
 URL when available. Importing works offline with no runtime dependencies or
@@ -42,13 +71,14 @@ python -m unittest discover -s tests -v
 
 [Offline CI](.github/workflows/ci.yml) tests Python 3.11–3.13 on Linux and Windows and
 checks the filtered benchmark bridge against the pinned harness.
-Replay conversion and saved-result scoring do not require the harness. Running
+Replay conversion and saved exact-response scoring do not require the harness.
+State-recreation KPI scoring requires the harness to verify journals. Running
 an agent through the bridge requires a separate harness checkout and your own
 bounded model transport; see [harness setup](docs/harness-integration.md).
 
 - [Supplying text replays](docs/acquisition.md)
 - [Replay bundle format](docs/replay-format.md)
-- [Text importing and reviewed-suite scoring](docs/text-logs.md)
+- [Text importing and the separate exact-response scorer](docs/text-logs.md)
 - [Preparing harness decision positions](docs/harness-integration.md)
 - [Agentic workflow KPIs and scoring](docs/agentic-kpis.md)
 - [Structural operation regression checks (separate from agent scores)](docs/reproduction.md)

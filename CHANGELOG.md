@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+- Three-KPI artifact scoring with equal weights for state recreation, semantic
+  human-move agreement and independently reviewed rule correctness.
+- GPT-6.1 Sol recorded as the selected evaluation target; reviewed agentic cases
+  and an actual model performance score remain pending.
+- Separate structural harness regression probes with journal replay verification;
+  their operation coverage does not contribute to the agentic score.
+- README and integration guides distinguish the KPI score from literal response
+  agreement and structural coverage.
+
 ## 0.1.0 — initial public toolkit
 
 - Offline conversion of copied Duelingbook duel text, individually or in batches.

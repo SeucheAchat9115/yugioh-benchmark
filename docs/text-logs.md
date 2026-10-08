@@ -54,7 +54,20 @@ windows, grading answers or player prompts. New imports can generate the same
 index with `candidates`; deliberately selected sources can then be added to the
 registry. Keep whole matches together when assigning train/test splits.
 
-## Reviewed decision suites
+## Agentic evaluation
+
+The intended final score is the average of state recreation, human-move agreement
+and rule correctness. See [agentic KPIs](agentic-kpis.md) for the live harness
+workflow and artifact-scoring contract. The target model is GPT-6.1 Sol; reviewed
+cases and its actual evaluation remain pending. Imported text is source evidence,
+not a ready-to-run scored suite. This replay's Unlimited label does not establish
+the rules needed for legality grading.
+
+## Separate exact-response decision suites
+
+The API and command below compare literal responses with approved answers.
+They do not calculate the three-KPI score or perform semantic move normalization,
+state-recreation grading or independent legality grading.
 
 Follow [harness integration](harness-integration.md) to reconstruct and review
 positions. The sample has incomplete hidden information and no pinned rules,

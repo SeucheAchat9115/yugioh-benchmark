@@ -1,8 +1,11 @@
 # Public release preparation
 
-The initial release is an alpha toolkit: importing and reviewed-case execution
-work, but no approved gameplay decision cases ship with the dataset. State this
-when describing results; source observations and candidate counts are not scores.
+The initial release is an alpha toolkit: importing, reviewed-case execution and
+[three-KPI artifact scoring](agentic-kpis.md) work, but no approved agentic cases
+or measured live model score ship with the dataset. The configured target is
+GPT-6.1 Sol, with equal weights for state recreation, human-move agreement and
+rule correctness. State this when describing results; source observations,
+candidate counts and structural operation coverage are not agent performance scores.
 
 ## Publication scope
 
