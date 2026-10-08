@@ -57,7 +57,7 @@ def validate_suite(suite):
         ids.add(identity)
         if not approved(case.get('review')):
             raise ValueError('KPI cases require reviewer approval')
-        if case.get('task') not in {'state_recreation', 'human_move_reproduction'}:
+        if case.get('task') not in {'state_recreation', 'human_move_reproduction', 'rule_correctness'}:
             raise ValueError('Unknown KPI task')
         rules = case.get('rules', {})
         if (any(field not in rules for field in RULE_FIELDS)
@@ -71,7 +71,7 @@ def validate_suite(suite):
             gameplay_state(case.get('expected_state'))
             if not isinstance(case.get('declared_play'), str) or not case['declared_play'].strip():
                 raise ValueError('State recreation requires the player-declared play')
-        else:
+        elif case['task'] == 'human_move_reproduction':
             move = case.get('human_move')
             if not isinstance(move, dict) or not isinstance(move.get('kind'), str) or not move['kind']:
                 raise ValueError('Human reproduction requires a reviewed semantic move signature')
@@ -122,8 +122,11 @@ def score_kpis(suite, run, weights=None):
     outcomes = []
     for case in cases:
         row = results.get(case['id'])
-        primary = 'state_recreation' if case['task'] == 'state_recreation' else 'human_move_agreement'
-        scores = {primary: None, 'rule_correctness': None}
+        primary = {'state_recreation': 'state_recreation',
+                   'human_move_reproduction': 'human_move_agreement'}.get(case['task'])
+        scores = {'rule_correctness': None}
+        if primary is not None:
+            scores[primary] = None
         pending = []
         status = 'missing' if row is None else row.get('status')
         if status not in {'missing', 'timeout', 'completed'}:
@@ -143,7 +146,7 @@ def score_kpis(suite, run, weights=None):
                     if not journal.get('events'):
                         raise ValueError('A declared-play attempt must record its execution')
                     scores[primary] = int(gameplay_state(actual) == gameplay_state(case['expected_state']))
-            else:
+            elif case['task'] == 'human_move_reproduction':
                 review = row.get('move_normalization_review')
                 move = row.get('normalized_move')
                 if not approved(review) or not isinstance(move, dict):

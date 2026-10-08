@@ -10,5 +10,26 @@
   "source_rules_status": "unknown: Unlimited does not identify a rules, banlist or card-text version",
   "case_preparation_status": "pending review",
   "current_agentic_score": null,
-  "structural_operation_coverage_contributes_to_score": false
+  "structural_operation_coverage_contributes_to_score": false,
+  "last_pilot": {
+    "date": "2026-10-08",
+    "format": "edison",
+    "state_recreation": {
+      "passed": 3,
+      "total": 3,
+      "score": 1.0
+    },
+    "human_move_agreement": {
+      "total": 0,
+      "score": null
+    },
+    "rule_correctness": {
+      "passed": 6,
+      "total": 6,
+      "score": 1.0
+    },
+    "final_score_percent": null,
+    "report": "docs/edison-pilot.md",
+    "scope": "assisted workflow micro-position pilot; no full match or replay agreement"
+  }
 }

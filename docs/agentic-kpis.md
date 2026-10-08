@@ -13,7 +13,9 @@ The instructions, harness implementation and reviewed suite are pinned per run.
 Each KPI is passed cases divided by all applicable cases. The final percentage
 is `(state recreation + human-move agreement + rule correctness) / 3`, where the
 three inputs are percentages. For example, 90%, 75% and 95% produce 86.7%.
-This example is illustrative; no agentic score has been measured yet.
+This example is illustrative; no complete three-KPI score has been measured yet.
+The [first Edison pilot](edison-pilot.md) measured two KPIs on six micro-positions;
+human-move agreement and the final score remain unavailable.
 
 A different legal move fails human agreement but passes rule correctness.
 Semantic comparison ignores wording but retains consequential choices such as
@@ -61,6 +63,8 @@ and SHA-256 values for `rules_sha256`, `banlist_sha256`, and `card_text_sha256`.
 - `task: "human_move_reproduction"` requires a reviewed `human_move` dictionary
   with `kind`, and a source reference with `replay`, `before_sequence` and
   `payload_sha256`. Reviewers must verify those source links against the bundle.
+- `task: "rule_correctness"` scores a separately reviewed player choice for
+  legality only. It does not enter state recreation or human-move agreement.
 
 The run records `suite_sha256`, `model`, `agent_instructions_sha256`,
 `harness_fingerprint_sha256` and a `results` list. Each result has `case_id` and
@@ -91,7 +95,7 @@ Known-format cases can supply that KPI without relying on this replay's rules.
 
 The configured target and weights are in `benchmarks/evaluation-config.json`.
 The earlier 71.5% structural operation coverage contributes nothing to this score.
-The scorer is available; reviewed agentic cases and an actual model run remain
-pending. A 99% score would describe performance on these tested tasks. Competitive
+The scorer is available; the replay's reviewed checkpoints and a complete
+three-KPI run remain pending. A 99% score would describe performance on these tested tasks. Competitive
 training suitability additionally needs diverse positions, formats, matchups and
 full games against strong opponents; human-move agreement alone cannot establish it.
