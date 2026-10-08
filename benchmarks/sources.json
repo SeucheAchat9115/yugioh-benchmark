@@ -31,7 +31,16 @@
         "candidate_count": 159,
         "approved_cases": []
       },
-      "card_metadata": "benchmarks/card-metadata/db-json-40753-85958923.json"
+      "card_metadata": "benchmarks/card-metadata/db-json-40753-85958923.json",
+      "format_declaration": {
+        "label": "Disc Commander 2014",
+        "provenance": "user declaration in conversation on 2026-10-08",
+        "status": "user_declared_not_independently_verified",
+        "rules_reference": null,
+        "banlist_reference": null,
+        "card_text_version": null,
+        "reviewed": false
+      }
     }
   ]
 }

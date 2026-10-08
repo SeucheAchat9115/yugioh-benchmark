@@ -88,3 +88,12 @@ candidate counts or old text diagnostic scores as a complete game benchmark.
 explicitly defined here to names and current texts. It is a separate dated
 snapshot; it does not replace this source, name unobserved deck slots or verify
 historical rules. The source registry links the snapshot.
+
+## User-declared format
+
+On 2026-10-08 the user identified this match as **Disc Commander 2014**.
+The source registry and evaluation configuration record that exact declaration
+separately from the export’s literal Unlimited (`uu` / `*`) fields.
+The declaration is not yet bound to a rules reference, dated banlist or historical
+card-text version. Those references remain pending; no alternate year or format
+is silently substituted and legality review stays unapproved.
