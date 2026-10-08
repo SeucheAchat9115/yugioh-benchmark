@@ -7,7 +7,7 @@
     "rule_correctness": 0.3333333333333333
   },
   "source_replay": "db-json-40753-85958923",
-  "source_rules_status": "Perfect Circle 2007 identified by user; September 2007 format reference found; exact card pool, historical rules and card texts still require review",
+  "source_rules_status": "Perfect Circle profile and dated TCG-pool banlist documented in a pinned harness commit; complete historical text overrides and replay states/legality still require review",
   "case_preparation_status": "pending review",
   "current_agentic_score": null,
   "last_pilot": {
@@ -34,12 +34,25 @@
   "source_format_declaration": {
     "label": "Perfect Circle 2007",
     "provenance": "user correction in conversation on 2026-10-08",
-    "status": "user_declared_format_reference_found_rules_review_pending",
-    "rules_reference": "https://www.formatlibrary.com/formats/perfect-circle",
-    "banlist_reference": "https://www.formatlibrary.com/formats/perfect-circle",
+    "status": "format_documented_historical_card_text_and_replay_review_pending",
+    "rules_reference": "https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/perfect-circle.md",
+    "banlist_reference": "https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/banlists/perfect-circle-2007-09-01.json",
     "card_text_version": null,
     "reviewed": false,
     "user_wording": "perfect cycle 2007",
     "banlist_candidate": "September 2007"
+  },
+  "source_rules_profile_reference": {
+    "id": "perfect-circle",
+    "version": "perfect-circle-2026-10-08",
+    "harness_commit": "d3f5a4193cdc81dea033742f9c639b63f21427eb",
+    "profile_url": "https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/perfect-circle.md",
+    "profile_sha256": "75c9ae2952d5e0f787dcaf4c12626701639e37137f75a004a14f0371809f1859",
+    "banlist_url": "https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/banlists/perfect-circle-2007-09-01.json",
+    "banlist_sha256": "bdd5cbbac9af362405f2227c3c34ad65a6323a5095f5589b90e64b6723c9e7e6",
+    "banlist_effective_date": "2007-09-01",
+    "reference_event": "SJC Orlando, 2008-01-26",
+    "historical_card_text_overrides_complete": false,
+    "replay_legality_reviewed": false
   }
 }

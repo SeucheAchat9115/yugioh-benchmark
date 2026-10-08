@@ -95,9 +95,15 @@ On 2026-10-08 the user corrected the format identification to **Perfect Circle
 configuration record this separately from the export’s literal Unlimited
 (`uu` / `*`) fields.
 
-[Format Library’s Perfect Circle reference](https://www.formatlibrary.com/formats/perfect-circle)
-lists a September 2007 banlist. That reference is linked as the candidate profile;
-the exact card-pool cutoff, historical rules and pre-errata texts still require
-review before legality scoring. Current YGOPRODeck text remains a separate
-reference. Identifying the format does not approve replay states or decision
-windows, and the original source payload remains unchanged.
+The harness now contains a [Perfect Circle rules profile](https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/perfect-circle.md)
+and [dated September 2007 TCG-pool restrictions](https://github.com/SeucheAchat9115/yugioh-harness/blob/d3f5a4193cdc81dea033742f9c639b63f21427eb/rules/banlists/perfect-circle-2007-09-01.json).
+The selected community reference is SJC Orlando, January 26, 2008. The source
+registry and evaluation configuration pin the harness commit and SHA-256 hashes
+of both local reference files. This is a reference profile, not a completed
+historical-text catalog or approval of the recorded game's legality.
+
+Use the harness profile, its banlist and agreed historical text/ruling overrides
+when constructing immutable game rules snapshots. Pin the actual assembled
+snapshot for each reviewed KPI case; the profile file hash alone does not replace
+the case’s rules/card-text bindings. The current YGOPRODeck snapshot stays separate.
+Reviewed states, information visibility and decision windows remain pending.
