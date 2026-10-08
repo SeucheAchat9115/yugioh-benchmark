@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "target_model": "gpt-6.1-sol",
+  "weights": {
+    "state_recreation": 0.3333333333333333,
+    "human_move_agreement": 0.3333333333333333,
+    "rule_correctness": 0.3333333333333333
+  },
+  "source_replay": "db-40753-85958923",
+  "source_rules_status": "unknown: Unlimited does not identify a rules, banlist or card-text version",
+  "case_preparation_status": "pending review",
+  "current_agentic_score": null,
+  "structural_operation_coverage_contributes_to_score": false
+}

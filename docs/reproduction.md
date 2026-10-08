@@ -8,6 +8,11 @@ independently constructed expected state, and verifies journal replay.
 This tests backend execution of a supplied operation. It does not ask an AI to
 choose a move. It also does not reconstruct or replay the complete duel.
 
+These probes are regression checks for the harness adapter and journal engine.
+They are separate from [the three agentic KPIs](agentic-kpis.md) and contribute
+nothing to their final score, including the state-recreation KPI. That KPI tests
+the agent interpreting a declared play; these probes supply the operations.
+
 ## Actual run on replay 40753-85958923
 
 On 2026-10-08, the supplied replay was tested against public harness commit
@@ -96,4 +101,5 @@ CI executes the same probes against the pinned public harness.
 Measuring full-match reproduction needs reviewed initial state, card-copy
 mapping, decks, rules and decision/effect checkpoints. Measuring AI move-choice
 accuracy additionally needs a specified agent, filtered positions and accepted
-answers; use the separate reviewed decision-suite bridge for that.
+answers. Follow [the agentic evaluation contract](agentic-kpis.md) for state
+recreation, human-move agreement and independent rule-correctness grading.
