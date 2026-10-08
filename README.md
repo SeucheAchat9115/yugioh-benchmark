@@ -83,6 +83,7 @@ bounded model transport; see [harness setup](docs/harness-integration.md).
 - [Text importing and the separate exact-response scorer](docs/text-logs.md)
 - [Preparing harness decision positions](docs/harness-integration.md)
 - [Agentic workflow KPIs and scoring](docs/agentic-kpis.md)
+- [Evaluation of the supplied Duelingbook game](docs/recorded-game-evaluation.md)
 - [Structural operation regression checks (separate from agent scores)](docs/reproduction.md)
 - [Contributing](CONTRIBUTING.md)
 - [Release notes and public release preparation](docs/releasing.md)
