@@ -101,3 +101,7 @@ All suite cases stay in the denominator. Missing responses score zero; duplicate
 or unknown IDs, unreviewed cases, invalid source sequences and digest mismatches
 are rejected. Runs remain local in ignored `runs/`; selected reviewed cases may
 be versioned. Model provider configuration is supplied through the transport.
+
+For live agentic evaluation, see [the three-KPI score](agentic-kpis.md): state
+recreation, human-move agreement and format-specific rule correctness. Structural
+operation coverage is separate and does not enter that score.
