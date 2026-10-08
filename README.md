@@ -72,6 +72,8 @@ cd yugioh-benchmark
 python -m pip install .
 yugioh-benchmark convert-json imports/replay.json --source https://www.duelingbook.com/replay?id=40753-85958923 --output replays/my-native-match
 yugioh-benchmark inspect replays/db-json-40753-85958923
+# Reconstruct reviewer-only observations; these are not scored cases:
+yugioh-benchmark extract replays/db-json-40753-85958923 --output inspection/db-json-40753-85958923
 # Score a reviewed suite and its trusted run artifacts:
 yugioh-benchmark score-kpis suite.json run.json
 python -m unittest discover -s tests -v
@@ -87,6 +89,7 @@ bounded model transport; see [harness setup](docs/harness-integration.md).
 - [Supplying replay data](docs/acquisition.md)
 - [Current card names and texts from YGOPRODeck](docs/card-metadata.md)
 - [Native JSON importing and coverage](docs/native-json.md)
+- [Extracting states and preparing reviewed cases](docs/extraction.md)
 - [Replay bundle format](docs/replay-format.md)
 - [Preparing harness decision positions](docs/harness-integration.md)
 - [Agentic workflow KPIs and scoring](docs/agentic-kpis.md)

@@ -42,7 +42,9 @@ review work items, not certified decisions or player prompts.
 
 The LP audit subtracts cumulative explicit changes from absolute recorded LP;
 all observations agree on those baselines. It does not assume 8000 or certify
-the rules behind each LP change. No engine state is reconstructed by importing.
+the rules behind each LP change. No engine state is reconstructed by importing. The separate
+[observation extractor](extraction.md) creates unreviewed before/after snapshots
+and flags transition inconsistencies for reviewers.
 
 `id` on a native action, card `id`, `object_id`, serial number and player
 Main/Extra/Side arrays have distinct roles. Do not turn catalog IDs into physical
