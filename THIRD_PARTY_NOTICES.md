@@ -3,7 +3,8 @@
 The selected `fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt`
 was supplied by the user for this repository on 2026-10-08. Its derived bundle
 and benchmark candidate index are linked in `benchmarks/sources.json`.
-No external replay URL or license statement was supplied; the MIT notice below
+The user supplied https://www.duelingbook.com/replay?id=40753-85958923 as its source.
+No license statement was supplied; the MIT notice below
 applies to the nedhmn/duel-tools archive fixture only.
 
 The replay `replays/db-2178594` is a lossless transformation of

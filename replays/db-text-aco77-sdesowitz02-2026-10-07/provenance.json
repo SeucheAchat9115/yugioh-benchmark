@@ -1,7 +1,7 @@
 {
   "acquisition": "user-supplied text in conversation",
   "provided_at": "2026-10-08",
-  "source_url": null,
+  "source_url": "https://www.duelingbook.com/replay?id=40753-85958923",
   "fixture": "fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt",
   "payload_sha256": "ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
   "adapter": "duelingbook-text-v1",
@@ -12,5 +12,6 @@
     "decklists",
     "pinned rules",
     "reviewed decision boundaries"
-  ]
+  ],
+  "source_url_acquisition": "user-supplied replay URL in conversation"
 }

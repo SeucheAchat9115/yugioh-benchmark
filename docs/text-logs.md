@@ -3,8 +3,9 @@
 Copied Chat/Duel/Game exports work offline, without a browser token or card-effect
 engine. Keep each match in a UTF-8 `.txt` file. The included Aco77 vs sdesowitz02
 fixture was supplied in the conversation on 2026-10-08; the log's displayed date
-is retained as text, with no timezone assumption. No replay URL was supplied.
-Its content digest identifies it until an actual replay ID is available.
+is retained as text, with no timezone assumption. The user also supplied its
+[replay URL](https://www.duelingbook.com/replay?id=40753-85958923), which identifies
+the sample as `db-40753-85958923`; its text digest is preserved for integrity.
 
 Maintainer commands:
 

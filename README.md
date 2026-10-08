@@ -14,6 +14,8 @@ rules, hidden-state completeness and decision boundaries remain unreviewed.
 The user-supplied [Aco77 vs sdesowitz02 text export](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
 is also included: **565 observations, two games**. It is linked to its converted
 bundle and reviewer candidate index in [the benchmark source registry](benchmarks/sources.json).
+Its [Duelingbook replay](https://www.duelingbook.com/replay?id=40753-85958923)
+is identified as `db-40753-85958923`.
 See [text-log importing and benchmarking](docs/text-logs.md) for batch ingestion,
 source-line references and reviewed-suite scoring.
 

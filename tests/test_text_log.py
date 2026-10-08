@@ -125,6 +125,7 @@ class TextLogTests(unittest.TestCase):
         for source in registry['sources']:
             replay = load_bundle(ROOT/source['bundle'])
             self.assertEqual(replay['id'], source['replay'])
+            self.assertEqual(replay['source']['url'], source['source_url'])
             self.assertEqual(replay['source']['payload_sha256'], source['payload_sha256'])
             self.assertEqual(restore_source(replay),
                              (ROOT/source['fixture']).read_text(encoding='utf-8'))
