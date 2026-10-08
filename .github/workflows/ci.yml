@@ -40,6 +40,10 @@ jobs:
         env:
           PYTHONPATH: '${{ github.workspace }}/src:${{ github.workspace }}/harness-source'
         run: python -m unittest discover -s tests -v
+      - name: Reproduce recorded operations with pinned harness
+        env:
+          PYTHONPATH: '${{ github.workspace }}/src:${{ github.workspace }}/harness-source'
+        run: python -m yugioh_benchmark reproduce replays/db-text-aco77-sdesowitz02-2026-10-07 --output runs/reproduction.json
   package:
     runs-on: ubuntu-latest
     timeout-minutes: 5

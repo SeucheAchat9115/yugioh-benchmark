@@ -50,6 +50,7 @@ bounded model transport; see [harness setup](docs/harness-integration.md).
 - [Replay bundle format](docs/replay-format.md)
 - [Text importing and reviewed-suite scoring](docs/text-logs.md)
 - [Preparing harness decision positions](docs/harness-integration.md)
+- [Recorded-operation reproduction results](docs/reproduction.md)
 - [Contributing](CONTRIBUTING.md)
 - [Release notes and public release preparation](docs/releasing.md)
 
