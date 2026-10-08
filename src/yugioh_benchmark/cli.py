@@ -36,9 +36,23 @@ def main():
     command.add_argument('cases', type=Path, help='Reviewed case array (JSON)')
     command.add_argument('results', type=Path, help='Array of case_id/response objects (JSON)')
     command.add_argument('--replays', required=True, type=Path)
+    command = commands.add_parser('reproduce', help='Run isolated structural operation probes against the harness')
+    command.add_argument('bundle', type=Path)
+    command.add_argument('--output', type=Path, help='Save a per-event report; refuses existing files')
     args = parser.parse_args()
     try:
-        if args.command == 'score':
+        if args.command == 'reproduce':
+            from .reproduction import run_reproduction
+            if args.output and args.output.exists():
+                raise ValueError('Report already exists; select a new path')
+            report = run_reproduction(load_bundle(args.bundle))
+            if args.output:
+                args.output.parent.mkdir(parents=True, exist_ok=True)
+                with args.output.open('x', encoding='utf-8') as stream:
+                    json.dump(report, stream, ensure_ascii=False, indent=2)
+                    stream.write('\n')
+            output = {key: report[key] for key in ('metric', 'source', 'summary', 'unsupported_reasons')}
+        elif args.command == 'score':
             replays = {}
             for path in sorted(args.replays.glob('*/replay.json')):
                 replay = load_bundle(path.parent)
