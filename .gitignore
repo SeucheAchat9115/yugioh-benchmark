@@ -8,4 +8,11 @@ imports/
 inspection/
 runs/
 harness-source/
+.env
+.env.*
+!.env.example
+*.har
+*.pem
+*.key
+.pytest_cache/
 
