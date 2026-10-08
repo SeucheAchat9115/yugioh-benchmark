@@ -140,6 +140,8 @@ class TextLogTests(unittest.TestCase):
     def test_versioned_registry_bundle_and_candidates_are_consistent(self):
         registry = json.loads((ROOT/'benchmarks/sources.json').read_text(encoding='utf-8'))
         for source in registry['sources']:
+            if source['adapter'] != 'duelingbook-text-v1':
+                source = source['companion_text']
             replay = load_bundle(ROOT/source['bundle'])
             self.assertEqual(replay['id'], source['replay'])
             self.assertEqual(replay['source']['url'], source['source_url'])

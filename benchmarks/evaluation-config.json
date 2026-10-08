@@ -6,7 +6,7 @@
     "human_move_agreement": 0.3333333333333333,
     "rule_correctness": 0.3333333333333333
   },
-  "source_replay": "db-40753-85958923",
+  "source_replay": "db-json-40753-85958923",
   "source_rules_status": "unknown: Unlimited does not identify a rules, banlist or card-text version",
   "case_preparation_status": "pending review",
   "current_agentic_score": null,
@@ -31,5 +31,6 @@
     "final_score_percent": null,
     "report": "docs/edison-pilot.md",
     "scope": "assisted workflow micro-position pilot; no full match or replay agreement"
-  }
+  },
+  "companion_text_replay": "db-40753-85958923"
 }

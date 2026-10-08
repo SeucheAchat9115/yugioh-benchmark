@@ -11,6 +11,15 @@ https://www.duelingbook.com/replay?id=40753-85958923.
 
 Its derived bundle and benchmark candidate index are linked in
 `benchmarks/sources.json`. No external license statement was supplied.
+
+`fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.json` is the user-supplied
+Duelingbook `view-replay` export for the same match, supplied on 2026-10-08.
+It is now the primary selected source. Account/display metadata was removed;
+gameplay entries, private/public logs and card definitions remain source data.
+Its uploaded-byte digest and selected fixture/canonical payload digests are
+recorded separately in the registry. The original text remains a companion.
+The JSON includes both players' private card observations and must never be
+passed directly to an evaluated player. These source data are not MIT licensed.
 No artwork is included; this notice does not claim ownership of Yu-Gi-Oh
 card names or game text.
 

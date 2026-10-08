@@ -9,7 +9,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^db-(?:[1-9][0-9]*(?:-[1-9][0-9]*)?|text-[a-f0-9]{64})$"
+      "pattern": "^db-(?:(?:json-)?[1-9][0-9]*(?:-[1-9][0-9]*)?|text-[a-f0-9]{64})$"
     },
     "source": {
       "type": "object",
@@ -43,7 +43,8 @@
         },
         "adapter": {
           "enum": [
-            "duelingbook-text-v1"
+            "duelingbook-text-v1",
+            "duelingbook-json-v1"
           ]
         }
       }

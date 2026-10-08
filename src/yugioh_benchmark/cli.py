@@ -20,13 +20,13 @@ def summary(replay):
 def main():
     parser = argparse.ArgumentParser(description='Convert DuelingBook observations and score reviewed decisions')
     commands = parser.add_subparsers(dest='command', required=True)
-    for name in ('convert-text', 'import-texts'):
+    for name in ('convert-text', 'import-texts', 'convert-json'):
         command = commands.add_parser(name)
         command.add_argument('input', type=Path)
         command.add_argument('--output', required=True, type=Path)
         command.add_argument('--retrieved-at')
         command.add_argument('--players', nargs=2)
-        if name == 'convert-text':
+        if name in ('convert-text', 'convert-json'):
             command.add_argument('--source')
     command = commands.add_parser('inspect')
     command.add_argument('bundle', type=Path)
@@ -76,8 +76,14 @@ def main():
                 write_bundle(replay, args.output/identity)
             output = [summary(replay) for replay in replays.values()]
         else:
-            if args.command == 'convert-text':
-                replay = convert_text(read_text(args.input), args.source, args.retrieved_at, args.players)
+            if args.command in ('convert-text', 'convert-json'):
+                if args.command == 'convert-json':
+                    from .native_json import convert_json, parse_export
+                    if args.players is not None:
+                        raise ValueError('Native player names come from the JSON export')
+                    replay = convert_json(parse_export(read_text(args.input)), args.source, args.retrieved_at)
+                else:
+                    replay = convert_text(read_text(args.input), args.source, args.retrieved_at, args.players)
                 write_bundle(replay, args.output)
             else:
                 replay = load_bundle(args.bundle)

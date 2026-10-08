@@ -1,4 +1,4 @@
-"""Storage and integrity checks for Duelingbook text observation bundles."""
+"""Storage and integrity checks for Duelingbook observation bundles."""
 import hashlib
 import json
 from pathlib import Path
@@ -31,12 +31,18 @@ def replay_id(value):
 
 def restore_source(replay):
     validate(replay)
+    if replay['source']['adapter'] == 'duelingbook-json-v1':
+        from copy import deepcopy
+        return deepcopy(replay['source_metadata']['data'])
     return replay['source_metadata']['text']
 
 
 def validate(replay):
     if replay.get('schema_version') != SCHEMA_VERSION:
         raise ValueError('Unsupported replay schema version')
+    if replay['source']['adapter'] == 'duelingbook-json-v1':
+        from .native_json import validate_json
+        return validate_json(replay)
     if replay['source']['adapter'] != 'duelingbook-text-v1':
         raise ValueError('Unsupported replay adapter; import a Duelingbook text log')
     from .text_log import validate_text
