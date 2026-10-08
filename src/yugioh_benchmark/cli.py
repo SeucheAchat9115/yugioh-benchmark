@@ -39,9 +39,29 @@ def main():
     command = commands.add_parser('reproduce', help='Run isolated structural operation probes against the harness')
     command.add_argument('bundle', type=Path)
     command.add_argument('--output', type=Path, help='Save a per-event report; refuses existing files')
+    command = commands.add_parser('card-metadata', help='Cache current YGOPRODeck names/text by explicit replay passcodes')
+    command.add_argument('bundle', type=Path)
+    command.add_argument('--response', type=Path, help='Use a saved API response offline instead of fetching')
+    command.add_argument('--retrieved-at', required=True)
+    command.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     try:
-        if args.command == 'reproduce':
+        if args.command == 'card-metadata':
+            from .card_metadata import build_metadata, fetch_response
+            if args.output.exists():
+                raise ValueError('Card metadata already exists; select a new path')
+            replay = load_bundle(args.bundle)
+            response = args.response.read_bytes() if args.response else fetch_response(replay)
+            if len(response) > 64 * 1024 * 1024:
+                raise ValueError('Card API response exceeds 64 MiB')
+            report = build_metadata(replay, response, args.retrieved_at)
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            with args.output.open('x', encoding='utf-8') as stream:
+                json.dump(report, stream, ensure_ascii=False, indent=2)
+                stream.write('\n')
+            output = {key: report[key] for key in ('source_replay', 'requested_distinct_passcodes',
+                'matched_distinct_passcodes', 'missing_passcodes', 'historical_rules_verified')}
+        elif args.command == 'reproduce':
             from .reproduction import run_reproduction
             if args.output and args.output.exists():
                 raise ValueError('Report already exists; select a new path')

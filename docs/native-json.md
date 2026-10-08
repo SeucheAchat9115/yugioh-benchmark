@@ -81,3 +81,10 @@ This import improves the evidence for all three KPIs; it does not calculate a
 model score. State reconstruction, response/effect windows, historical rules and
 ground-truth decisions still require review. Do not treat native event counts,
 candidate counts or old text diagnostic scores as a complete game benchmark.
+
+## Card references
+
+[YGOPRODeck metadata](card-metadata.md) resolves all 42 distinct passcodes
+explicitly defined here to names and current texts. It is a separate dated
+snapshot; it does not replace this source, name unobserved deck slots or verify
+historical rules. The source registry links the snapshot.

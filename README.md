@@ -86,6 +86,7 @@ an agent through the bridge requires a separate harness checkout and your own
 bounded model transport; see [harness setup](docs/harness-integration.md).
 
 - [Supplying replay data](docs/acquisition.md)
+- [Current card names and texts from YGOPRODeck](docs/card-metadata.md)
 - [Native JSON importing and coverage](docs/native-json.md)
 - [Replay bundle format](docs/replay-format.md)
 - [Text importing and the separate exact-response scorer](docs/text-logs.md)

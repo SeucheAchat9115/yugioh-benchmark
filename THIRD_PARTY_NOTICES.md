@@ -30,3 +30,11 @@ No separate third-party redistribution license was supplied.
 Git history also contains the removed `replays/db-2178594` archive fixture from
 `nedhmn/duel-tools`, originally supplied under MIT. Its original attribution,
 license notice and pinned provenance remain in the commits containing it.
+
+`benchmarks/card-metadata/db-json-40753-85958923.json` contains selected card
+names, descriptions and statistics retrieved from the YGOPRODeck v7 API on
+2026-10-08. Source: https://db.ygoprodeck.com/api/v7/cardinfo.php ; documentation:
+https://ygoprodeck.com/api-guide/ . Retrieval timestamp, exact passcode query and
+response/selected-data digests are stored in the snapshot. This third-party
+game material is not relicensed under MIT; no separate redistribution license
+was established. No artwork, prices or set lists are included.

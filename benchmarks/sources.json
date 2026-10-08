@@ -30,7 +30,8 @@
         "game_count": 2,
         "candidate_count": 159,
         "approved_cases": []
-      }
+      },
+      "card_metadata": "benchmarks/card-metadata/db-json-40753-85958923.json"
     }
   ]
 }
