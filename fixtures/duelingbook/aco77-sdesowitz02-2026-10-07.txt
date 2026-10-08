@@ -1,0 +1,568 @@
+Oct 7, 2026, 03:18:54 PM
+[0:00] Aco77: Aco77 (100/0) hosted 2 out of 3 Match in Unlimited (Unrated)
+[0:00] sdesowitz02: Accepted sdesowitz02 (100/19) into duel
+[0:05] Aco77: "glhf"
+[0:08] sdesowitz02: "glhf "
+[0:09] : Won Rock-Paper-Scissors
+[0:15] sdesowitz02: Chose to go first
+------------------(Turn 1)------------------
+[0:15] Aco77: Drew a card
+[0:15] Aco77: Drew a card
+[0:15] Aco77: Drew a card
+[0:15] Aco77: Drew a card
+[0:15] Aco77: Drew a card
+[0:15] sdesowitz02: Drew "Scapegoat"
+[0:15] sdesowitz02: Drew "Monster Gate"
+[0:15] sdesowitz02: Drew "Destiny Draw"
+[0:15] sdesowitz02: Drew "Reasoning"
+[0:15] sdesowitz02: Drew "Trade-In"
+[0:23] sdesowitz02: Drew "Divine Sword - Phoenix Blade"
+[0:25] sdesowitz02: Shuffled hand
+[0:28] sdesowitz02: Entered Standby Phase
+[0:30] sdesowitz02: Entered Main Phase 1
+[0:34] sdesowitz02: Thinking
+[0:39] sdesowitz02: Activated "Reasoning" from hand (5/6) to S-3
+[0:43] Aco77: Thinking
+[1:00] Aco77: "4"
+[1:00] sdesowitz02: Milled "Trade-In" from top of deck
+[1:02] sdesowitz02: Milled "Destiny HERO - Plasma" from top of deck
+[1:04] sdesowitz02: Milled "Dark Magician of Chaos" from top of deck
+[1:06] sdesowitz02: Viewed GY
+[1:07] sdesowitz02: Special Summoned "Dark Magician of Chaos" from GY to M-3 (ATK)
+[1:09] sdesowitz02: Stopped viewing GY
+[1:11] sdesowitz02: Declared effect of "Dark Magician of Chaos" in M-3
+[1:13] sdesowitz02: Returned "Reasoning" from S-3 to hand
+[1:15] sdesowitz02: Viewed GY
+[1:16] sdesowitz02: Stopped viewing GY
+[1:18] sdesowitz02: Set "Scapegoat" from hand (6/6) to S-3
+[1:20] sdesowitz02: Entered End Phase
+[1:21] sdesowitz02: Ended turn
+------------------(Turn 2)------------------
+[1:24] Aco77: Drew a card
+[1:26] Aco77: Entered Standby Phase
+[1:29] Aco77: Entered Main Phase 1
+[1:31] Aco77: Shuffled hand
+[2:07] Aco77: Set card from hand (4/6) to M-3
+[2:08] Aco77: Set card from hand (4/5) to S-3
+[2:09] Aco77: Ended turn
+------------------(Turn 3)------------------
+[2:12] sdesowitz02: Drew "Gold Sarcophagus"
+[2:15] sdesowitz02: Entered Standby Phase
+[2:16] sdesowitz02: Entered Main Phase 1
+[2:18] sdesowitz02: Shuffled hand
+[2:22] sdesowitz02: Activated "Gold Sarcophagus" from hand (1/6) to S-4
+[2:28] sdesowitz02: Viewed deck
+[2:28] Aco77: Signaled OK
+[2:29] sdesowitz02: Banished "Dimension Fusion" from Deck
+[2:30] sdesowitz02: Stopped viewing Deck
+[2:30] sdesowitz02: Shuffled deck
+[2:32] sdesowitz02: Sent "Gold Sarcophagus" from S-4 to GY
+[2:33] sdesowitz02: Activated "Reasoning" from hand (5/5) to S-4
+[2:38] Aco77: "6"
+[2:41] sdesowitz02: Milled "Destiny Draw" from top of deck
+[2:42] sdesowitz02: Milled "Reasoning" from top of deck
+[2:44] sdesowitz02: Milled "Spell Reproduction" from top of deck
+[2:45] sdesowitz02: Milled "Destiny HERO - Diamond Dude" from top of deck
+[2:46] sdesowitz02: Viewed GY
+[2:48] sdesowitz02: Special Summoned "Destiny HERO - Diamond Dude" from GY to M-4 (ATK)
+[2:49] sdesowitz02: Stopped viewing GY
+[2:51] sdesowitz02: Sent "Reasoning" from S-4 to GY
+[2:54] sdesowitz02: Declared effect of "Destiny HERO - Diamond Dude" in M-4
+[2:56] sdesowitz02: Milled "Divine Sword - Phoenix Blade" from top of deck
+[2:57] sdesowitz02: Viewed GY
+[2:58] Aco77: Viewed Opponent's Graveyard
+[2:58] sdesowitz02: Returned "Divine Sword - Phoenix Blade" from GY to bottom of deck
+[2:59] sdesowitz02: Stopped viewing GY
+[2:59] Aco77: Stopped viewing Opponent's GY
+[3:03] sdesowitz02: Viewed GY
+[3:04] sdesowitz02: Stopped viewing GY
+[3:05] sdesowitz02: Activated "Divine Sword - Phoenix Blade" from hand (3/4) to S-4
+[3:09] sdesowitz02: Activated "Monster Gate" from hand (2/3) to S-2
+[3:12] sdesowitz02: Sent "Destiny HERO - Diamond Dude" from M-4 to GY
+[3:13] sdesowitz02: Sent "Divine Sword - Phoenix Blade" from S-4 to GY
+[3:14] sdesowitz02: Signaled OK
+[3:15] Aco77: Signaled OK
+[3:17] sdesowitz02: Milled "Destiny Draw" from top of deck
+[3:19] sdesowitz02: Milled "Reinforcement of the Army" from top of deck
+[3:20] sdesowitz02: Milled "Card Destruction" from top of deck
+[3:22] sdesowitz02: Milled "Destiny HERO - Dasher" from top of deck
+[3:23] sdesowitz02: Viewed GY
+[3:25] sdesowitz02: Special Summoned "Destiny HERO - Dasher" from GY to M-4 (ATK)
+[3:27] sdesowitz02: Stopped viewing GY
+[3:28] sdesowitz02: Sent "Monster Gate" from S-2 to GY
+[3:31] sdesowitz02: Entered Battle Phase
+[3:34] sdesowitz02: Attacked Set card in M-3 with "Dark Magician of Chaos" in M-3
+[3:54] Aco77: Activated Set "Dimensional Prison" in S-3
+[3:56] Aco77: Sent "Dimensional Prison" from S-3 to GY
+[3:57] sdesowitz02: Banished "Dark Magician of Chaos" from M-3
+[3:59] sdesowitz02: Attacked Set card in M-3 with "Destiny HERO - Dasher" in M-4
+[4:01] Aco77: Viewed Opponent's Graveyard
+[4:03] sdesowitz02: Viewed GY
+[4:04] Aco77: Stopped viewing Opponent's GY
+[4:05] sdesowitz02: Stopped viewing GY
+[4:08] Aco77: Banished Set "D.D. Warrior Lady" from M-3
+[4:10] sdesowitz02: Banished "Destiny HERO - Dasher" from M-4
+[4:11] sdesowitz02: Entered Main Phase 2
+[4:12] sdesowitz02: Viewed GY
+[4:13] sdesowitz02: Stopped viewing GY
+[4:14] sdesowitz02: Entered End Phase
+[4:14] sdesowitz02: Ended turn
+------------------(Turn 4)------------------
+[4:15] Aco77: Drew a card
+[4:17] Aco77: Entered Standby Phase
+[4:18] Aco77: Shuffled hand
+[4:20] Aco77: Entered Main Phase 1
+[4:32] Aco77: Shuffled hand
+[4:53] Aco77: Shuffled hand
+[4:55] Aco77: Viewed Opponent's Graveyard
+[4:59] Aco77: Stopped viewing Opponent's GY
+[5:06] sdesowitz02: Viewed GY
+[5:07] sdesowitz02: Stopped viewing GY
+[5:11] sdesowitz02: Viewed GY
+[5:13] Aco77: Set card from hand (4/5) to M-3
+[5:15] Aco77: Set card from hand (1/4) to S-3
+[5:16] Aco77: Ended turn
+[5:22] sdesowitz02: Stopped viewing GY
+[5:23] sdesowitz02: Viewed Opponent's Banished
+[5:23] sdesowitz02: Stopped viewing Opponent's Banished
+------------------(Turn 5)------------------
+[5:23] sdesowitz02: Drew "E - Emergency Call"
+[5:29] sdesowitz02: Entered Standby Phase
+[5:33] sdesowitz02: "1/2"
+[5:34] sdesowitz02: Entered Main Phase 1
+[5:35] sdesowitz02: Shuffled hand
+[5:37] sdesowitz02: Activated "E - Emergency Call" from hand (1/3) to S-4
+[5:39] sdesowitz02: Declared effect of "E - Emergency Call" in S-4
+[5:43] Aco77: Signaled OK
+[5:44] sdesowitz02: Viewed deck
+[5:47] sdesowitz02: Added "Elemental HERO Stratos" from Deck to hand
+[5:49] sdesowitz02: Stopped viewing Deck
+[5:49] sdesowitz02: Shuffled deck
+[5:50] sdesowitz02: Sent "E - Emergency Call" from S-4 to GY
+[5:52] sdesowitz02: Normal Summoned "Elemental HERO Stratos" from hand (3/3) to M-3
+[5:56] sdesowitz02: Declared effect of "Elemental HERO Stratos" in M-3
+[5:56] Aco77: Signaled OK
+[5:58] sdesowitz02: Viewed deck
+[6:03] sdesowitz02: Added "Destiny HERO - Plasma" from Deck to hand
+[6:04] sdesowitz02: Stopped viewing Deck
+[6:04] sdesowitz02: Shuffled deck
+[6:07] sdesowitz02: Activated "Destiny Draw" from hand (2/3) to S-4
+[6:09] sdesowitz02: Sent "Destiny HERO - Plasma" from hand (1/2) to GY
+[6:15] Aco77: Signaled OK
+[6:19] sdesowitz02: Drew "Reinforcement of the Army"
+[6:19] sdesowitz02: Drew "Heavy Storm"
+[6:19] Aco77: Viewed Opponent's Graveyard
+[6:21] sdesowitz02: Sent "Destiny Draw" from S-4 to GY
+[6:21] Aco77: Stopped viewing Opponent's GY
+[6:22] sdesowitz02: Shuffled hand
+[6:27] sdesowitz02: Viewed GY
+[6:31] sdesowitz02: Stopped viewing GY
+[6:33] sdesowitz02: Entered End Phase
+[6:33] sdesowitz02: Ended turn
+------------------(Turn 6)------------------
+[6:39] Aco77: Drew a card
+[6:41] Aco77: Entered Standby Phase
+[6:43] Aco77: Entered Main Phase 1
+[6:44] Aco77: Shuffled hand
+[6:47] Aco77: Normal Summoned "Breaker the Magical Warrior" from hand (1/4) to M-4
+[6:50] Aco77: Placed a counter on "Breaker the Magical Warrior" in M-4 (now 1)
+[6:50] sdesowitz02: Signaled OK
+[6:51] Aco77: Entered Battle Phase
+[6:54] Aco77: Attacked "Elemental HERO Stratos" in M-3 with "Breaker the Magical Warrior" in M-4
+[6:55] sdesowitz02: Sent "Elemental HERO Stratos" from M-3 to GY
+[6:57] Aco77: Entered Main Phase 2
+[6:57] sdesowitz02: Lost 100 LP
+[7:00] Aco77: Removed a counter from "Breaker the Magical Warrior" in M-4 (now 0)
+[7:00] Aco77: Pointed at Set "Scapegoat" in S-3
+[7:02] sdesowitz02: Activated Set "Scapegoat" in S-3
+[7:02] sdesowitz02: Summoned a token in M-3
+[7:03] sdesowitz02: Summoned a token in M-4
+[7:03] sdesowitz02: Summoned a token in M-2
+[7:04] sdesowitz02: Summoned a token in M-5
+[7:06] sdesowitz02: Sent "Scapegoat" from S-3 to GY
+[7:20] Aco77: Shuffled hand
+[7:30] Aco77: Ended turn
+------------------(Turn 7)------------------
+[7:32] sdesowitz02: Drew "Premature Burial"
+[7:34] sdesowitz02: Entered Standby Phase
+[7:35] sdesowitz02: Viewed Banished
+[7:36] sdesowitz02: Returned banished "Dimension Fusion" (3/3) to hand
+[7:38] sdesowitz02: Stopped viewing Banished
+[7:40] sdesowitz02: Shuffled hand
+[7:40] sdesowitz02: Entered Main Phase 1
+[7:41] sdesowitz02: Viewed GY
+[7:43] sdesowitz02: Stopped viewing GY
+[7:44] sdesowitz02: Viewed Opponent's Graveyard
+[7:45] sdesowitz02: Stopped viewing Opponent's GY
+[7:46] sdesowitz02: Viewed GY
+[7:49] sdesowitz02: Stopped viewing GY
+[7:51] sdesowitz02: Activated "Heavy Storm" from hand (2/5) to S-3
+[7:56] Aco77: Sent Set "Solemn Judgment" from S-3 to GY
+[7:57] sdesowitz02: Sent "Heavy Storm" from S-3 to GY
+[7:59] sdesowitz02: Activated "Premature Burial" from hand (2/4) to S-3
+[8:02] sdesowitz02: Moved "Premature Burial" from S-3 to S-1
+[8:03] Aco77: Viewed Opponent's Graveyard
+[8:04] sdesowitz02: Lost 800 LP
+[8:05] Aco77: Stopped viewing Opponent's GY
+[8:05] sdesowitz02: Viewed GY
+[8:07] sdesowitz02: Special Summoned "Elemental HERO Stratos" from GY to M-1 (ATK)
+[8:07] sdesowitz02: Stopped viewing GY
+[8:09] sdesowitz02: Declared effect of "Elemental HERO Stratos" in M-1
+[8:11] sdesowitz02: Viewed deck
+[8:14] sdesowitz02: Added "Destiny HERO - Plasma" from Deck to hand
+[8:15] sdesowitz02: Stopped viewing Deck
+[8:15] sdesowitz02: Shuffled deck
+[8:21] sdesowitz02: Removed "Token" from M-3
+[8:23] sdesowitz02: Removed "Token" from M-2
+[8:23] Aco77: Viewed GY
+[8:23] sdesowitz02: Sent "Elemental HERO Stratos" from M-1 to GY
+[8:24] Aco77: Stopped viewing GY
+[8:24] sdesowitz02: Sent "Premature Burial" from S-1 to GY
+[8:25] sdesowitz02: Special Summoned "Destiny HERO - Plasma" from hand (1/4) to M-3 (ATK)
+[8:31] sdesowitz02: Declared effect of "Destiny HERO - Plasma" in M-3
+[8:32] sdesowitz02: Pointed at Set card in M-3
+[8:34] Aco77: Moved Set card from M-3 to M2-2
+[8:37] sdesowitz02: Moved Set "Dekoichi the Battlechanted Locomotive" from M-2 to S-3
+[8:38] sdesowitz02: Viewed GY
+[8:39] sdesowitz02: Declared effect of "Divine Sword - Phoenix Blade" from GY
+[8:42] sdesowitz02: Banished "Destiny HERO - Diamond Dude" from GY
+[8:45] sdesowitz02: Banished "Elemental HERO Stratos" from GY
+[8:47] sdesowitz02: Returned "Divine Sword - Phoenix Blade" from GY to hand
+[8:48] sdesowitz02: Stopped viewing GY
+[8:49] sdesowitz02: Viewed GY
+[8:57] sdesowitz02: Stopped viewing GY
+[8:58] sdesowitz02: Thinking
+[9:08] sdesowitz02: Viewed Banished
+[9:11] sdesowitz02: Stopped viewing Banished
+[9:13] sdesowitz02: Activated "Dimension Fusion" from hand (2/4) to S-4
+[9:16] Aco77: Viewed Banished
+[9:17] sdesowitz02: Lost 2000 LP
+[9:17] Aco77: Special Summoned banished "D.D. Warrior Lady" (1/1) to M-3 (DEF)
+[9:19] Aco77: Stopped viewing Banished
+[9:19] sdesowitz02: Viewed Banished
+[9:22] sdesowitz02: Special Summoned banished "Dark Magician of Chaos" (4/4) to M-2 (ATK)
+[9:24] Aco77: Viewed Opponent's Graveyard
+[9:24] Aco77: Stopped viewing Opponent's GY
+[9:28] sdesowitz02: Special Summoned banished "Destiny HERO - Dasher" (3/3) to M-1 (ATK)
+[9:30] sdesowitz02: Stopped viewing Banished
+[9:31] sdesowitz02: Declared effect of "Dark Magician of Chaos" in M-2
+[9:32] sdesowitz02: Viewed GY
+[10:33] Aco77: Viewed Opponent's Graveyard
+[10:35] Aco77: Stopped viewing Opponent's GY
+[10:47] sdesowitz02: Lost connection
+[10:49] sdesowitz02: Rejoined duel
+[10:49] Duelingbook: The game can resume
+[10:52] sdesowitz02: Signaled OK
+[10:54] Aco77: Signaled OK
+[10:55] sdesowitz02: Returned "Dimension Fusion" from S-4 to hand
+[10:56] sdesowitz02: Activated "Reinforcement of the Army" from hand (2/4) to S-4
+[10:58] sdesowitz02: Viewed deck
+[11:03] sdesowitz02: Added "Strike Ninja" from Deck to hand
+[11:06] sdesowitz02: Stopped viewing Deck
+[11:06] sdesowitz02: Shuffled deck
+[11:08] sdesowitz02: Sent "Reinforcement of the Army" from S-4 to GY
+[11:12] sdesowitz02: Declared effect of "Destiny HERO - Dasher" in M-1
+[11:15] sdesowitz02: Banished "Dark Magician of Chaos" from M-2
+[11:18] sdesowitz02: Changed stats of "Destiny HERO - Dasher" in M-1 to 3100/1000
+[11:24] sdesowitz02: Activated "Dimension Fusion" from hand (3/4) to S-4
+[11:28] sdesowitz02: Lost 2000 LP
+[11:30] sdesowitz02: Viewed Banished
+[11:31] sdesowitz02: Special Summoned banished "Dark Magician of Chaos" (1/3) to M-2 (ATK)
+[11:32] sdesowitz02: Stopped viewing Banished
+[11:32] sdesowitz02: Sent "Dimension Fusion" from S-4 to GY
+[11:33] sdesowitz02: Declared effect of "Dark Magician of Chaos" in M-2
+[11:34] sdesowitz02: Viewed GY
+[11:49] sdesowitz02: "thinking"
+[12:03] sdesowitz02: Returned "Monster Gate" from GY to hand
+[12:03] sdesowitz02: Stopped viewing GY
+[12:05] sdesowitz02: Activated "Monster Gate" from hand (2/4) to S-4
+[12:07] sdesowitz02: Removed "Token" from M-4
+[12:09] sdesowitz02: Milled "Divine Sword - Phoenix Blade" from top of deck
+[12:10] sdesowitz02: Milled "D.D.M. - Different Dimension Master" from top of deck
+[12:12] sdesowitz02: Viewed GY
+[12:14] sdesowitz02: Special Summoned "D.D.M. - Different Dimension Master" from GY to M-4 (ATK)
+[12:16] sdesowitz02: Stopped viewing GY
+[12:18] sdesowitz02: Sent "Monster Gate" from S-4 to GY
+[12:24] sdesowitz02: Entered Battle Phase
+[12:29] sdesowitz02: Attacked "D.D. Warrior Lady" in M-3 with "D.D.M. - Different Dimension Master" in M-4
+[12:32] Aco77: Sent "D.D. Warrior Lady" from M-3 to GY
+[12:38] sdesowitz02: Attacked "Breaker the Magical Warrior" in M-4 with "Destiny HERO - Plasma" in M-3
+[12:42] Aco77: "its neg right"
+[12:46] sdesowitz02: "yes it is"
+[12:48] Aco77: Sent "Breaker the Magical Warrior" from M-4 to GY
+[12:49] sdesowitz02: "like skill drain"
+[12:50] Aco77: Lost 300 LP
+[12:52] Aco77: Lost 2800 LP
+[12:53] Aco77: Lost 3100 LP
+[12:57] sdesowitz02: Changed "Destiny HERO - Dasher" in M-1 to DEF
+[12:58] sdesowitz02: Entered Main Phase 2
+[13:00] sdesowitz02: Activated "Divine Sword - Phoenix Blade" from hand (1/3) to S-4
+[13:02] sdesowitz02: Changed stats of "Destiny HERO - Plasma" in M-3 to 2200/600
+[13:04] sdesowitz02: Entered End Phase
+[13:04] sdesowitz02: Ended turn
+[13:07] sdesowitz02: Changed stats of "Destiny HERO - Dasher" in M-1 to 2100/1000
+------------------(Turn 8)------------------
+[13:09] Aco77: Drew a card
+[13:11] Aco77: Entered Standby Phase
+[13:12] Aco77: Entered Main Phase 1
+[13:13] Aco77: Shuffled hand
+[13:23] Aco77: Thinking
+[13:25] Aco77: Viewed Opponent's Graveyard
+[13:47] Aco77: Stopped viewing Opponent's GY
+[13:50] Aco77: Shuffled hand
+[13:52] Aco77: Set card from hand (2/4) to M-3
+[13:54] Aco77: Set card from hand (1/3) to S-3
+[13:55] Aco77: Ended turn
+------------------(Turn 9)------------------
+[13:58] sdesowitz02: Drew "Giant Trunade"
+[14:00] sdesowitz02: Entered Standby Phase
+[14:00] sdesowitz02: Entered Main Phase 1
+[14:01] sdesowitz02: Shuffled hand
+[14:02] sdesowitz02: Viewed GY
+[14:06] sdesowitz02: Stopped viewing GY
+[14:09] sdesowitz02: Activated "Giant Trunade" from hand (2/3) to S-2
+[14:11] Aco77: Returned Set card from S-3 to hand
+[14:12] sdesowitz02: Returned Set "Dekoichi the Battlechanted Locomotive" from S-3 to hand
+[14:13] sdesowitz02: Returned "Divine Sword - Phoenix Blade" from S-4 to hand
+[14:14] sdesowitz02: Sent "Giant Trunade" from S-2 to GY
+[14:15] sdesowitz02: Changed stats of "Destiny HERO - Plasma" in M-3 to 1900/600
+[14:17] sdesowitz02: Changed "Destiny HERO - Dasher" in M-1 to ATK
+[14:19] sdesowitz02: Declared effect of "Destiny HERO - Plasma" in M-3
+[14:20] sdesowitz02: Pointed at Set card in M-3
+[14:21] Aco77: Admitted defeat
+[15:03] sdesowitz02: Finished siding
+[15:09] Aco77: Finished siding
+[15:10] Aco77: Chose to go first
+------------(Game 1 - Turn 1)------------
+[15:10] Aco77: Drew a card
+[15:10] Aco77: Drew a card
+[15:10] Aco77: Drew a card
+[15:10] Aco77: Drew a card
+[15:10] Aco77: Drew a card
+[15:10] sdesowitz02: Drew "Brain Control"
+[15:10] sdesowitz02: Drew "Destiny Draw"
+[15:10] sdesowitz02: Drew "Mystical Space Typhoon"
+[15:10] sdesowitz02: Drew "Dark Magician of Chaos"
+[15:10] sdesowitz02: Drew "Destiny HERO - Dasher"
+[15:17] Aco77: Drew a card
+[15:18] sdesowitz02: Shuffled hand
+[15:18] Aco77: Entered Standby Phase
+[15:19] Aco77: Entered Main Phase 1
+[15:21] Aco77: Shuffled hand
+[15:31] Aco77: Set card from hand (4/6) to M-3
+[15:32] Aco77: Set card from hand (5/5) to S-3
+[15:34] Aco77: Set card from hand (3/4) to S-4
+[15:48] Aco77: Set card from hand (2/3) to S-2
+[15:49] Aco77: Ended turn
+------------------(Turn 2)------------------
+[15:51] sdesowitz02: Drew "Return from the Different Dimension"
+[15:51] sdesowitz02: Entered Standby Phase
+[15:54] sdesowitz02: Entered Main Phase 1
+[15:55] sdesowitz02: Shuffled hand
+[15:58] sdesowitz02: Activated "Destiny Draw" from hand (5/6) to S-3
+[16:04] sdesowitz02: Sent "Destiny HERO - Dasher" from hand (3/5) to GY
+[16:06] sdesowitz02: Signaled OK
+[16:08] Aco77: Signaled OK
+[16:11] sdesowitz02: Drew "Monster Gate"
+[16:11] sdesowitz02: Drew "E - Emergency Call"
+[16:13] sdesowitz02: Sent "Destiny Draw" from S-3 to GY
+[16:15] sdesowitz02: Shuffled hand
+[16:18] sdesowitz02: Activated "E - Emergency Call" from hand (4/6) to S-3
+[16:27] Aco77: Signaled OK
+[16:27] sdesowitz02: Declared effect of "E - Emergency Call" in S-3
+[16:29] sdesowitz02: Viewed deck
+[16:32] sdesowitz02: Added "Elemental HERO Stratos" from Deck to hand
+[16:33] sdesowitz02: Stopped viewing Deck
+[16:33] sdesowitz02: Shuffled deck
+[16:35] sdesowitz02: Sent "E - Emergency Call" from S-3 to GY
+[16:36] sdesowitz02: Normal Summoned "Elemental HERO Stratos" from hand (3/6) to M-3
+[16:39] sdesowitz02: Declared effect of "Elemental HERO Stratos" in M-3
+[16:56] sdesowitz02: Viewed GY
+[16:58] sdesowitz02: Stopped viewing GY
+[17:05] sdesowitz02: Viewed deck
+[17:09] sdesowitz02: Added "Destiny HERO - Diamond Dude" from Deck to hand
+[17:09] sdesowitz02: Stopped viewing Deck
+[17:09] sdesowitz02: Shuffled deck
+[17:17] sdesowitz02: Set "Return from the Different Dimension" from hand (4/6) to S-3
+[17:17] sdesowitz02: Set "Mystical Space Typhoon" from hand (4/5) to S-4
+[17:18] sdesowitz02: Set "Monster Gate" from hand (3/4) to S-2
+[17:21] sdesowitz02: Entered Battle Phase
+[17:22] sdesowitz02: Attacked Set card in M-3 with "Elemental HERO Stratos" in M-3
+[17:38] Aco77: Banished Set "D.D. Warrior Lady" from M-3
+[17:40] sdesowitz02: Banished "Elemental HERO Stratos" from M-3
+[17:41] sdesowitz02: Entered Main Phase 2
+[17:41] sdesowitz02: Entered End Phase
+[17:42] sdesowitz02: Ended turn
+------------------(Turn 3)------------------
+[17:48] Aco77: Drew a card
+[17:50] Aco77: Entered Standby Phase
+[17:51] Aco77: Entered Main Phase 1
+[17:53] Aco77: Shuffled hand
+[18:00] Aco77: Shuffled hand
+[18:19] Aco77: Normal Summoned "Breaker the Magical Warrior" from hand (3/3) to M-3
+[18:22] sdesowitz02: Signaled OK
+[18:29] Aco77: Declared effect of "Breaker the Magical Warrior" in M-3
+[18:30] Aco77: Pointed at Set "Mystical Space Typhoon" in S-4
+[18:32] sdesowitz02: Activated Set "Mystical Space Typhoon" in S-4
+[18:34] sdesowitz02: Pointed at Set card in S-4
+[18:36] Aco77: Sent Set "Dark Bribe" from S-4 to GY
+[18:37] Aco77: Entered Battle Phase
+[18:37] sdesowitz02: Sent "Mystical Space Typhoon" from S-4 to GY
+[18:38] Aco77: Attacked directly with "Breaker the Magical Warrior" in M-3
+[18:39] sdesowitz02: Lost 1600 LP
+[18:42] Aco77: Entered Main Phase 2
+[18:43] Aco77: Activated "Dimensional Fissure" from hand (1/2) to S-4
+[18:44] Aco77: Ended turn
+------------------(Turn 4)------------------
+[18:46] sdesowitz02: Drew "Card Destruction"
+[18:48] sdesowitz02: Entered Standby Phase
+[18:49] sdesowitz02: Entered Main Phase 1
+[19:43] sdesowitz02: Lost connection
+[19:52] sdesowitz02: Rejoined duel
+[19:53] Duelingbook: The game can resume
+[19:53] sdesowitz02: "my god the lag"
+[19:56] sdesowitz02: Shuffled hand
+[20:01] sdesowitz02: Activated "Brain Control" from hand (1/4) to S-4
+[20:05] sdesowitz02: Lost 800 LP
+[20:07] sdesowitz02: Pointed at "Breaker the Magical Warrior" in M-3
+[20:08] Aco77: Moved "Breaker the Magical Warrior" from M-3 to M2-3
+[20:09] sdesowitz02: Sent "Brain Control" from S-4 to GY
+[20:12] sdesowitz02: Activated Set "Monster Gate" in S-2
+[20:15] Aco77: Signaled OK
+[20:15] sdesowitz02: Banished "Breaker the Magical Warrior" from M-3
+[20:17] sdesowitz02: Milled "Magical Stone Excavation" from top of deck
+[20:19] sdesowitz02: Milled "Twister" from top of deck
+[20:21] sdesowitz02: Milled "Divine Sword - Phoenix Blade" from top of deck
+[20:22] sdesowitz02: Milled "Heavy Storm" from top of deck
+[20:24] sdesowitz02: Milled "Destiny HERO - Plasma" from top of deck
+[20:26] sdesowitz02: Viewed GY
+[20:28] sdesowitz02: Banished "Destiny HERO - Plasma" from GY
+[20:28] Aco77: Viewed Opponent's Graveyard
+[20:29] sdesowitz02: Stopped viewing GY
+[20:30] sdesowitz02: Milled "Trade-In" from top of deck
+[20:31] Aco77: Stopped viewing Opponent's GY
+[20:32] sdesowitz02: Milled "Dimension Fusion" from top of deck
+[20:34] sdesowitz02: Milled "Return from the Different Dimension" from top of deck
+[20:35] sdesowitz02: Milled "Trade-In" from top of deck
+[20:37] sdesowitz02: Milled "Royal Decree" from top of deck
+[20:39] sdesowitz02: Milled "Royal Decree" from top of deck
+[20:41] sdesowitz02: Milled "Destiny Draw" from top of deck
+[20:42] sdesowitz02: Milled "Reinforcement of the Army" from top of deck
+[20:43] sdesowitz02: Milled "Monster Gate" from top of deck
+[20:45] sdesowitz02: Milled "Reasoning" from top of deck
+[20:46] sdesowitz02: Milled "Strike Ninja" from top of deck
+[20:47] sdesowitz02: Viewed GY
+[20:49] sdesowitz02: Special Summoned "Strike Ninja" from GY to M-3 (ATK)
+[20:51] sdesowitz02: Stopped viewing GY
+[20:52] sdesowitz02: Sent "Monster Gate" from S-2 to GY
+[20:54] Aco77: Viewed Opponent's Graveyard
+[20:56] Aco77: Stopped viewing Opponent's GY
+[20:56] sdesowitz02: Activated "Card Destruction" from hand (3/3) to S-4
+[21:00] Aco77: Banished "Mobius the Frost Monarch" from hand (1/1)
+[21:01] Aco77: Drew a card
+[21:02] sdesowitz02: Banished "Destiny HERO - Diamond Dude" from hand (2/2)
+[21:03] sdesowitz02: Banished "Dark Magician of Chaos" from hand (1/1)
+[21:05] sdesowitz02: Drew "Twister"
+[21:05] sdesowitz02: Drew "Snipe Hunter"
+[21:08] sdesowitz02: Sent "Card Destruction" from S-4 to GY
+[21:10] sdesowitz02: Shuffled hand
+[21:13] sdesowitz02: Viewed GY
+[21:16] sdesowitz02: Stopped viewing GY
+[21:25] sdesowitz02: Entered Battle Phase
+[21:27] sdesowitz02: Attacked directly with "Strike Ninja" in M-3
+[21:34] Aco77: Lost 1700 LP
+[21:40] Aco77: Viewed Opponent's Graveyard
+[21:41] Aco77: Stopped viewing Opponent's GY
+[21:43] sdesowitz02: Viewed Opponent's Banished
+[21:45] sdesowitz02: Stopped viewing Opponent's Banished
+[21:46] sdesowitz02: Entered Main Phase 2
+[21:49] sdesowitz02: Entered End Phase
+[21:50] sdesowitz02: Ended turn
+------------------(Turn 5)------------------
+[21:52] Aco77: Drew a card
+[21:54] Aco77: Entered Standby Phase
+[21:57] Aco77: Entered Main Phase 1
+[22:00] Aco77: Set card from hand (2/2) to S-5
+[22:01] Aco77: Set card from hand (1/1) to S-1
+[22:02] Aco77: Ended turn
+------------------(Turn 6)------------------
+[22:05] sdesowitz02: Drew "Giant Trunade"
+[22:07] sdesowitz02: Entered Standby Phase
+[22:09] sdesowitz02: Entered Main Phase 1
+[22:11] sdesowitz02: Shuffled hand
+[22:22] sdesowitz02: Thinking
+[22:38] sdesowitz02: Thinking
+[22:38] sdesowitz02: Viewed GY
+[22:43] sdesowitz02: Stopped viewing GY
+[22:44] Aco77: Viewed Opponent's Graveyard
+[22:45] sdesowitz02: Viewed Opponent's Banished
+[22:46] sdesowitz02: Stopped viewing Opponent's Banished
+[22:49] Aco77: Stopped viewing Opponent's GY
+[22:52] sdesowitz02: Entered Battle Phase
+[22:53] sdesowitz02: Attacked directly with "Strike Ninja" in M-3
+[22:56] Aco77: Activated Set "Dimensional Prison" in S-1
+[22:59] sdesowitz02: Banished "Strike Ninja" from M-3
+[23:00] Aco77: Sent "Dimensional Prison" from S-1 to GY
+[23:00] sdesowitz02: Entered Main Phase 2
+[23:02] sdesowitz02: Entered End Phase
+[23:02] sdesowitz02: Ended turn
+------------------(Turn 7)------------------
+[23:03] Aco77: Drew a card
+[23:05] Aco77: Entered Standby Phase
+[23:07] Aco77: Entered Main Phase 1
+[23:11] Aco77: Ended turn
+------------------(Turn 8)------------------
+[23:12] sdesowitz02: Drew "Destiny HERO - Plasma"
+[23:14] sdesowitz02: Entered Standby Phase
+[23:16] sdesowitz02: Entered Main Phase 1
+[23:18] sdesowitz02: Shuffled hand
+[23:23] sdesowitz02: Normal Summoned "Snipe Hunter" from hand (1/4) to M-3
+[23:27] Aco77: Thinking
+[23:40] Aco77: Viewed Opponent's Graveyard
+[23:42] Aco77: Stopped viewing Opponent's GY
+[23:49] sdesowitz02: "prio if able"
+[23:49] Aco77: Thinking
+[24:40] Aco77: Activated Set "Solemn Judgment" in S-5
+[24:40] Aco77: Lost 3150 LP
+[24:40] Aco77: "lag"
+[24:43] Aco77: Sent "Solemn Judgment" from S-5 to GY
+[25:01] sdesowitz02: Went offline
+[25:04] sdesowitz02: Rejoined duel
+[25:04] Duelingbook: The game can resume
+[25:09] sdesowitz02: Banished "Snipe Hunter" from M-3
+[25:13] sdesowitz02: "yeah i know lol"
+[25:19] sdesowitz02: Viewed GY
+[25:25] Aco77: Viewed Opponent's Banished
+[25:26] Aco77: Stopped viewing Opponent's Banished
+[25:27] Aco77: Viewed GY
+[25:27] sdesowitz02: Stopped viewing GY
+[25:28] Aco77: Stopped viewing GY
+[25:31] sdesowitz02: Viewed Banished
+[25:32] sdesowitz02: Stopped viewing Banished
+[25:33] sdesowitz02: Activated Set "Return from the Different Dimension" in S-3
+[25:37] sdesowitz02: Lost 2800 LP
+[25:44] Aco77: Signaled OK
+[25:46] sdesowitz02: Viewed Banished
+[25:47] sdesowitz02: Special Summoned banished "Elemental HERO Stratos" (6/6) to M-3 (ATK)
+[25:49] sdesowitz02: Special Summoned banished "Destiny HERO - Diamond Dude" (4/5) to M-4 (ATK)
+[25:50] sdesowitz02: Special Summoned banished "Dark Magician of Chaos" (3/4) to M-2 (ATK)
+[25:51] sdesowitz02: Special Summoned banished "Snipe Hunter" (1/3) to M-5 (ATK)
+[25:53] sdesowitz02: Special Summoned banished "Strike Ninja" (1/2) to M-1 (ATK)
+[25:55] sdesowitz02: Stopped viewing Banished
+[25:56] sdesowitz02: Sent "Return from the Different Dimension" from S-3 to GY
+[25:58] sdesowitz02: Declared effect of "Dark Magician of Chaos" in M-2
+[26:03] sdesowitz02: "target dfusion"
+[26:05] Aco77: Signaled OK
+[26:06] sdesowitz02: "spell/trap"
+[26:08] sdesowitz02: Pointed at Set card in S-3
+[26:11] sdesowitz02: "middle one"
+[26:12] Aco77: Admitted defeat
+[26:16] sdesowitz02: "ggs"
+[26:16] Aco77: "congrats"
+[26:20] sdesowitz02: "thank you"
+[26:21] Aco77: Sent Set "Mirror Force" from S-3 to GY
+[26:22] Aco77: Left duel
+[26:26] sdesowitz02: Activated "Giant Trunade" from hand (2/3) to S-3
+[26:37] sdesowitz02: Left duel
+Search: 
+  Chat  Duel  Game  Usernames  Deleted Chats

@@ -9,7 +9,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^db-[1-9][0-9]*(-[1-9][0-9]*)?$"
+      "pattern": "^db-(?:[1-9][0-9]*(?:-[1-9][0-9]*)?|text-[a-f0-9]{64})$"
     },
     "source": {
       "type": "object",
@@ -28,6 +28,24 @@
         "payload_sha256": {
           "type": "string",
           "pattern": "^[a-f0-9]{64}$"
+        },
+        "replay_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "adapter": {
+          "enum": [
+            "duelingbook-plays-v1",
+            "duelingbook-text-v1"
+          ]
         }
       }
     },

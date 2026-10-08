@@ -134,6 +134,8 @@ def convert(data, source, retrieved_at=None):
 
 
 def restore_source(replay):
+    if replay['source']['adapter'] == 'duelingbook-text-v1':
+        return replay['source_metadata']['text']
     result = deepcopy(replay['source_metadata'])
     result['plays'] = [deepcopy(event['payload']) for event in replay['events']]
     return result
@@ -142,6 +144,9 @@ def restore_source(replay):
 def validate(replay):
     if replay.get('schema_version') != SCHEMA_VERSION:
         raise ValueError('Unsupported replay schema version')
+    if replay['source']['adapter'] == 'duelingbook-text-v1':
+        from .text_log import validate_text
+        return validate_text(replay)
     identity = replay_id(replay['source']['url'])
     if replay['id'] != 'db-'+identity or replay['source']['replay_id'] != identity:
         raise ValueError('Replay identity does not match provenance')
@@ -206,3 +211,4 @@ def load_bundle(directory):
         events.append(json.loads(content))
     manifest['events']=events
     return validate(manifest)
+
