@@ -1,0 +1,16 @@
+{
+  "acquisition": "user-supplied text in conversation",
+  "provided_at": "2026-10-08",
+  "source_url": null,
+  "fixture": "fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt",
+  "payload_sha256": "ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+  "adapter": "duelingbook-text-v1",
+  "review_status": "unreviewed",
+  "known_gaps": [
+    "one player hidden hand",
+    "physical-copy IDs",
+    "decklists",
+    "pinned rules",
+    "reviewed decision boundaries"
+  ]
+}

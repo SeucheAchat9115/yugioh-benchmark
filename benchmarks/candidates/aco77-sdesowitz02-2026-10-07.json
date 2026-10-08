@@ -1,0 +1,3341 @@
+[
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000020",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 20,
+      "line_number": 21
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000021",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 21,
+      "line_number": 22
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000023",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 23,
+      "line_number": 24
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000030",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 30,
+      "line_number": 31
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000032",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 32,
+      "line_number": 33
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000036",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 36,
+      "line_number": 37
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000037",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 37,
+      "line_number": 38
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000038",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 38,
+      "line_number": 39
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000041",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 41,
+      "line_number": 42
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000042",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 42,
+      "line_number": 43
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000044",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 44,
+      "line_number": 45
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000045",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 45,
+      "line_number": 46
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000046",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 46,
+      "line_number": 47
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000049",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 49,
+      "line_number": 50
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000050",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 50,
+      "line_number": 51
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000052",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 52,
+      "line_number": 53
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000059",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 59,
+      "line_number": 60
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000066",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 66,
+      "line_number": 67
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000069",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 69,
+      "line_number": 70
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000078",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 78,
+      "line_number": 79
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000079",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 79,
+      "line_number": 80
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000089",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 89,
+      "line_number": 90
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000092",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 92,
+      "line_number": 93
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000093",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 93,
+      "line_number": 94
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000094",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 94,
+      "line_number": 95
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000097",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 97,
+      "line_number": 98
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000104",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 104,
+      "line_number": 105
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000107",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 107,
+      "line_number": 108
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000108",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 108,
+      "line_number": 109
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000111",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 111,
+      "line_number": 112
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000113",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 113,
+      "line_number": 114
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000121",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 121,
+      "line_number": 122
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000122",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 122,
+      "line_number": 123
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000123",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 123,
+      "line_number": 124
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000129",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 129,
+      "line_number": 130
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000131",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 131,
+      "line_number": 132
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000133",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 133,
+      "line_number": 134
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000134",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 134,
+      "line_number": 135
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000141",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 141,
+      "line_number": 142
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000142",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 142,
+      "line_number": 143
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000148",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 148,
+      "line_number": 149
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000159",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 159,
+      "line_number": 160
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000160",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 160,
+      "line_number": 161
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000163",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 163,
+      "line_number": 164
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000164",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 164,
+      "line_number": 165
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000166",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 166,
+      "line_number": 167
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000169",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 169,
+      "line_number": 170
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000170",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 170,
+      "line_number": 171
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000172",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 172,
+      "line_number": 173
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000176",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 176,
+      "line_number": 177
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000183",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 183,
+      "line_number": 184
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000186",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 186,
+      "line_number": 187
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000191",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 191,
+      "line_number": 192
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000198",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 198,
+      "line_number": 199
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000201",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 201,
+      "line_number": 202
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000207",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 207,
+      "line_number": 208
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000209",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 209,
+      "line_number": 210
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000220",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 220,
+      "line_number": 221
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000221",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 221,
+      "line_number": 222
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000226",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 226,
+      "line_number": 227
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000236",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 236,
+      "line_number": 237
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000239",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 239,
+      "line_number": 240
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000242",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 242,
+      "line_number": 243
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000245",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 245,
+      "line_number": 246
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000247",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 247,
+      "line_number": 248
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000257",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 257,
+      "line_number": 258
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000263",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 263,
+      "line_number": 264
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000266",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 266,
+      "line_number": 267
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000269",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 269,
+      "line_number": 270
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000272",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 272,
+      "line_number": 273
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000277",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 277,
+      "line_number": 278
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000282",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 282,
+      "line_number": 283
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000285",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 285,
+      "line_number": 286
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000286",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 286,
+      "line_number": 287
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000288",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 288,
+      "line_number": 289
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000297",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 297,
+      "line_number": 298
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000298",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 298,
+      "line_number": 299
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000300",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 300,
+      "line_number": 301
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000301",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 301,
+      "line_number": 302
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000305",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 305,
+      "line_number": 306
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000306",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 306,
+      "line_number": 307
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000312",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 312,
+      "line_number": 313
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000313",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 313,
+      "line_number": 314
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000314",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 314,
+      "line_number": 315
+    },
+    "game": 1,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000317",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 317,
+      "line_number": 318
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000318",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 318,
+      "line_number": 319
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000322",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 322,
+      "line_number": 323
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000329",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 329,
+      "line_number": 330
+    },
+    "game": 1,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000348",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 348,
+      "line_number": 349
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000349",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 349,
+      "line_number": 350
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000351",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 351,
+      "line_number": 352
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000352",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 352,
+      "line_number": 353
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000353",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 353,
+      "line_number": 354
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000354",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 354,
+      "line_number": 355
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000355",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 355,
+      "line_number": 356
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000358",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 358,
+      "line_number": 359
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000359",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 359,
+      "line_number": 360
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000361",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 361,
+      "line_number": 362
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000369",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 369,
+      "line_number": 370
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000371",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 371,
+      "line_number": 372
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000377",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 377,
+      "line_number": 378
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000378",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 378,
+      "line_number": 379
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000385",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 385,
+      "line_number": 386
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000386",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 386,
+      "line_number": 387
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000387",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 387,
+      "line_number": 388
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000388",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 388,
+      "line_number": 389
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000389",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 389,
+      "line_number": 390
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000392",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 392,
+      "line_number": 393
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000393",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 393,
+      "line_number": 394
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000394",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 394,
+      "line_number": 395
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000397",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 397,
+      "line_number": 398
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000398",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 398,
+      "line_number": 399
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000401",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 401,
+      "line_number": 402
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000403",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 403,
+      "line_number": 404
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000405",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 405,
+      "line_number": 406
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000408",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 408,
+      "line_number": 409
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000410",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 410,
+      "line_number": 411
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000412",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 412,
+      "line_number": 413
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000413",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 413,
+      "line_number": 414
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000414",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 414,
+      "line_number": 415
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000417",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 417,
+      "line_number": 418
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000418",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 418,
+      "line_number": 419
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000424",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 424,
+      "line_number": 425
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000429",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 429,
+      "line_number": 430
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000454",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 454,
+      "line_number": 455
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000459",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 459,
+      "line_number": 460
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000470",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 470,
+      "line_number": 471
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000471",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 471,
+      "line_number": 472
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000477",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 477,
+      "line_number": 478
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000478",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 478,
+      "line_number": 479
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000479",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 479,
+      "line_number": 480
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000482",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 482,
+      "line_number": 483
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000483",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 483,
+      "line_number": 484
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000484",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 484,
+      "line_number": 485
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000485",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 485,
+      "line_number": 486
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "set",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000486",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 486,
+      "line_number": 487
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000489",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 489,
+      "line_number": 490
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000490",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 490,
+      "line_number": 491
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000500",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 500,
+      "line_number": 501
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000501",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 501,
+      "line_number": 502
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "attack",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000502",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 502,
+      "line_number": 503
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000505",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 505,
+      "line_number": 506
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000506",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 506,
+      "line_number": 507
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000507",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 507,
+      "line_number": 508
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000510",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 510,
+      "line_number": 511
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000511",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 511,
+      "line_number": 512
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000512",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 512,
+      "line_number": 513
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "turn",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000515",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 515,
+      "line_number": 516
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000516",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 516,
+      "line_number": 517
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "phase",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000518",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 518,
+      "line_number": 519
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000524",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 524,
+      "line_number": 525
+    },
+    "game": 2,
+    "actor": "p1",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000541",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 541,
+      "line_number": 542
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000545",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 545,
+      "line_number": 546
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000546",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 546,
+      "line_number": 547
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000547",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 547,
+      "line_number": 548
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000548",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 548,
+      "line_number": 549
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000549",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 549,
+      "line_number": 550
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "summon",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000552",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 552,
+      "line_number": 553
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  },
+  {
+    "id": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0-before-000564",
+    "source": {
+      "replay": "db-text-ea5f2953dbc0111abd6a3da4b1f850a34b0149e3682b0681f5c50aec568b54a0",
+      "before_sequence": 564,
+      "line_number": 565
+    },
+    "game": 2,
+    "actor": "p2",
+    "observation_kind": "activation_observation",
+    "review": {
+      "status": "unreviewed"
+    },
+    "required_review": [
+      "state",
+      "information_visibility",
+      "rules",
+      "decision_boundary",
+      "grading"
+    ]
+  }
+]

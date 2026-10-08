@@ -38,7 +38,10 @@ if needed for adjudication. They must contain all known hidden state, while play
 contexts contain only information available to that actor.
 
 `run_case` currently returns a decision, measured latency and `assessment: null`.
-Automated rubric grading, checkpoint reconstruction, model provider transports
-and a reviewed suite are future additions. Historical replays cannot evaluate a
+`benchmark.run_suite` adds reviewed-suite execution and explicit response-agreement
+scoring; see [text-log benchmarks](text-logs.md). Automated strategic rubric grading,
+checkpoint reconstruction, model provider transports and approved case datasets
+remain future additions. Historical replays cannot evaluate a
 counterfactual win rate once the model diverges; that requires actual new duels
 in the harness against controlled opponents with repeated seeds and side swaps.
+

@@ -1,5 +1,11 @@
 # Third-party source fixture
 
+The selected `fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt`
+was supplied by the user for this repository on 2026-10-08. Its derived bundle
+and benchmark candidate index are linked in `benchmarks/sources.json`.
+No external replay URL or license statement was supplied; the MIT notice below
+applies to the nedhmn/duel-tools archive fixture only.
+
 The replay `replays/db-2178594` is a lossless transformation of
 [`standard-replay.json`](https://github.com/nedhmn/duel-tools/blob/main/packages/dt-parser/tests/fixtures/standard-replay.json)
 from **nedhmn/duel-tools**, supplied under its repository MIT license.
@@ -28,3 +34,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+

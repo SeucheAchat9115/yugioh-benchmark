@@ -11,6 +11,12 @@ archived JSON was converted into [replays/db-2178594](replays/db-2178594).
 See [provenance](replays/db-2178594/provenance.json) and [third-party notices](THIRD_PARTY_NOTICES.md).
 The archive supplies card data and simulator operations. Legality, historical
 rules, hidden-state completeness and decision boundaries remain unreviewed.
+The user-supplied [Aco77 vs sdesowitz02 text export](fixtures/duelingbook/aco77-sdesowitz02-2026-10-07.txt)
+is also included: **565 observations, two games**. It is linked to its converted
+bundle and reviewer candidate index in [the benchmark source registry](benchmarks/sources.json).
+See [text-log importing and benchmarking](docs/text-logs.md) for batch ingestion,
+source-line references and reviewed-suite scoring.
+
 There are currently **no scored decision cases**; importing a replay does not
 create a validated benchmark automatically.
 
@@ -45,3 +51,4 @@ archive instead. There are no endless retries or fabricated tokens.
 Raw imports/HARs and evaluation runs stay local and ignored. Deliberately selected
 source fixtures and reviewed cases may be versioned. Harness game saves belong
 in the harness's local storage.
+
