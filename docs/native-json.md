@@ -91,9 +91,14 @@ historical rules. The source registry links the snapshot.
 
 ## User-declared format
 
-On 2026-10-08 the user identified this match as **Disc Commander 2014**.
-The source registry and evaluation configuration record that exact declaration
-separately from the export’s literal Unlimited (`uu` / `*`) fields.
-The declaration is not yet bound to a rules reference, dated banlist or historical
-card-text version. Those references remain pending; no alternate year or format
-is silently substituted and legality review stays unapproved.
+On 2026-10-08 the user corrected the format identification to **Perfect Circle
+2007** (written “perfect cycle 2007”). The source registry and evaluation
+configuration record this separately from the export’s literal Unlimited
+(`uu` / `*`) fields.
+
+[Format Library’s Perfect Circle reference](https://www.formatlibrary.com/formats/perfect-circle)
+lists a September 2007 banlist. That reference is linked as the candidate profile;
+the exact card-pool cutoff, historical rules and pre-errata texts still require
+review before legality scoring. Current YGOPRODeck text remains a separate
+reference. Identifying the format does not approve replay states or decision
+windows, and the original source payload remains unchanged.

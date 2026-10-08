@@ -33,13 +33,15 @@
       },
       "card_metadata": "benchmarks/card-metadata/db-json-40753-85958923.json",
       "format_declaration": {
-        "label": "Disc Commander 2014",
-        "provenance": "user declaration in conversation on 2026-10-08",
-        "status": "user_declared_not_independently_verified",
-        "rules_reference": null,
-        "banlist_reference": null,
+        "label": "Perfect Circle 2007",
+        "provenance": "user correction in conversation on 2026-10-08",
+        "status": "user_declared_format_reference_found_rules_review_pending",
+        "rules_reference": "https://www.formatlibrary.com/formats/perfect-circle",
+        "banlist_reference": "https://www.formatlibrary.com/formats/perfect-circle",
         "card_text_version": null,
-        "reviewed": false
+        "reviewed": false,
+        "user_wording": "perfect cycle 2007",
+        "banlist_candidate": "September 2007"
       }
     }
   ]

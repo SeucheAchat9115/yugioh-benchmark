@@ -88,9 +88,10 @@ pending and block a final score. A missing KPI also blocks the final score.
 
 The supplied native JSON replay is linked as `db-json-40753-85958923`;
 the text companion retains `db-40753-85958923`. Its export labels the format
-Unlimited. The user identifies it as Disc Commander 2014; that declaration is
-recorded separately, while exact rules, banlist and card-text references remain
-unverified. Do not infer
+Unlimited. The user identifies it as Perfect Circle 2007. The declaration and
+[September 2007 format reference](https://www.formatlibrary.com/formats/perfect-circle)
+are recorded separately; exact card pool, historical rules and pre-errata texts
+still require review. Do not infer
 Edison, Goat or Advanced from its cards. Its states and decision boundaries still
 need review. The native export supplies both players’ private draw logs and
 absolute LP updates, but complete named decklists and reviewed checkpoints remain
