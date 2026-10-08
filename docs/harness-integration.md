@@ -1,4 +1,19 @@
-# Reviewed decisions through the harness
+# Agentic evaluation through the harness
+
+The intended benchmark has [three equally weighted KPIs](agentic-kpis.md): state
+recreation, human-move agreement and format-specific rule correctness. GPT-6.1
+Sol is the configured evaluation target. The combined scorer is implemented;
+reviewed cases and an actual model run remain pending.
+
+For live evaluation, use the harness's existing orchestrator and sole moderator
+writer to collect model attempts, reviewed action records and authoritative
+journals. State recreation tests the agent interpreting a player-declared play;
+human agreement tests its independent move choice. Independent legality grades
+apply to both. Follow the KPI guide for pinned inputs and grading artifacts.
+The filtered decision bridge below supplies player intentions only; its text
+response is not evidence that the play was executed correctly or was legal.
+
+## Filtered decision bridge
 
 A replay is source evidence. A benchmark case is a reviewed position immediately
 before a particular decision. The LLM should receive what that player knew at
@@ -53,7 +68,7 @@ This checkout is optional and public; no GitHub token is needed. The benchmark
 does not bundle the harness. A model transport is still supplied by the caller;
 no provider account, credentials or provider SDK is included.
 
-Cases use `{schema_version, id, source, review, player_context, grading}`;
+Bridge cases use `{schema_version, id, source, review, player_context, grading}`;
 `source.before_sequence` identifies the source boundary. `review` includes
 `status: approved` and `reviewer`; keep pinning/reconstruction evidence there.
 `player_context` uses the harness's existing schema, not a second game-state
@@ -63,8 +78,13 @@ if needed for adjudication. They must contain all known hidden state, while play
 contexts contain only information available to that actor.
 
 `run_case` currently returns a decision, measured latency and `assessment: null`.
-`benchmark.run_suite` adds reviewed-suite execution and explicit response-agreement
-scoring; see [text-log benchmarks](text-logs.md). Automated strategic rubric grading,
+`benchmark.run_suite` adds reviewed-suite execution and exact-response agreement;
+see [text-log benchmarks](text-logs.md). This is a separate narrow metric, not
+the three-KPI score. Bridge cases/results do not directly satisfy the KPI suite
+and run contract; prepare the additional reviewed states, semantic moves,
+journals and independent grading records described in [agentic KPIs](agentic-kpis.md).
+The KPI scorer consumes these trusted artifacts but does not launch the workflow.
+Automated strategic rubric grading,
 checkpoint reconstruction, model provider transports and approved case datasets
 remain future additions. Historical replays cannot evaluate a
 counterfactual win rate once the model diverges; that requires actual new duels
