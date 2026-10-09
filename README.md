@@ -8,7 +8,7 @@ implement a card-effects engine.
 
 **Status: alpha toolkit.** Replay importing, reviewed-case execution and the
 three-KPI artifact scorer and automated metered checkpoint runner are implemented. A [first scoped replay suite](docs/replay-review-stage.md) is prepared. The
-[assisted Sol and Luna pilots](docs/results/2026-10-08/README.md) now report all
+[completed Luna run](docs/results/2026-10-09/README.md) reports all
 three KPIs on 18 reviewed replay checkpoints. A complete live-duel evaluation
 remains pending. The separate [small Edison pilot](docs/edison-pilot.md) measured
 state recreation and legality only.
@@ -26,8 +26,8 @@ weighted KPIs:
 | Rule correctness | Is the agent's play legal under the pinned format, banlist and card text? | ⅓ |
 
 **Final score = the average of the three KPI percentages.** A different legal
-move can pass rule correctness while failing human-move agreement. The selected
-evaluation target is **GPT-6.1 Sol** (`gpt-6.1-sol`); see the
+move can pass rule correctness while failing human-move agreement. The current
+plotted result is **GPT-6 Luna** (`gpt-6-luna`). Future runs use the
 [evaluation configuration](benchmarks/evaluation-config.json).
 
 The [automated evaluation runner](docs/automated-evaluation.md) sends identical
@@ -40,27 +40,30 @@ A high task score alone does not establish competitive playing strength.
 
 ## Scoped replay results
 
-![Four performance-versus-recorded-workflow-span plots for Sol and Luna](docs/results/2026-10-08/performance-runtime.png)
+![Completed Luna checkpoint performance](docs/results/2026-10-09/performance.png)
 
-| KPI | GPT-6.1 Sol | GPT-6 Luna |
-| --- | ---: | ---: |
-| State recreation | 83.33% (15/18) | 38.89% (7/18) |
-| Human-move agreement | 55.56% (10/18) | 38.89% (7/18) |
-| Rules correctness | 97.22% (35/36) | 86.11% (31/36) |
-| **Equal-weight final score** | **78.70%** | **54.63%** |
+| KPI | GPT-6 Luna |
+| --- | ---: |
+| State recreation | 94.44% (17/18) |
+| Human-move agreement | 50.00% (9/18) |
+| Rule correctness | 88.89% (32/36) |
+| **Equal-weight final score** | **77.78%** |
 
-These are assisted cooperative pilots, with 36 tasks per model across 18
-independently reset positions from game 2. Shortened prompts differed between
-models, and one Sol failure was affected by a host prompt omission. These scores
-do not measure a continuous duel or certify competitive strength.
-All four plots use the total recorded workflow span across 36 tasks: **41m 36s
-for Sol** (sum of two batch spans) and **18m 37s for Luna**. This includes host
-review and tool work, excludes setup and the first response before each batch’s
-first recorded action, and is not model inference time.
-See the [run methodology, score summaries and limitations](docs/results/2026-10-08/README.md).
-These old chat runs have no token or billing telemetry. New runs use the
-[identical-prompt protocol and performance/cost plots](docs/automated-evaluation.md);
-new scores are labeled separately because structured execution changes the task.
+All 36 tasks are graded across 18 independently reset positions. The current
+plots show only this completed native Luna run; the earlier assisted Sol and
+Luna points have been removed. Independent journal replay reproduced the score.
+
+![Luna performance versus cost; measured USD cost unavailable](docs/results/2026-10-09/performance-cost.png)
+
+Native subagents did not report tokens or billing, so cost is **unavailable**.
+The plot uses an explicitly labeled categorical position, rather than assigning
+zero USD. Comparable runtime is also unavailable because collection combined
+archived answers with manual preparation and waiting. The
+[runtime plots, reproducible summaries and methodology](docs/results/2026-10-09/README.md)
+record these limits. This is cooperative checkpoint evaluation with automated
+legality reviews; a continuous duel remains unevaluated. The report discloses
+five excluded referee-input trials and one corrective player dispatch for an
+incorrect input, with zero performance-selected retries.
 
 ## Replay dataset and importing
 

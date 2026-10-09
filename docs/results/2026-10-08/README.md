@@ -11,11 +11,9 @@ independent provider model/version or usage attestation.
 | Rules correctness | 97.22% (35/36) | 86.11% (31/36) |
 | **Equal-weight final score** | **78.70%** | **54.63%** |
 
-![Four performance-versus-recorded-workflow-span plots for Sol and Luna](performance-runtime.png)
-
-[Download the four-panel SVG](performance-runtime.svg). Performance comes from the
-committed score summaries; the runtime axis comes from the
-[reconstructed timestamp summary](runtime-summary.json).
+These pilot scores are historical. The active plots use the
+[completed Luna checkpoint run](../2026-10-09/README.md); the old Sol and Luna
+points have been removed.
 
 Luna used 36 fresh attempts; Sol used 28 new attempts and 8 compatible earlier attempts.
 Both cover 36 tasks across 18 reviewed positions from game 2 of
@@ -88,29 +86,6 @@ first attempt before its first recorded action. Separate subagent start-to-respo
 timestamps were not preserved in the surviving artifacts, so model inference
 latency cannot be recovered. This is not a controlled model speed comparison.
 
-The timestamp summary includes each batch's bounds and private source-run hash.
-The plotting script validates timestamp differences, summed spans and source hashes
-against the committed provenance. Points show only the two observed models; no
-interpolation, trend line or speed-versus-quality frontier is inferred.
-
-Each plot is also available separately:
-
-| Plot | PNG | SVG |
-| --- | --- | --- |
-| State recreation | [PNG](performance-runtime-state-recreation.png) | [SVG](performance-runtime-state-recreation.svg) |
-| Human-move agreement | [PNG](performance-runtime-human-move-agreement.png) | [SVG](performance-runtime-human-move-agreement.svg) |
-| Rules correctness | [PNG](performance-runtime-rule-correctness.png) | [SVG](performance-runtime-rule-correctness.svg) |
-| Final score | [PNG](performance-runtime-final-score.png) | [SVG](performance-runtime-final-score.svg) |
-
-## Regenerating the plots
-
-Matplotlib is an optional plotting dependency, not a benchmark runtime
-dependency. Install them and run the script from the repository root:
-
-```sh
-python -m pip install matplotlib
-python docs/results/2026-10-08/plot_results.py
-```
-
-The script reads the committed score and runtime summaries and writes the
-four-panel figure plus four standalone plots, each in PNG and SVG format.
+The [timestamp summary](runtime-summary.json) is retained as historical provenance.
+Current plots and their regeneration command are in the
+[latest results](../2026-10-09/README.md).
