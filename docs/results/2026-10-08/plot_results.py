@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
+matplotlib.rcParams["svg.hashsalt"] = "yugioh-sol-luna-20261008"
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -46,5 +47,7 @@ fig.text(0.03, 0.035, "Assisted checkpoint pilot; prompts differed. Not a contin
          fontsize=9, color="#4b5563")
 fig.subplots_adjust(left=0.28, right=0.97, top=0.80, bottom=0.15)
 fig.savefig(root / "kpi-comparison.png", dpi=180, facecolor="white")
-fig.savefig(root / "kpi-comparison.svg", facecolor="white")
+fig.savefig(root / "kpi-comparison.svg", facecolor="white", metadata={"Date": None})
+svg = root / "kpi-comparison.svg"
+svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
 plt.close(fig)
