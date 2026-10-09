@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- Read UTF-8 replay fixtures explicitly in tests, review preparation and result
+  plotting, fixing Windows failures caused by the default code page.
+
+- Publish aggregate Sol/Luna checkpoint results, a README comparison plot and
+  reproducible plotting script. Document host assistance, differing prompts,
+  the Sol prompt omission and remaining full-game evaluation gaps. Keep raw
+  model logs and harness saves local.
+
 - Review all 185 previously pending replay work items: approve 14 additional
   scoped checkpoints, exclude 77 bookkeeping/substeps, and document 94 blocked
   items. Expand the suite to 18 independent checkpoints / 36 tasks. Preserve
@@ -19,8 +27,9 @@
   reference; historical card text and legality review remain pending.
 - Three equally weighted KPIs: state recreation, semantic human-move agreement
   and independently reviewed rule correctness. Expose `score-kpis` in the CLI.
-- GPT-6.1 Sol is the evaluation target; a complete measured model score remains
-  pending. Update CI and source packages for the native JSON workflow.
+- GPT-6.1 Sol is the default evaluation target. Update CI and source packages
+  for the native JSON workflow; scoped results are reported separately from
+  complete live-duel evaluation.
 
 ## 0.1.0 — initial public toolkit
 

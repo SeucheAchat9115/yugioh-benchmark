@@ -17,7 +17,7 @@ def extract(data):
 class ExtractionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data=json.loads(SOURCE.read_text()); cls.result=extract(cls.data)
+        cls.data=json.loads(SOURCE.read_text(encoding='utf-8')); cls.result=extract(cls.data)
         cls.records=cls.result['records']
 
     def test_order_and_candidates(self):
@@ -72,7 +72,7 @@ class ExtractionTests(unittest.TestCase):
 
     def test_selected_summary_is_reproducible(self):
         path=SOURCE.parents[2]/'benchmarks/extractions/db-json-40753-85958923.json'
-        self.assertEqual(json.loads(path.read_text()),extraction_summary(self.result))
+        self.assertEqual(json.loads(path.read_text(encoding='utf-8')),extraction_summary(self.result))
 
     def test_unknown_operations_are_flagged(self):
         data=deepcopy(self.data)
@@ -91,7 +91,7 @@ class ExtractionTests(unittest.TestCase):
             summary=write_extraction(self.result,directory)
             self.assertEqual(summary['source_events'],554)
             with self.assertRaises(FileExistsError): write_extraction(self.result,directory)
-            self.assertEqual(json.loads((directory/'states-and-actions.json').read_text()),self.result)
+            self.assertEqual(json.loads((directory/'states-and-actions.json').read_text(encoding='utf-8')),self.result)
             command=[sys.executable,'-m','yugioh_benchmark','extract',
                      str(SOURCE.parents[2]/'replays/db-json-40753-85958923'),
                      '--output',str(Path(temporary)/'cli')]

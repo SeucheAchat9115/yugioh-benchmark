@@ -38,7 +38,7 @@ def save(path, value):
 def apply_followup_review(values, packets, records, state_for, context_for, catalog, pinned_rules):
     """Apply explicit, source-bound evaluator dispositions; never auto-approve."""
     review_path=FOLDER/'review-decisions.json'
-    audit=json.loads(review_path.read_text())
+    audit=json.loads(review_path.read_text(encoding='utf-8'))
     assert audit['source_payload_sha256']==values['manifest']['source_payload_sha256']
     rows={row['source']['source_index']:row for row in values['review-index']}
     assert set(map(int,audit['items']))=={i for i,row in rows.items() if row['status']=='pending_review'}
@@ -109,11 +109,11 @@ def apply_followup_review(values, packets, records, state_for, context_for, cata
 def prepared():
     replay=load_bundle(ROOT/'replays/db-json-40753-85958923')
     extraction=extract_observations(replay); records=extraction['records']
-    metadata=json.loads((ROOT/'benchmarks/card-metadata/db-json-40753-85958923.json').read_text())
+    metadata=json.loads((ROOT/'benchmarks/card-metadata/db-json-40753-85958923.json').read_text(encoding='utf-8'))
     fields={'id','name','type','frameType','desc','race','archetype','atk','def','level','attribute','scale','linkval','linkmarkers','pend_desc','monster_desc'}
     catalog={c['api_card']['name']:{k:v for k,v in c['api_card'].items() if k in fields} for c in metadata['cards']}
     assets=FOLDER/'assets'
-    common=(assets/'common.md').read_text(); profile=(assets/'perfect-circle.md').read_text()
+    common=(assets/'common.md').read_text(encoding='utf-8'); profile=(assets/'perfect-circle.md').read_text(encoding='utf-8')
     banlist=(assets/'perfect-circle-2007-09-01.json').read_bytes()
     rules_snapshot={'format':'perfect-circle','rules_version':'perfect-circle-2026-10-08',
                     'text_scope':'Historical profile with current card texts; no complete historical text overrides',

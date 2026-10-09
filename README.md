@@ -7,10 +7,11 @@ The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
 **Status: alpha toolkit.** Replay importing, reviewed-case execution and the
-three-KPI artifact scorer are implemented. A [first scoped replay suite](docs/replay-review-stage.md) is prepared; a
-complete three-KPI model evaluation remains pending. A [small Edison pilot](docs/edison-pilot.md)
-measured state recreation and legality; human-move agreement and a final score
-remain unavailable.
+three-KPI artifact scorer are implemented. A [first scoped replay suite](docs/replay-review-stage.md) is prepared. The
+[assisted Sol and Luna pilots](docs/results/2026-10-08/README.md) now report all
+three KPIs on 18 reviewed replay checkpoints. A complete live-duel evaluation
+remains pending. The separate [small Edison pilot](docs/edison-pilot.md) measured
+state recreation and legality only.
 This project is independent of Duelingbook and the Yu-Gi-Oh rights holders.
 
 ## Agentic benchmark score
@@ -35,6 +36,23 @@ those artifacts; it does not launch a model or simulate a duel by itself.
 Missing attempts score zero, while unfinished grading blocks a final score.
 A high task score alone does not establish competitive playing strength.
 
+## Scoped replay results
+
+![Sol and Luna comparison across three KPIs and the final score](docs/results/2026-10-08/kpi-comparison.png)
+
+| KPI | GPT-6.1 Sol | GPT-6 Luna |
+| --- | ---: | ---: |
+| State recreation | 83.33% (15/18) | 38.89% (7/18) |
+| Human-move agreement | 55.56% (10/18) | 38.89% (7/18) |
+| Rules correctness | 97.22% (35/36) | 86.11% (31/36) |
+| **Equal-weight final score** | **78.70%** | **54.63%** |
+
+These are assisted cooperative pilots, with 36 tasks per model across 18
+independently reset positions from game 2. Shortened prompts differed between
+models, and one Sol failure was affected by a host prompt omission. These scores
+do not measure a continuous duel or certify competitive strength.
+See the [run methodology, score summaries and limitations](docs/results/2026-10-08/README.md).
+
 ## Replay dataset and importing
 
 The selected [Aco77 vs sdesowitz02 replay](https://www.duelingbook.com/replay?id=40753-85958923)
@@ -51,8 +69,9 @@ across both games. All 185 previously pending items now have dispositions:
 14 newly approved, 77 excluded as bookkeeping/substeps and 94 reviewed but blocked.
 The suite has **18 scoped checkpoints and 36 tasks**, including the original four.
 These are independent resets, not an uninterrupted match. The earlier four-position
-cooperative pilot scored 70.83%; **the expanded suite has not been run**. Neither
-result establishes competitive strength. The user identifies the match as
+cooperative pilot scored 70.83%; the expanded assisted pilots scored **78.70% for
+Sol and 54.63% for Luna**. These results do not establish competitive strength.
+The user identifies the match as
 **Perfect Circle 2007**; historical-text-dependent cases remain provisional and
 the native export itself labels the game Unlimited.
 

@@ -16,20 +16,20 @@ HAVE_HARNESS=importlib.util.find_spec('harness') is not None
 class ReviewedCasesTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.suite=json.loads((FOLDER/'suite.json').read_text())
-        cls.index=json.loads((FOLDER/'review-index.json').read_text())
-        cls.evaluator=json.loads((FOLDER/'evaluator.json').read_text())
+        cls.suite=json.loads((FOLDER/'suite.json').read_text(encoding='utf-8'))
+        cls.index=json.loads((FOLDER/'review-index.json').read_text(encoding='utf-8'))
+        cls.evaluator=json.loads((FOLDER/'evaluator.json').read_text(encoding='utf-8'))
         cls.replay=load_bundle(ROOT/'replays/db-json-40753-85958923')
 
     def test_full_source_coverage_and_no_blanket_approval(self):
-        timeline=json.loads((FOLDER/'timeline.json').read_text())
+        timeline=json.loads((FOLDER/'timeline.json').read_text(encoding='utf-8'))
         self.assertEqual([e['source_index'] for e in timeline],list(range(554)))
         self.assertEqual(len(self.index),207)
         self.assertEqual(sum(e['status']=='approved_scoped' for e in self.index),18)
         self.assertEqual(sum(e['status']=='reviewed_blocked' for e in self.index),94)
         self.assertEqual(sum(e['status']=='excluded' for e in self.index),95)
         self.assertEqual({e['source']['game'] for e in self.index},{1,2})
-        candidates=json.loads((ROOT/'benchmarks/candidates/aco77-sdesowitz02-2026-10-07-native.json').read_text())
+        candidates=json.loads((ROOT/'benchmarks/candidates/aco77-sdesowitz02-2026-10-07-native.json').read_text(encoding='utf-8'))
         self.assertTrue({c['source']['source_index'] for c in candidates}.issubset({e['source']['source_index'] for e in self.index}))
 
     def test_every_source_link_matches_and_no_run_is_claimed(self):
@@ -38,7 +38,7 @@ class ReviewedCasesTests(unittest.TestCase):
             self.assertEqual(event['sequence'],source['before_sequence'])
             self.assertEqual(source['payload_sha256'],self.replay['source']['payload_sha256'])
             self.assertEqual(entry['play'],event['payload']['play'])
-        manifest=json.loads((FOLDER/'manifest.json').read_text())
+        manifest=json.loads((FOLDER/'manifest.json').read_text(encoding='utf-8'))
         self.assertFalse(manifest['whole_game_fully_reviewed'])
         self.assertFalse(manifest['whole_game_model_run_completed'])
         self.assertEqual(len(validate_suite(self.suite)),36)
@@ -50,7 +50,7 @@ class ReviewedCasesTests(unittest.TestCase):
     def test_all_prepared_packets_hide_opponent_and_unseen_catalogs(self):
         for entry in self.index:
             if not entry['packet']:continue
-            packet=json.loads((FOLDER/entry['packet']).read_text());ctx=packet['player_context']
+            packet=json.loads((FOLDER/entry['packet']).read_text(encoding='utf-8'));ctx=packet['player_context']
             self.assertEqual(packet['runnable'],entry['status']=='approved_scoped')
             opponent=ctx['state']['players']['human']
             self.assertFalse({'hand','deck','cards','extra_deck','side_deck'} & set(opponent))
@@ -100,7 +100,7 @@ class ReviewedCasesTests(unittest.TestCase):
             else:self.assertEqual(expected['pending_decision'],{'actor':'human','window':'after_set'})
 
     def test_followup_dispositions_bind_every_previous_pending_source(self):
-        audit=json.loads((FOLDER/'review-decisions.json').read_text())
+        audit=json.loads((FOLDER/'review-decisions.json').read_text(encoding='utf-8'))
         self.assertEqual(len(audit['items']),185)
         self.assertEqual(sum(item['status']=='approved_scoped' for item in audit['items'].values()),14)
         self.assertEqual(sum(item['status']=='excluded' for item in audit['items'].values()),77)
@@ -113,15 +113,15 @@ class ReviewedCasesTests(unittest.TestCase):
         self.assertIn('313',audit['items']['317']['finding'])
         self.assertEqual(audit['items']['530']['classification'],'effect_resolution_substep')
         self.assertEqual(audit['items']['344']['classification'],'cost_or_procedure_substep')
-        manifest=json.loads((FOLDER/'manifest.json').read_text())
+        manifest=json.loads((FOLDER/'manifest.json').read_text(encoding='utf-8'))
         self.assertEqual(manifest['review_decisions_sha256'],digest(audit))
 
     def test_new_approved_context_history_has_no_future_entries(self):
-        audit=json.loads((FOLDER/'review-decisions.json').read_text())
+        audit=json.loads((FOLDER/'review-decisions.json').read_text(encoding='utf-8'))
         for key,finding in audit['items'].items():
             if finding['status']!='approved_scoped':continue
             row=next(e for e in self.index if e['source']['source_index']==int(key))
-            context=json.loads((FOLDER/row['packet']).read_text())['player_context']
+            context=json.loads((FOLDER/row['packet']).read_text(encoding='utf-8'))['player_context']
             self.assertEqual(len(context['recent_events']),context['context_limits']['recent_events'])
             for event in context['recent_events']:
                 sequence=int(event['id'].split('-')[1])
@@ -146,9 +146,9 @@ class ReviewedCasesTests(unittest.TestCase):
         values,packets=module.prepared()
         for name,value in values.items():
             path=FOLDER/(('assets/' if name in {'rules-snapshot','card-texts'} else '')+name+'.json')
-            self.assertEqual(json.loads(path.read_text()),value)
+            self.assertEqual(json.loads(path.read_text(encoding='utf-8')),value)
         for identity,packet in packets.items():
-            self.assertEqual(json.loads((FOLDER/'player-packets'/f'{identity}.json').read_text()),packet)
+            self.assertEqual(json.loads((FOLDER/'player-packets'/f'{identity}.json').read_text(encoding='utf-8')),packet)
 
     @unittest.skipUnless(HAVE_HARNESS,'requires pinned harness')
     def test_changed_player_packet_is_rejected(self):
