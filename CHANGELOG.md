@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Read UTF-8 replay fixtures explicitly in tests, review preparation and result
+  plotting, fixing Windows failures caused by the default code page.
+
 - Publish aggregate Sol/Luna checkpoint results, a README comparison plot and
   reproducible plotting script. Document host assistance, differing prompts,
   the Sol prompt omission and remaining full-game evaluation gaps. Keep raw

@@ -19,7 +19,7 @@ SOURCE = 'https://www.duelingbook.com/replay?id=40753-85958923'
 class NativeJsonTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data = parse_export(FIXTURE.read_text())
+        cls.data = parse_export(FIXTURE.read_text(encoding='utf-8'))
         cls.replay = convert_json(cls.data, SOURCE, '2026-10-08')
 
     def test_full_native_roundtrip_and_source_order(self):
@@ -88,12 +88,12 @@ class NativeJsonTests(unittest.TestCase):
             convert_json(changed)
 
     def test_primary_registry_fixture_and_candidates(self):
-        registry = json.loads((ROOT/'benchmarks/sources.json').read_text())['sources'][0]
+        registry = json.loads((ROOT/'benchmarks/sources.json').read_text(encoding='utf-8'))['sources'][0]
         loaded = load_bundle(ROOT/registry['bundle'])
         self.assertEqual(loaded, self.replay)
         self.assertEqual(registry['payload_sha256'], hashlib.sha256(canonical(self.data)).hexdigest())
         self.assertEqual(registry['fixture_sha256'], hashlib.sha256(FIXTURE.read_bytes()).hexdigest())
-        candidates = json.loads((ROOT/registry['candidates']).read_text())
+        candidates = json.loads((ROOT/registry['candidates']).read_text(encoding='utf-8'))
         self.assertEqual(candidates, decision_candidates(loaded))
         self.assertEqual(len(candidates), 174)
         self.assertTrue(all(c['review']['status'] == 'unreviewed' for c in candidates))

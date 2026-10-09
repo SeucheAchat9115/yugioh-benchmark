@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 root = Path(__file__).resolve().parent
-luna = json.loads((root / "luna.score.json").read_text())
-sol = json.loads((root / "sol.score.json").read_text())
+luna = json.loads((root / "luna.score.json").read_text(encoding='utf-8'))
+sol = json.loads((root / "sol.score.json").read_text(encoding='utf-8'))
 keys = ["state_recreation", "human_move_agreement", "rule_correctness"]
 labels = ["State recreation", "Human move reproduction", "Rules correctness", "Final score · equal weights"]
 fig, ax = plt.subplots(figsize=(10, 5.1))
@@ -49,5 +49,5 @@ fig.subplots_adjust(left=0.28, right=0.97, top=0.80, bottom=0.15)
 fig.savefig(root / "kpi-comparison.png", dpi=180, facecolor="white")
 fig.savefig(root / "kpi-comparison.svg", facecolor="white", metadata={"Date": None})
 svg = root / "kpi-comparison.svg"
-svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
+svg.write_text("\n".join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines()) + "\n", encoding="utf-8")
 plt.close(fig)

@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class CardMetadataTests(unittest.TestCase):
     def setUp(self):
         self.replay = load_bundle(ROOT/'replays/db-json-40753-85958923')
-        self.selected = json.loads((ROOT/'benchmarks/card-metadata/db-json-40753-85958923.json').read_text())
+        self.selected = json.loads((ROOT/'benchmarks/card-metadata/db-json-40753-85958923.json').read_text(encoding='utf-8'))
         self.response = json.dumps({'data': [c['api_card'] for c in self.selected['cards']]}).encode()
 
     def test_selected_snapshot_matches_replay_without_mutation(self):
@@ -76,6 +76,6 @@ class CardMetadataTests(unittest.TestCase):
                     '--response', str(response), '--retrieved-at', '2026-10-08', '--output', str(output)]
             with patch('sys.argv', argv), patch('builtins.print'):
                 main()
-            self.assertEqual(json.loads(output.read_text())['matched_distinct_passcodes'], 42)
+            self.assertEqual(json.loads(output.read_text(encoding='utf-8'))['matched_distinct_passcodes'], 42)
             with patch('sys.argv', argv), patch('sys.stderr'), self.assertRaises(SystemExit):
                 main()
