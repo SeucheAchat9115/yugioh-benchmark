@@ -66,46 +66,34 @@ def main():
     ax.set_xticks(range(4), [title.replace(" ", "\n", 1) for _, title in METRICS])
     save(fig, "performance")
 
-    for axis, field, unit in (
-        ("runtime", "evaluation_minutes", "Evaluated-model runtime (minutes)"),
-        ("cost", "evaluation_cost_usd", "Evaluated-model cost (USD)"),
-    ):
-        x = measurements[field]
+    minutes = measurements["player_collection_minutes"]
+    assert minutes > 0
+    assert abs(minutes * 60 - measurements["player_collection_seconds"]) < 1e-6
 
-        def panel(ax, key, title):
-            style(ax, title)
-            y = value(score, key)
-            if x is None:
-                # A categorical location, explicitly unrelated to a numeric zero.
-                ax.set_xlim(-.7, .7)
-                ax.set_xticks([0], ["Unavailable"])
-                ax.set_xlabel(unit + " · unmeasured")
-                position = 0
-            else:
-                assert x >= 0
-                position = float(x)
-                ax.set_xlim(0, max(1, position * 1.6))
-                ax.set_xlabel(unit)
-            ax.scatter(position, y, s=110, color=COLOR, marker="D", zorder=3)
-            ax.annotate(f"GPT-6 Luna · {y:.2f}%", (position, y),
-                        xytext=(0, 10), textcoords="offset points", ha="center", fontsize=10)
+    def panel(ax, key, title):
+        style(ax, title)
+        y = value(score, key)
+        ax.set_xlim(0, minutes * 1.6)
+        ax.set_xlabel("Cumulative player-collection time (minutes)")
+        ax.scatter(minutes, y, s=110, color=COLOR, marker="D", zorder=3)
+        ax.annotate(f"GPT-6 Luna · {y:.2f}%\n{minutes:.2f} min", (minutes, y),
+                    xytext=(0, 10), textcoords="offset points", ha="center", fontsize=10)
 
-        fig, panels = plt.subplots(2, 2, figsize=(11, 8.5), layout="constrained")
-        for ax, (key, title) in zip(panels.flat, METRICS):
-            panel(ax, key, title)
-        fig.suptitle(f"Performance vs {axis} · GPT-6 Luna\n"
-                     "18 reviewed positions · 36 tasks · cooperative native subagents", fontsize=15)
-        footer = ("USD cost unavailable: token usage and billing were not reported. No zero-cost estimate."
-                  if axis == "cost" else
-                  "Comparable runtime unavailable: archival reuse and coordinator preparation prevent inference timing.")
-        fig.supxlabel(footer, fontsize=10)
-        save(fig, f"performance-{axis}")
+    footer = "Recorded collector durations include preparation, waiting and cached retrieval; referee time excluded."
+    fig, panels = plt.subplots(2, 2, figsize=(11, 8.5), layout="constrained")
+    for ax, (key, title) in zip(panels.flat, METRICS):
+        panel(ax, key, title)
+    fig.suptitle("Performance vs recorded runtime · GPT-6 Luna\n"
+                 "18 reviewed positions · 36 tasks · cumulative collection time", fontsize=15)
+    fig.supxlabel(footer + "\nThis is neither model inference time nor elapsed wall time.", fontsize=10)
+    save(fig, "performance-runtime")
 
-        for key, title in METRICS:
-            fig, ax = plt.subplots(figsize=(7, 5), layout="constrained")
-            panel(ax, key, title)
-            fig.supxlabel(footer.replace(": ", ":\n", 1), fontsize=9)
-            save(fig, f"performance-{axis}-{key.replace('_', '-')}")
+    for key, title in METRICS:
+        fig, ax = plt.subplots(figsize=(7, 5), layout="constrained")
+        panel(ax, key, title)
+        fig.supxlabel("Preparation, waiting and cached retrieval included; referee time excluded.\n"
+                      "Cumulative collection time; not inference or elapsed wall time.", fontsize=9)
+        save(fig, f"performance-runtime-{key.replace('_', '-')}")
 
 
 if __name__ == "__main__":

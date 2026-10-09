@@ -12,24 +12,24 @@ across 18 independently reset, reviewed positions. All tasks are graded.
 | Rule correctness | 32/36 | 88.89% |
 | **Equal-weight final score** | | **77.78%** |
 
-## Performance versus costs
+## Performance versus recorded runtime
 
-![Luna performance versus cost, with cost explicitly unavailable](performance-cost.png)
+![Luna performance versus cumulative recorded collection runtime](performance-runtime.png)
 
-The run used native subagents through the chat subscription. Token usage and
-billing were not reported, so evaluated-model and full-pipeline USD costs are
-`null`. The categorical **Unavailable** position shows the observed performance
-without inventing a numeric cost. It does not represent $0, an allocated
-subscription price, or a hypothetical API estimate.
+The x-axis is **396.71 minutes** (23,802.77 seconds), the sum of recorded static
+collector durations for all 36 canonical player responses. All four metrics use
+this same full-run coordinate, rather than a per-KPI duration.
 
-## Performance versus runtime
+These durations include manual prompt preparation and waiting. Reused archived
+answers contribute cached retrieval time, rather than their original generation
+latency. Referee calls and excluded transport trials are outside this total.
+Parallel call durations are cumulative, so the coordinate is neither elapsed wall
+time nor a complete measurement of model inference time. The raw total comes from
+the hashed source report; the public measurement summary preserves it without
+rounding. The old assisted pilot's runtime coordinates are excluded.
 
-![Luna performance with comparable runtime explicitly unavailable](performance-runtime.png)
-
-The run reused archived answers and collected others through manual prompt
-preparation. Collector timings include preparation, waiting and cached retrieval;
-there is no complete, comparable model-runtime measurement. The old assisted
-pilot's time coordinates are therefore removed rather than reused for this run.
+USD cost remains `null`: native subagents did not report token usage or billing.
+The previous cost plots have been removed in favor of the recorded-runtime plots.
 
 ## Scope and provenance
 
@@ -60,13 +60,13 @@ python docs/results/2026-10-09/plot_results.py
 
 Install the optional plotting dependency with `pip install -e '.[plotting]'` if
 needed. The script reads only the committed summaries and writes PNG/SVG versions
-of the performance overview, the four-panel runtime and cost figures, and each
+of the performance overview, the four-panel runtime figure, and each
 individual metric. No API access or private run files are needed.
 
-| Plot | Runtime | Cost |
+| Plot | PNG | SVG |
 | --- | --- | --- |
-| All four metrics | [SVG](performance-runtime.svg) | [SVG](performance-cost.svg) |
-| State recreation | [PNG](performance-runtime-state-recreation.png) | [PNG](performance-cost-state-recreation.png) |
-| Human-move agreement | [PNG](performance-runtime-human-move-agreement.png) | [PNG](performance-cost-human-move-agreement.png) |
-| Rule correctness | [PNG](performance-runtime-rule-correctness.png) | [PNG](performance-cost-rule-correctness.png) |
-| Final score | [PNG](performance-runtime-final-score.png) | [PNG](performance-cost-final-score.png) |
+| All four metrics | [PNG](performance-runtime.png) | [SVG](performance-runtime.svg) |
+| State recreation | [PNG](performance-runtime-state-recreation.png) | [SVG](performance-runtime-state-recreation.svg) |
+| Human-move agreement | [PNG](performance-runtime-human-move-agreement.png) | [SVG](performance-runtime-human-move-agreement.svg) |
+| Rule correctness | [PNG](performance-runtime-rule-correctness.png) | [SVG](performance-runtime-rule-correctness.svg) |
+| Final score | [PNG](performance-runtime-final-score.png) | [SVG](performance-runtime-final-score.svg) |

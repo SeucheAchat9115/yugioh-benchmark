@@ -53,14 +53,15 @@ All 36 tasks are graded across 18 independently reset positions. The current
 plots show only this completed native Luna run; the earlier assisted Sol and
 Luna points have been removed. Independent journal replay reproduced the score.
 
-![Luna performance versus cost; measured USD cost unavailable](docs/results/2026-10-09/performance-cost.png)
+![Luna performance versus cumulative player-collection runtime](docs/results/2026-10-09/performance-runtime.png)
 
-Native subagents did not report tokens or billing, so cost is **unavailable**.
-The plot uses an explicitly labeled categorical position, rather than assigning
-zero USD. Comparable runtime is also unavailable because collection combined
-archived answers with manual preparation and waiting. The
-[runtime plots, reproducible summaries and methodology](docs/results/2026-10-09/README.md)
-record these limits. This is cooperative checkpoint evaluation with automated
+The x-axis uses **396.71 minutes of cumulative recorded player-collection time**
+across the 36 tasks. This sums collector durations, including prompt preparation,
+waiting and cached retrieval; it excludes referee time and is neither inference
+time nor elapsed wall time. Costs remain unavailable because native subagents did
+not report tokens or billing. See the
+[runtime plots, reproducible summaries and methodology](docs/results/2026-10-09/README.md).
+This is cooperative checkpoint evaluation with automated
 legality reviews; a continuous duel remains unevaluated. The report discloses
 five excluded referee-input trials and one corrective player dispatch for an
 incorrect input, with zero performance-selected retries.
