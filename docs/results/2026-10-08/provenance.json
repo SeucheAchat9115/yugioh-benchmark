@@ -31,5 +31,7 @@
   },
   "model_attestation": "Model requested through native Codex subagents; provider model/version and token usage not independently exposed.",
   "delivery": "Manually condensed prompts, not byte-identical across models. Shared capabilities forbidden by instructions; no enforced sandbox.",
-  "evidence": "Score summaries only. Raw model logs, authoritative journals and harness saves remain local and are required for independent rescoring."
+  "evidence": "Score summaries only. Raw model logs, authoritative journals and harness saves remain local and are required for independent rescoring.",
+  "runtime_summary": "runtime-summary.json",
+  "runtime_metric": "Sum of batch first-to-last harness action spans across all 36 tasks; host work included, setup and initial attempt before first action excluded. Not model inference latency."
 }

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Replace the README bar chart with four performance-versus-runtime
+  plots (three KPIs and final score). Publish aggregate timing bounds,
+  distinguish workflow spans from model latency, and export standalone PNG/SVGs.
+
 - Read UTF-8 replay fixtures explicitly in tests, review preparation and result
   plotting, fixing Windows failures caused by the default code page.
 
