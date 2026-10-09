@@ -21,6 +21,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[project.optional-dependencies]
+plotting = ["matplotlib>=3.8"]
+
 [project.urls]
 Repository = "https://github.com/SeucheAchat9115/yugioh-benchmark"
 Issues = "https://github.com/SeucheAchat9115/yugioh-benchmark/issues"

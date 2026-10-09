@@ -7,7 +7,7 @@ The agent interprets card rules and chooses moves; this repository does not
 implement a card-effects engine.
 
 **Status: alpha toolkit.** Replay importing, reviewed-case execution and the
-three-KPI artifact scorer are implemented. A [first scoped replay suite](docs/replay-review-stage.md) is prepared. The
+three-KPI artifact scorer and automated metered checkpoint runner are implemented. A [first scoped replay suite](docs/replay-review-stage.md) is prepared. The
 [assisted Sol and Luna pilots](docs/results/2026-10-08/README.md) now report all
 three KPIs on 18 reviewed replay checkpoints. A complete live-duel evaluation
 remains pending. The separate [small Edison pilot](docs/edison-pilot.md) measured
@@ -30,9 +30,11 @@ move can pass rule correctness while failing human-move agreement. The selected
 evaluation target is **GPT-6.1 Sol** (`gpt-6.1-sol`); see the
 [evaluation configuration](benchmarks/evaluation-config.json).
 
-Use the existing live harness workflow to collect attempts, authoritative
-journals and independent grades. The [KPI scorer](docs/agentic-kpis.md) consumes
-those artifacts; it does not launch a model or simulate a duel by itself.
+The [automated evaluation runner](docs/automated-evaluation.md) sends identical
+filtered prompts, receives structured intentions, independently reviews legality,
+and executes through the real harness. It records per-call time, tokens and costs
+and generates four accuracy/runtime panels plus four accuracy/cost panels.
+The [KPI scorer](docs/agentic-kpis.md) also accepts separately collected artifacts.
 Missing attempts score zero, while unfinished grading blocks a final score.
 A high task score alone does not establish competitive playing strength.
 
@@ -56,6 +58,9 @@ for Sol** (sum of two batch spans) and **18m 37s for Luna**. This includes host
 review and tool work, excludes setup and the first response before each batch’s
 first recorded action, and is not model inference time.
 See the [run methodology, score summaries and limitations](docs/results/2026-10-08/README.md).
+These old chat runs have no token or billing telemetry. New runs use the
+[identical-prompt protocol and performance/cost plots](docs/automated-evaluation.md);
+new scores are labeled separately because structured execution changes the task.
 
 ## Replay dataset and importing
 

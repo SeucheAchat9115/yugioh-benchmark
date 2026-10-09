@@ -19,6 +19,23 @@ def summary(replay):
 def main():
     parser = argparse.ArgumentParser(description='Import native Duelingbook JSON and score reviewed agentic KPIs')
     commands = parser.add_subparsers(dest='command', required=True)
+    command = commands.add_parser('evaluate', help='Run identical reviewed checkpoints through a metered model transport and real harness')
+    command.add_argument('dataset', type=Path)
+    command.add_argument('--output', required=True, type=Path)
+    command.add_argument('--models', required=True, nargs='+')
+    command.add_argument('--referee-model', required=True)
+    command.add_argument('--prices', type=Path, help='Sourced, dated USD price book; omit to leave cost unavailable')
+    command.add_argument('--options', type=Path, help='JSON of supported provider options applied identically to all models')
+    command.add_argument('--endpoint', default='https://api.openai.com/v1/chat/completions')
+    command.add_argument('--key-env', default='OPENAI_API_KEY')
+    command.add_argument('--timeout', type=int, default=90)
+    command.add_argument('--max-output-tokens', type=int, default=512)
+    command.add_argument('--referee-output-tokens', type=int, default=1024)
+    command.add_argument('--token-parameter', choices=['max_completion_tokens','max_tokens'], default='max_completion_tokens')
+    command = commands.add_parser('plot-evaluation', help='Generate four accuracy/runtime and four accuracy/cost panels')
+    command.add_argument('comparison', type=Path)
+    command.add_argument('--output', required=True, type=Path)
+    command.add_argument('--cost-scope', choices=['evaluation','pipeline'], default='evaluation')
     command = commands.add_parser('convert-json')
     command.add_argument('input', type=Path)
     command.add_argument('--output', required=True, type=Path)
@@ -41,7 +58,21 @@ def main():
     command.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     try:
-        if args.command == 'extract':
+        if args.command == 'evaluate':
+            from .evaluation import evaluate
+            from .transports import OpenAICompatible
+            transport = OpenAICompatible(args.endpoint, key_env=args.key_env, timeout_seconds=args.timeout,
+                max_output_tokens=args.max_output_tokens, referee_output_tokens=args.referee_output_tokens,
+                token_parameter=args.token_parameter)
+            reports = evaluate(args.dataset,args.output,args.models,transport,referee_model=args.referee_model,
+                prices=json.loads(read_text(args.prices)) if args.prices else None,
+                options=json.loads(read_text(args.options)) if args.options else None,timeout_seconds=args.timeout)
+            output = {'comparison':str(args.output/'comparison.json'),
+                      'models':[{'model':r['model'],'final_score_percent':r['score']['final_score_percent']} for r in reports]}
+        elif args.command == 'plot-evaluation':
+            from .evaluation_plots import plot_comparison
+            output = plot_comparison(json.loads(read_text(args.comparison)),args.output,cost_scope=args.cost_scope)
+        elif args.command == 'extract':
             from .extraction import extract_observations, write_extraction
             output = write_extraction(extract_observations(load_bundle(args.bundle)), args.output)
         elif args.command == 'score-kpis':

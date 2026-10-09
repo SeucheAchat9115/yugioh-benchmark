@@ -113,3 +113,8 @@ full games against strong opponents; human-move agreement alone cannot establish
 
 The [review preparation report](replay-review-stage.md) records the whole-match
 work list, approved subset, information gaps and how to run the first scoped suite.
+
+For reproducible model dispatch, authoritative execution and per-attempt timing,
+tokens and costs, use the [automated checkpoint evaluation](automated-evaluation.md).
+Its semantic action protocol differs from the assisted pilots; keep their results
+separate. Independent automated legality review is not expert certification.
