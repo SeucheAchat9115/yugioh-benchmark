@@ -38,7 +38,7 @@ A high task score alone does not establish competitive playing strength.
 
 ## Scoped replay results
 
-![Sol and Luna comparison across three KPIs and the final score](docs/results/2026-10-08/kpi-comparison.png)
+![Four performance-versus-recorded-workflow-span plots for Sol and Luna](docs/results/2026-10-08/performance-runtime.png)
 
 | KPI | GPT-6.1 Sol | GPT-6 Luna |
 | --- | ---: | ---: |
@@ -51,6 +51,10 @@ These are assisted cooperative pilots, with 36 tasks per model across 18
 independently reset positions from game 2. Shortened prompts differed between
 models, and one Sol failure was affected by a host prompt omission. These scores
 do not measure a continuous duel or certify competitive strength.
+All four plots use the total recorded workflow span across 36 tasks: **41m 36s
+for Sol** (sum of two batch spans) and **18m 37s for Luna**. This includes host
+review and tool work, excludes setup and the first response before each batch’s
+first recorded action, and is not model inference time.
 See the [run methodology, score summaries and limitations](docs/results/2026-10-08/README.md).
 
 ## Replay dataset and importing
