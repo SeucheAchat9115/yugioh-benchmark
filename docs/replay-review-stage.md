@@ -155,11 +155,14 @@ send only filtered context. For state tasks, provide the declared action through
 the normal sole-moderator workflow, not the expected-state patch. Record actual
 journals and independently normalize/review attempts. Keep live saves, model logs
 and execution journals outside Git. Follow the [KPI scorer contract](agentic-kpis.md).
-A model transport and actual execution are still required for a v2 score.
+A model transport and actual execution are required to collect new v2 attempts.
 
 The earlier cooperative GPT-6.1 Sol pilot ran only the original four opening
 checkpoints. Its 70.83% result does not apply to the expanded suite, is not a
-full-game score, and used host assistance. No expanded-suite score is claimed.
+full-game score, and used host assistance. Subsequent
+[expanded assisted pilots](results/2026-10-08/README.md) report 78.70% for Sol and
+54.63% for Luna across all 36 scoped tasks. These are independent checkpoint
+evaluations, not continuous games; delivered prompts differed between models.
 
 Reproduce the authored fixtures and verify them offline:
 
