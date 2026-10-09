@@ -1,0 +1,13 @@
+{
+  "model": "gpt-6-luna",
+  "evaluation_minutes": null,
+  "evaluation_cost_usd": null,
+  "pipeline_cost_usd": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "evaluation_calls": 36,
+  "referee_calls": 36,
+  "unpriced_evaluation_calls": 36,
+  "runtime_note": "Includes near-zero retrieval of reused artifacts. Not a complete inference latency benchmark; original raw telemetry preserved in archived phases.",
+  "cost_note": "Native subagents expose neither token usage nor billing. Subscription allocation and hypothetical API charges are not measured run costs."
+}
